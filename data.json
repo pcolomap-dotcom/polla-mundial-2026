@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "26 Jun 2026 20:55 UTC",
-  "playedCount": 0,
+  "lastUpdated": "26 Jun 2026 21:00 UTC",
+  "playedCount": 2,
   "totalCount": 72,
   "topScorer": {
     "name": "Lionel Messi",
@@ -9,454 +9,477 @@
   },
   "ranking": [
     {
-      "name": "AguColoma",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
       "name": "Benja",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Carmen",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Caro",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Carola P",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Cata",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Coni",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Diego",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Domingo",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Felipe Coloma",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Fernando II",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Fernando IV",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Ignacolo",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Jaime",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Joselin",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "José Pablo",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Juan",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Juanco",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Lito",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Martín",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Mely",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Pablo (tú)",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Paz",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Pedro",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Rodrigo",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Seb",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Tomi",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Tono",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Trini Coloma",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Tío Gucho",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
-    },
-    {
-      "name": "Vale",
-      "pts": 0,
-      "rank": 1,
-      "exact": 0,
-      "outc": 0
+      "exact": 1,
+      "outc": 1
     },
     {
       "name": "Victo",
-      "pts": 0,
+      "pts": 4,
       "rank": 1,
+      "exact": 1,
+      "outc": 1
+    },
+    {
+      "name": "AguColoma",
+      "pts": 2,
+      "rank": 10,
       "exact": 0,
-      "outc": 0
+      "outc": 2
+    },
+    {
+      "name": "Carola P",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Cata",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Diego",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Domingo",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Felipe Coloma",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Jaime",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
     },
     {
       "name": "joaco",
-      "pts": 0,
-      "rank": 1,
+      "pts": 2,
+      "rank": 10,
       "exact": 0,
-      "outc": 0
+      "outc": 2
+    },
+    {
+      "name": "Joselin",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Juan",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Juanco",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
     },
     {
       "name": "lica",
-      "pts": 0,
-      "rank": 1,
+      "pts": 2,
+      "rank": 10,
       "exact": 0,
-      "outc": 0
+      "outc": 2
+    },
+    {
+      "name": "Lito",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Martín",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Pablo (tú)",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Pedro",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Seb",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Tío Gucho",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Trini Coloma",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Vale",
+      "pts": 2,
+      "rank": 10,
+      "exact": 0,
+      "outc": 2
+    },
+    {
+      "name": "Fernando IV",
+      "pts": 1,
+      "rank": 29,
+      "exact": 0,
+      "outc": 1
+    },
+    {
+      "name": "José Pablo",
+      "pts": 1,
+      "rank": 29,
+      "exact": 0,
+      "outc": 1
+    },
+    {
+      "name": "Mely",
+      "pts": 1,
+      "rank": 29,
+      "exact": 0,
+      "outc": 1
+    },
+    {
+      "name": "Rodrigo",
+      "pts": 1,
+      "rank": 29,
+      "exact": 0,
+      "outc": 1
+    },
+    {
+      "name": "Tomi",
+      "pts": 1,
+      "rank": 29,
+      "exact": 0,
+      "outc": 1
     }
   ],
   "evolution": {
-    "dates": [],
+    "dates": [
+      "26 jun"
+    ],
     "players": [
       {
-        "name": "AguColoma",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
         "name": "Benja",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Carmen",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Caro",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Carola P",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Cata",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Coni",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Diego",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Domingo",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Felipe Coloma",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Fernando II",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Fernando IV",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Ignacolo",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Jaime",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Joselin",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "José Pablo",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Juan",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Juanco",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Lito",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Martín",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Mely",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Pablo (tú)",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Paz",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Pedro",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Rodrigo",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Seb",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Tomi",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Tono",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Trini Coloma",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Tío Gucho",
-        "ranks": [],
-        "pts": [],
-        "final": 0
-      },
-      {
-        "name": "Vale",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
       },
       {
         "name": "Victo",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [1],
+        "pts": [4],
+        "final": 4
+      },
+      {
+        "name": "AguColoma",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Carola P",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Cata",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Diego",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Domingo",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Felipe Coloma",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Jaime",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
       },
       {
         "name": "joaco",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Joselin",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Juan",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Juanco",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
       },
       {
         "name": "lica",
-        "ranks": [],
-        "pts": [],
-        "final": 0
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Lito",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Martín",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Pablo (tú)",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Pedro",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Seb",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Tío Gucho",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Trini Coloma",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Vale",
+        "ranks": [10],
+        "pts": [2],
+        "final": 2
+      },
+      {
+        "name": "Fernando IV",
+        "ranks": [29],
+        "pts": [1],
+        "final": 1
+      },
+      {
+        "name": "José Pablo",
+        "ranks": [29],
+        "pts": [1],
+        "final": 1
+      },
+      {
+        "name": "Mely",
+        "ranks": [29],
+        "pts": [1],
+        "final": 1
+      },
+      {
+        "name": "Rodrigo",
+        "ranks": [29],
+        "pts": [1],
+        "final": 1
+      },
+      {
+        "name": "Tomi",
+        "ranks": [29],
+        "pts": [1],
+        "final": 1
       }
     ]
   },
-  "recentMatches": [],
+  "recentMatches": [
+    {
+      "num": 11,
+      "grupo": "E",
+      "fecha": "26 jun",
+      "team1": "Türkiye",
+      "team2": "USA",
+      "resH": 1,
+      "resA": 2,
+      "preds": []
+    },
+    {
+      "num": 12,
+      "grupo": "F",
+      "fecha": "26 jun",
+      "team1": "Paraguay",
+      "team2": "Australia",
+      "resH": 1,
+      "resA": 1,
+      "preds": []
+    }
+  ],
   "upcoming": [
     {
       "num": 1,
@@ -464,489 +487,22 @@
       "fecha": "11 jun",
       "team1": "Mexico",
       "team2": "South Africa",
-      "preds": [
-        {
-          "name": "AguColoma",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Benja",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Carmen",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Caro",
-          "h": 3,
-          "a": 1
-        },
-        {
-          "name": "Carola P",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Cata",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Coni",
-          "h": 3,
-          "a": 1
-        },
-        {
-          "name": "Diego",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Domingo",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Felipe Coloma",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Fernando II",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Fernando IV",
-          "h": 3,
-          "a": 0
-        },
-        {
-          "name": "Ignacolo",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Jaime",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "joaco",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "José Pablo",
-          "h": 0,
-          "a": 0
-        },
-        {
-          "name": "Joselin",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Juan",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Juanco",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "lica",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Lito",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Martín",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Mely",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Pablo (tú)",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Paz",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Pedro",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Rodrigo",
-          "h": 1,
-          "a": 1
-        },
-        {
-          "name": "Seb",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Tío Gucho",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Tomi",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Tono",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Trini Coloma",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Vale",
-          "h": 2,
-          "a": 0
-        },
-        {
-          "name": "Victo",
-          "h": 2,
-          "a": 1
-        }
-      ]
+      "preds": []
     }
   ],
-  "specials": [
+  "specials": [],
+  "_raw_results": [
     {
-      "name": "AguColoma",
-      "first": "Brazil",
-      "second": "France",
-      "third": "Argentina",
-      "scorer": "Ferran Torres",
-      "mvp": "Mbappé",
-      "unc": []
+      "num": 11,
+      "h": 1,
+      "a": 2,
+      "fecha": "26 jun"
     },
     {
-      "name": "Benja",
-      "first": "France",
-      "second": "Brazil",
-      "third": "Spain",
-      "scorer": "Mbappé",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Carmen",
-      "first": "Spain",
-      "second": "France",
-      "third": "Brazil",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Caro",
-      "first": "Argentina",
-      "second": "Spain",
-      "third": "France",
-      "scorer": "Mbappé",
-      "mvp": "Messi",
-      "unc": []
-    },
-    {
-      "name": "Carola P",
-      "first": "France",
-      "second": "Brazil",
-      "third": "Spain",
-      "scorer": "Messi",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Cata",
-      "first": "Spain",
-      "second": "France",
-      "third": "Portugal",
-      "scorer": "Mbappé",
-      "mvp": "Rodri",
-      "unc": []
-    },
-    {
-      "name": "Coni",
-      "first": "England",
-      "second": "France",
-      "third": "Portugal",
-      "scorer": "Harry Kane",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Diego",
-      "first": "Spain",
-      "second": "Portugal",
-      "third": "Netherlands",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Domingo",
-      "first": "France",
-      "second": "Spain",
-      "third": "England",
-      "scorer": "Mbappé",
-      "mvp": "Désiré Doué",
-      "unc": []
-    },
-    {
-      "name": "Felipe Coloma",
-      "first": "Argentina",
-      "second": "Spain",
-      "third": "France",
-      "scorer": "Haaland",
-      "mvp": "Julián Álvarez",
-      "unc": []
-    },
-    {
-      "name": "Fernando II",
-      "first": "Spain",
-      "second": "France",
-      "third": "England",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Fernando IV",
-      "first": "France",
-      "second": "England",
-      "third": "Spain",
-      "scorer": "Harry Kane",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Ignacolo",
-      "first": "Spain",
-      "second": "Germany",
-      "third": "Argentina",
-      "scorer": "Mikel Oyarzabal",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Jaime",
-      "first": "Spain",
-      "second": "France",
-      "third": "Argentina",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "joaco",
-      "first": "Spain",
-      "second": "Argentina",
-      "third": "Netherlands",
-      "scorer": "Julián Álvarez",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "José Pablo",
-      "first": "Spain",
-      "second": "Germany",
-      "third": "Argentina",
-      "scorer": "Mikel Oyarzabal",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Joselin",
-      "first": "Spain",
-      "second": "France",
-      "third": "Argentina",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Juan",
-      "first": "Spain",
-      "second": "France",
-      "third": "Argentina",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Juanco",
-      "first": "Spain",
-      "second": "France",
-      "third": "Brazil",
-      "scorer": "Mbappé",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "lica",
-      "first": "Spain",
-      "second": "Netherlands",
-      "third": "Belgium",
-      "scorer": "Ferran Torres",
-      "mvp": "Frenkie de Jong",
-      "unc": []
-    },
-    {
-      "name": "Lito",
-      "first": "Spain",
-      "second": "England",
-      "third": "Colombia",
-      "scorer": "Harry Kane",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Martín",
-      "first": "Spain",
-      "second": "Argentina",
-      "third": "France",
-      "scorer": "Mbappé",
-      "mvp": "Harry Kane",
-      "unc": []
-    },
-    {
-      "name": "Mely",
-      "first": "Argentina",
-      "second": "Netherlands",
-      "third": "Norway",
-      "scorer": "Lautaro Martínez",
-      "mvp": "Messi",
-      "unc": []
-    },
-    {
-      "name": "Pablo (tú)",
-      "first": "Spain",
-      "second": "Brazil",
-      "third": "France",
-      "scorer": "Mikel Oyarzabal",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Paz",
-      "first": "Spain",
-      "second": "England",
-      "third": "France",
-      "scorer": "Harry Kane",
-      "mvp": "Mbappé",
-      "unc": []
-    },
-    {
-      "name": "Pedro",
-      "first": "Spain",
-      "second": "France",
-      "third": "Brazil",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Rodrigo",
-      "first": "Argentina",
-      "second": "France",
-      "third": "Spain",
-      "scorer": "Mbappé",
-      "mvp": "Dembélé",
-      "unc": [
-        "1er lugar"
-      ]
-    },
-    {
-      "name": "Seb",
-      "first": "Portugal",
-      "second": "France",
-      "third": "Spain",
-      "scorer": "Harry Kane",
-      "mvp": "Bruno Fernandes",
-      "unc": []
-    },
-    {
-      "name": "Tío Gucho",
-      "first": "Spain",
-      "second": "Argentina",
-      "third": "Portugal",
-      "scorer": "Mbappé",
-      "mvp": "Rodri",
-      "unc": []
-    },
-    {
-      "name": "Tomi",
-      "first": "France",
-      "second": "Spain",
-      "third": "Portugal",
-      "scorer": "Haaland",
-      "mvp": "Giuliano Simeone",
-      "unc": []
-    },
-    {
-      "name": "Tono",
-      "first": "Spain",
-      "second": "England",
-      "third": "Portugal",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Trini Coloma",
-      "first": "Spain",
-      "second": "France",
-      "third": "Argentina",
-      "scorer": "Cristiano Ronaldo",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Vale",
-      "first": "Argentina",
-      "second": "France",
-      "third": "Spain",
-      "scorer": "Mbappé",
-      "mvp": "Lamine Yamal",
-      "unc": []
-    },
-    {
-      "name": "Victo",
-      "first": "Uruguay",
-      "second": "Brazil",
-      "third": "USA",
-      "scorer": "Vinícius Júnior",
-      "mvp": "Lamine Yamal",
-      "unc": []
+      "num": 12,
+      "h": 1,
+      "a": 1,
+      "fecha": "26 jun"
     }
-  ],
-  "_raw_results": []
+  ]
 }
