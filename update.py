@@ -10,8 +10,8 @@ import json, urllib.request, urllib.error, datetime, os, sys, collections
 
 # ── CONFIG ────────────────────────────────────────────────────────────
 API_KEY  = os.environ.get('FOOTBALL_API_KEY', '')
-API_URL  = 'https://api.football-data.org/v4/competitions/WC/matches'
-YOU      = "Pablo (tú)"
+API_URL  = 'https://api.football-data.org/v4/matches'
+YOU      = "pcolomap@gmail.com"
 
 # Normalización de nombres (football-data.org → nuestros datos)
 NAME_MAP = {
