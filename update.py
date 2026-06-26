@@ -10,8 +10,8 @@ import json, urllib.request, urllib.error, datetime, os, sys, collections
 
 # ── CONFIG ────────────────────────────────────────────────────────────
 API_KEY  = os.environ.get('FOOTBALL_API_KEY', '')
-API_URL  = 'https://api.football-data.org/v4/matches'
-YOU      = "pcolomap@gmail.com"
+API_URL  = 'https://api.football-data.org/v4/competitions/WC/matches'
+YOU      = "Pablo (tú)"
 
 # Normalización de nombres (football-data.org → nuestros datos)
 NAME_MAP = {
@@ -86,8 +86,9 @@ if not API_KEY:
     print("⚠️  FOOTBALL_API_KEY no configurada — usando resultados previos")
 else:
     print("Consultando football-data.org…")
+    # Nota: Quitamos el filtro fijo de stage=GROUP_STAGE para que sirva en eliminatorias directas si avanza el torneo
     req = urllib.request.Request(
-        API_URL + '?stage=GROUP_STAGE&status=FINISHED',
+        API_URL + '?status=FINISHED',
         headers={'X-Auth-Token': API_KEY,
                  'User-Agent': 'PollaMundialBot/1.0'}
     )
@@ -111,10 +112,14 @@ else:
                 print(f"  SIN MATCH: {t1} vs {t2}")
                 continue
             
-            # Swap score if teams were reversed
-            m = next(x for x in matches if x['num'] == num)
-            if m['team1'] == t2:
-                rh, ra = ra, rh
+            # ── BLOQUE PROTEGIDO PARA EVITAR CAÍDAS POR DESALINEACIÓN ──
+            try:
+                m = next(x for x in matches if x['num'] == num)
+                if m['team1'] == t2:
+                    rh, ra = ra, rh
+            except StopIteration:
+                print(f"  ⚠️ Error de coincidencia: No se encontró el partido num {num} en predictions.json para {t1} vs {t2}")
+                continue
             
             date_str = match.get('utcDate', '')[:10]
             try:
@@ -234,28 +239,6 @@ if next_dk:
         })
     upcoming.sort(key=lambda x: x['num'])
 
-# ── ALL MATCHES (resultados completos con exactos/aciertos) ───────────
-all_matches_out = []
-for m in sorted(matches, key=lambda x: (dkey(known[x['num']]['fecha']) if x['num'] in known else 999, x['num'])):
-    res = known.get(m['num'])
-    if not res:
-        continue
-    rh, ra = res['h'], res['a']
-    preds_detail = []
-    for nm, pr in m['preds'].items():
-        pts = compute_pts(pr[0], pr[1], rh, ra)
-        preds_detail.append({'name': nm, 'h': pr[0], 'a': pr[1], 'pts': pts})
-    preds_detail.sort(key=lambda x: (-x['pts'], x['name']))
-    all_matches_out.append({
-        'num': m['num'], 'grupo': m['grupo'], 'fecha': res['fecha'],
-        'team1': m['team1'], 'team2': m['team2'],
-        'resH': rh, 'resA': ra,
-        'exact': sorted([p['name'] for p in preds_detail if p['pts'] == 3]),
-        'right': sorted([p['name'] for p in preds_detail if p['pts'] == 1]),
-        'wrong': sorted([p['name'] for p in preds_detail if p['pts'] == 0]),
-        'preds': preds_detail,
-    })
-
 # ── GUARDAR ───────────────────────────────────────────────────────────
 now_str = datetime.datetime.now(datetime.timezone.utc).strftime('%d %b %Y %H:%M UTC')
 top_scorer = prev_scorer or {'name': 'Lionel Messi', 'goals': 5, 'asOf': '25 jun'}
@@ -269,7 +252,6 @@ output = {
     'evolution':     evolution,
     'recentMatches': recent_matches,
     'upcoming':      upcoming,
-    'allMatches':    all_matches_out,
     'specials':      [{'name': p, **specials[p]} for p in players],
     '_raw_results':  list(known.values()),
 }
