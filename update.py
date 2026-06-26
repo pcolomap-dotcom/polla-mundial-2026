@@ -234,6 +234,28 @@ if next_dk:
         })
     upcoming.sort(key=lambda x: x['num'])
 
+# ── ALL MATCHES (resultados completos con exactos/aciertos) ───────────
+all_matches_out = []
+for m in sorted(matches, key=lambda x: (dkey(known[x['num']]['fecha']) if x['num'] in known else 999, x['num'])):
+    res = known.get(m['num'])
+    if not res:
+        continue
+    rh, ra = res['h'], res['a']
+    preds_detail = []
+    for nm, pr in m['preds'].items():
+        pts = compute_pts(pr[0], pr[1], rh, ra)
+        preds_detail.append({'name': nm, 'h': pr[0], 'a': pr[1], 'pts': pts})
+    preds_detail.sort(key=lambda x: (-x['pts'], x['name']))
+    all_matches_out.append({
+        'num': m['num'], 'grupo': m['grupo'], 'fecha': res['fecha'],
+        'team1': m['team1'], 'team2': m['team2'],
+        'resH': rh, 'resA': ra,
+        'exact': sorted([p['name'] for p in preds_detail if p['pts'] == 3]),
+        'right': sorted([p['name'] for p in preds_detail if p['pts'] == 1]),
+        'wrong': sorted([p['name'] for p in preds_detail if p['pts'] == 0]),
+        'preds': preds_detail,
+    })
+
 # ── GUARDAR ───────────────────────────────────────────────────────────
 now_str = datetime.datetime.now(datetime.timezone.utc).strftime('%d %b %Y %H:%M UTC')
 top_scorer = prev_scorer or {'name': 'Lionel Messi', 'goals': 5, 'asOf': '25 jun'}
@@ -247,6 +269,7 @@ output = {
     'evolution':     evolution,
     'recentMatches': recent_matches,
     'upcoming':      upcoming,
+    'allMatches':    all_matches_out,
     'specials':      [{'name': p, **specials[p]} for p in players],
     '_raw_results':  list(known.values()),
 }
