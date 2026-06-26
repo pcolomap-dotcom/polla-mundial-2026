@@ -1,0 +1,10756 @@
+{
+  "players": [
+    "AguColoma",
+    "Benja",
+    "Carmen",
+    "Caro",
+    "Carola P",
+    "Cata",
+    "Coni",
+    "Diego",
+    "Domingo",
+    "Felipe Coloma",
+    "Fernando II",
+    "Fernando IV",
+    "Ignacolo",
+    "Jaime",
+    "joaco",
+    "José Pablo",
+    "Joselin",
+    "Juan",
+    "Juanco",
+    "lica",
+    "Lito",
+    "Martín",
+    "Mely",
+    "Pablo (tú)",
+    "Paz",
+    "Pedro",
+    "Rodrigo",
+    "Seb",
+    "Tío Gucho",
+    "Tomi",
+    "Tono",
+    "Trini Coloma",
+    "Vale",
+    "Victo"
+  ],
+  "specials": {
+    "AguColoma": {
+      "first": "Brazil",
+      "second": "France",
+      "third": "Argentina",
+      "scorer": "Ferran Torres",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Benja": {
+      "first": "France",
+      "second": "Brazil",
+      "third": "Spain",
+      "scorer": "Mbappé",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Carmen": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Brazil",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Caro": {
+      "first": "Argentina",
+      "second": "Spain",
+      "third": "France",
+      "scorer": "Mbappé",
+      "mvp": "Messi",
+      "unc": []
+    },
+    "Carola P": {
+      "first": "France",
+      "second": "Brazil",
+      "third": "Spain",
+      "scorer": "Messi",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Cata": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Portugal",
+      "scorer": "Mbappé",
+      "mvp": "Rodri",
+      "unc": []
+    },
+    "Coni": {
+      "first": "England",
+      "second": "France",
+      "third": "Portugal",
+      "scorer": "Harry Kane",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Diego": {
+      "first": "Spain",
+      "second": "Portugal",
+      "third": "Netherlands",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Domingo": {
+      "first": "France",
+      "second": "Spain",
+      "third": "England",
+      "scorer": "Mbappé",
+      "mvp": "Désiré Doué",
+      "unc": []
+    },
+    "Felipe Coloma": {
+      "first": "Argentina",
+      "second": "Spain",
+      "third": "France",
+      "scorer": "Haaland",
+      "mvp": "Julián Álvarez",
+      "unc": []
+    },
+    "Fernando II": {
+      "first": "Spain",
+      "second": "France",
+      "third": "England",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Fernando IV": {
+      "first": "France",
+      "second": "England",
+      "third": "Spain",
+      "scorer": "Harry Kane",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Ignacolo": {
+      "first": "Spain",
+      "second": "Germany",
+      "third": "Argentina",
+      "scorer": "Mikel Oyarzabal",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Jaime": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Argentina",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "joaco": {
+      "first": "Spain",
+      "second": "Argentina",
+      "third": "Netherlands",
+      "scorer": "Julián Álvarez",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "José Pablo": {
+      "first": "Spain",
+      "second": "Germany",
+      "third": "Argentina",
+      "scorer": "Mikel Oyarzabal",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Joselin": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Argentina",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Juan": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Argentina",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Juanco": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Brazil",
+      "scorer": "Mbappé",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "lica": {
+      "first": "Spain",
+      "second": "Netherlands",
+      "third": "Belgium",
+      "scorer": "Ferran Torres",
+      "mvp": "Frenkie de Jong",
+      "unc": []
+    },
+    "Lito": {
+      "first": "Spain",
+      "second": "England",
+      "third": "Colombia",
+      "scorer": "Harry Kane",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Martín": {
+      "first": "Spain",
+      "second": "Argentina",
+      "third": "France",
+      "scorer": "Mbappé",
+      "mvp": "Harry Kane",
+      "unc": []
+    },
+    "Mely": {
+      "first": "Argentina",
+      "second": "Netherlands",
+      "third": "Norway",
+      "scorer": "Lautaro Martínez",
+      "mvp": "Messi",
+      "unc": []
+    },
+    "Pablo (tú)": {
+      "first": "Spain",
+      "second": "Brazil",
+      "third": "France",
+      "scorer": "Mikel Oyarzabal",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Paz": {
+      "first": "Spain",
+      "second": "England",
+      "third": "France",
+      "scorer": "Harry Kane",
+      "mvp": "Mbappé",
+      "unc": []
+    },
+    "Pedro": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Brazil",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Rodrigo": {
+      "first": "Argentina",
+      "second": "France",
+      "third": "Spain",
+      "scorer": "Mbappé",
+      "mvp": "Dembélé",
+      "unc": [
+        "1er lugar"
+      ]
+    },
+    "Seb": {
+      "first": "Portugal",
+      "second": "France",
+      "third": "Spain",
+      "scorer": "Harry Kane",
+      "mvp": "Bruno Fernandes",
+      "unc": []
+    },
+    "Tío Gucho": {
+      "first": "Spain",
+      "second": "Argentina",
+      "third": "Portugal",
+      "scorer": "Mbappé",
+      "mvp": "Rodri",
+      "unc": []
+    },
+    "Tomi": {
+      "first": "France",
+      "second": "Spain",
+      "third": "Portugal",
+      "scorer": "Haaland",
+      "mvp": "Giuliano Simeone",
+      "unc": []
+    },
+    "Tono": {
+      "first": "Spain",
+      "second": "England",
+      "third": "Portugal",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Trini Coloma": {
+      "first": "Spain",
+      "second": "France",
+      "third": "Argentina",
+      "scorer": "Cristiano Ronaldo",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Vale": {
+      "first": "Argentina",
+      "second": "France",
+      "third": "Spain",
+      "scorer": "Mbappé",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    },
+    "Victo": {
+      "first": "Uruguay",
+      "second": "Brazil",
+      "third": "USA",
+      "scorer": "Vinícius Júnior",
+      "mvp": "Lamine Yamal",
+      "unc": []
+    }
+  },
+  "matches": [
+    {
+      "num": 60,
+      "grupo": "J",
+      "fecha_orig": "28 jun",
+      "team1": "Jordan",
+      "team2": "Argentina",
+      "preds": {
+        "AguColoma": [
+          0,
+          4
+        ],
+        "Benja": [
+          0,
+          3
+        ],
+        "Carmen": [
+          0,
+          3
+        ],
+        "Caro": [
+          1,
+          4
+        ],
+        "Carola P": [
+          1,
+          3
+        ],
+        "Cata": [
+          0,
+          3
+        ],
+        "Coni": [
+          1,
+          5
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          1,
+          3
+        ],
+        "Felipe Coloma": [
+          0,
+          4
+        ],
+        "Fernando II": [
+          1,
+          3
+        ],
+        "Fernando IV": [
+          0,
+          4
+        ],
+        "Ignacolo": [
+          0,
+          4
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          4
+        ],
+        "Joselin": [
+          0,
+          3
+        ],
+        "Juan": [
+          0,
+          3
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          3
+        ],
+        "Mely": [
+          0,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          0,
+          3
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          0,
+          3
+        ],
+        "Tío Gucho": [
+          0,
+          2
+        ],
+        "Tomi": [
+          0,
+          2
+        ],
+        "Tono": [
+          0,
+          4
+        ],
+        "Trini Coloma": [
+          0,
+          3
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 59,
+      "grupo": "J",
+      "fecha_orig": "28 jun",
+      "team1": "Algeria",
+      "team2": "Austria",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          0,
+          1
+        ],
+        "Carmen": [
+          0,
+          2
+        ],
+        "Caro": [
+          1,
+          3
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          2,
+          1
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          2,
+          2
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          0,
+          1
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          0,
+          0
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          0
+        ],
+        "Tomi": [
+          3,
+          2
+        ],
+        "Tono": [
+          2,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 66,
+      "grupo": "K",
+      "fecha_orig": "27 jun",
+      "team1": "DR Congo",
+      "team2": "Uzbekistan",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          0,
+          0
+        ],
+        "Carmen": [
+          0,
+          1
+        ],
+        "Caro": [
+          0,
+          1
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          1
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          1,
+          0
+        ],
+        "Ignacolo": [
+          1,
+          0
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          0,
+          1
+        ],
+        "Joselin": [
+          0,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          0,
+          1
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          0,
+          0
+        ],
+        "Mely": [
+          0,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          0,
+          4
+        ],
+        "Trini Coloma": [
+          0,
+          2
+        ],
+        "Vale": [
+          0,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 65,
+      "grupo": "K",
+      "fecha_orig": "27 jun",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "preds": {
+        "AguColoma": [
+          1,
+          3
+        ],
+        "Benja": [
+          1,
+          2
+        ],
+        "Carmen": [
+          2,
+          2
+        ],
+        "Caro": [
+          2,
+          1
+        ],
+        "Carola P": [
+          2,
+          3
+        ],
+        "Cata": [
+          1,
+          2
+        ],
+        "Coni": [
+          2,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          2,
+          2
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          1,
+          2
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          2
+        ],
+        "joaco": [
+          1,
+          1
+        ],
+        "José Pablo": [
+          0,
+          0
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          1,
+          2
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          1,
+          2
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          0,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          1,
+          2
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          1,
+          2
+        ],
+        "Tomi": [
+          2,
+          3
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          1,
+          2
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 71,
+      "grupo": "L",
+      "fecha_orig": "27 jun",
+      "team1": "Panama",
+      "team2": "England",
+      "preds": {
+        "AguColoma": [
+          0,
+          4
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          0,
+          2
+        ],
+        "Caro": [
+          0,
+          3
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          2,
+          4
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          4
+        ],
+        "Ignacolo": [
+          0,
+          2
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          0,
+          2
+        ],
+        "Juan": [
+          1,
+          3
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          0,
+          3
+        ],
+        "Martín": [
+          0,
+          2
+        ],
+        "Mely": [
+          1,
+          3
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          1,
+          3
+        ],
+        "Pedro": [
+          0,
+          4
+        ],
+        "Rodrigo": [
+          1,
+          3
+        ],
+        "Seb": [
+          0,
+          3
+        ],
+        "Tío Gucho": [
+          0,
+          3
+        ],
+        "Tomi": [
+          1,
+          4
+        ],
+        "Tono": [
+          0,
+          3
+        ],
+        "Trini Coloma": [
+          0,
+          3
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 72,
+      "grupo": "L",
+      "fecha_orig": "27 jun",
+      "team1": "Croatia",
+      "team2": "Ghana",
+      "preds": {
+        "AguColoma": [
+          1,
+          2
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          3,
+          0
+        ],
+        "Caro": [
+          3,
+          1
+        ],
+        "Carola P": [
+          0,
+          1
+        ],
+        "Cata": [
+          2,
+          1
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          3,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          2
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          2,
+          0
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          3,
+          0
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          0
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "num": 42,
+      "grupo": "G",
+      "fecha_orig": "27 jun",
+      "team1": "New Zealand",
+      "team2": "Belgium",
+      "preds": {
+        "AguColoma": [
+          1,
+          3
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          0,
+          2
+        ],
+        "Carola P": [
+          2,
+          2
+        ],
+        "Cata": [
+          0,
+          3
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          4
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          1,
+          3
+        ],
+        "Ignacolo": [
+          0,
+          5
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          0,
+          3
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          0
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          2,
+          4
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          0,
+          3
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          0,
+          3
+        ],
+        "Seb": [
+          0,
+          3
+        ],
+        "Tío Gucho": [
+          0,
+          5
+        ],
+        "Tomi": [
+          1,
+          5
+        ],
+        "Tono": [
+          0,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 41,
+      "grupo": "G",
+      "fecha_orig": "27 jun",
+      "team1": "Egypt",
+      "team2": "Iran",
+      "preds": {
+        "AguColoma": [
+          0,
+          1
+        ],
+        "Benja": [
+          1,
+          0
+        ],
+        "Carmen": [
+          1,
+          1
+        ],
+        "Caro": [
+          1,
+          0
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          1
+        ],
+        "José Pablo": [
+          2,
+          2
+        ],
+        "Joselin": [
+          1,
+          0
+        ],
+        "Juan": [
+          2,
+          0
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          1
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 48,
+      "grupo": "H",
+      "fecha_orig": "27 jun",
+      "team1": "Uruguay",
+      "team2": "Spain",
+      "preds": {
+        "AguColoma": [
+          1,
+          3
+        ],
+        "Benja": [
+          0,
+          0
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          2,
+          2
+        ],
+        "Carola P": [
+          2,
+          2
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          3,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          1,
+          3
+        ],
+        "Fernando IV": [
+          1,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          3
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          1,
+          2
+        ],
+        "José Pablo": [
+          1,
+          2
+        ],
+        "Joselin": [
+          2,
+          2
+        ],
+        "Juan": [
+          1,
+          2
+        ],
+        "Juanco": [
+          1,
+          2
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          0,
+          1
+        ],
+        "Martín": [
+          1,
+          2
+        ],
+        "Mely": [
+          2,
+          3
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          0,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          2
+        ],
+        "Tomi": [
+          2,
+          4
+        ],
+        "Tono": [
+          1,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 47,
+      "grupo": "H",
+      "fecha_orig": "27 jun",
+      "team1": "Cape Verde",
+      "team2": "Saudi Arabia",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          0,
+          2
+        ],
+        "Caro": [
+          0,
+          3
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          2
+        ],
+        "Jaime": [
+          0,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          3,
+          1
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          0,
+          0
+        ],
+        "Pablo (tú)": [
+          0,
+          0
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          2
+        ],
+        "Tomi": [
+          1,
+          1
+        ],
+        "Tono": [
+          0,
+          3
+        ],
+        "Trini Coloma": [
+          0,
+          2
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 54,
+      "grupo": "I",
+      "fecha_orig": "26 jun",
+      "team1": "Senegal",
+      "team2": "Iraq",
+      "preds": {
+        "AguColoma": [
+          2,
+          0
+        ],
+        "Benja": [
+          2,
+          1
+        ],
+        "Carmen": [
+          1,
+          0
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          0
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          3,
+          1
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          3,
+          0
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 53,
+      "grupo": "I",
+      "fecha_orig": "26 jun",
+      "team1": "Norway",
+      "team2": "France",
+      "preds": {
+        "AguColoma": [
+          1,
+          4
+        ],
+        "Benja": [
+          0,
+          0
+        ],
+        "Carmen": [
+          0,
+          3
+        ],
+        "Caro": [
+          2,
+          3
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          2,
+          4
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          3
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          1,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          2
+        ],
+        "Jaime": [
+          1,
+          3
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          1,
+          3
+        ],
+        "Joselin": [
+          1,
+          3
+        ],
+        "Juan": [
+          1,
+          2
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          1,
+          3
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          3
+        ],
+        "Mely": [
+          3,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          3
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          1,
+          3
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          3
+        ],
+        "Tomi": [
+          2,
+          3
+        ],
+        "Tono": [
+          1,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          3
+        ],
+        "Vale": [
+          1,
+          2
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 24,
+      "grupo": "D",
+      "fecha_orig": "26 jun",
+      "team1": "Paraguay",
+      "team2": "Australia",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          2,
+          1
+        ],
+        "Carmen": [
+          0,
+          1
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          0,
+          1
+        ],
+        "Diego": [
+          1,
+          1
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          1,
+          0
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          3,
+          1
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          3,
+          2
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          0,
+          0
+        ],
+        "Mely": [
+          1,
+          1
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          1,
+          1
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          1,
+          0
+        ],
+        "Trini Coloma": [
+          0,
+          0
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 23,
+      "grupo": "D",
+      "fecha_orig": "26 jun",
+      "team1": "Türkiye",
+      "team2": "USA",
+      "preds": {
+        "AguColoma": [
+          1,
+          0
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          2,
+          2
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          1,
+          2
+        ],
+        "Coni": [
+          1,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          3
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          1,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          0,
+          1
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          1,
+          2
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          1
+        ],
+        "Paz": [
+          1,
+          1
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          1,
+          0
+        ],
+        "Tomi": [
+          3,
+          2
+        ],
+        "Tono": [
+          2,
+          1
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "num": 36,
+      "grupo": "F",
+      "fecha_orig": "25 jun",
+      "team1": "Tunisia",
+      "team2": "Netherlands",
+      "preds": {
+        "AguColoma": [
+          0,
+          3
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          1,
+          3
+        ],
+        "Caro": [
+          1,
+          4
+        ],
+        "Carola P": [
+          0,
+          1
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          4
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          0,
+          3
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          0,
+          4
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          1,
+          2
+        ],
+        "Mely": [
+          0,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          0,
+          2
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          0,
+          1
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          2
+        ],
+        "Tomi": [
+          1,
+          4
+        ],
+        "Tono": [
+          1,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 35,
+      "grupo": "F",
+      "fecha_orig": "25 jun",
+      "team1": "Japan",
+      "team2": "Sweden",
+      "preds": {
+        "AguColoma": [
+          2,
+          0
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          1,
+          0
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          0
+        ],
+        "Jaime": [
+          1,
+          1
+        ],
+        "joaco": [
+          2,
+          1
+        ],
+        "José Pablo": [
+          0,
+          0
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          3,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          1
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          2,
+          1
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          0,
+          0
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 30,
+      "grupo": "E",
+      "fecha_orig": "25 jun",
+      "team1": "Ecuador",
+      "team2": "Germany",
+      "preds": {
+        "AguColoma": [
+          1,
+          3
+        ],
+        "Benja": [
+          1,
+          0
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          2,
+          3
+        ],
+        "Carola P": [
+          0,
+          2
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          3,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          1,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          4
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          1,
+          1
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          1,
+          3
+        ],
+        "Juan": [
+          2,
+          2
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          2
+        ],
+        "Mely": [
+          1,
+          4
+        ],
+        "Pablo (tú)": [
+          1,
+          1
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          1,
+          2
+        ],
+        "Rodrigo": [
+          1,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          3,
+          2
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          3
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "num": 29,
+      "grupo": "E",
+      "fecha_orig": "25 jun",
+      "team1": "Curaçao",
+      "team2": "Ivory Coast",
+      "preds": {
+        "AguColoma": [
+          0,
+          0
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          0,
+          0
+        ],
+        "Caro": [
+          0,
+          3
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          0,
+          1
+        ],
+        "Fernando IV": [
+          0,
+          3
+        ],
+        "Ignacolo": [
+          0,
+          5
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          0,
+          1
+        ],
+        "Juan": [
+          0,
+          3
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          3
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          3
+        ],
+        "Mely": [
+          0,
+          3
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          1,
+          3
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          0,
+          3
+        ],
+        "Tío Gucho": [
+          0,
+          3
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          0,
+          4
+        ],
+        "Trini Coloma": [
+          0,
+          4
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 6,
+      "grupo": "A",
+      "fecha_orig": "24 jun",
+      "team1": "South Africa",
+      "team2": "South Korea",
+      "preds": {
+        "AguColoma": [
+          0,
+          1
+        ],
+        "Benja": [
+          1,
+          3
+        ],
+        "Carmen": [
+          2,
+          2
+        ],
+        "Caro": [
+          1,
+          2
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          1
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          2,
+          2
+        ],
+        "Juan": [
+          1,
+          2
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          0,
+          0
+        ],
+        "Lito": [
+          1,
+          2
+        ],
+        "Martín": [
+          1,
+          1
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          0
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          1,
+          2
+        ],
+        "Rodrigo": [
+          3,
+          2
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          0,
+          2
+        ],
+        "Tono": [
+          1,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          1,
+          2
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 5,
+      "grupo": "A",
+      "fecha_orig": "24 jun",
+      "team1": "Czechia",
+      "team2": "Mexico",
+      "preds": {
+        "AguColoma": [
+          0,
+          1
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          1,
+          2
+        ],
+        "Carola P": [
+          0,
+          1
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          3,
+          1
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          2
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          1,
+          2
+        ],
+        "Ignacolo": [
+          2,
+          2
+        ],
+        "Jaime": [
+          1,
+          2
+        ],
+        "joaco": [
+          1,
+          2
+        ],
+        "José Pablo": [
+          3,
+          2
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          1,
+          2
+        ],
+        "Martín": [
+          2,
+          2
+        ],
+        "Mely": [
+          0,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          2
+        ],
+        "Paz": [
+          2,
+          3
+        ],
+        "Pedro": [
+          1,
+          1
+        ],
+        "Rodrigo": [
+          1,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          0,
+          1
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          1,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          0
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 18,
+      "grupo": "C",
+      "fecha_orig": "24 jun",
+      "team1": "Morocco",
+      "team2": "Haiti",
+      "preds": {
+        "AguColoma": [
+          2,
+          0
+        ],
+        "Benja": [
+          4,
+          0
+        ],
+        "Carmen": [
+          1,
+          1
+        ],
+        "Caro": [
+          6,
+          0
+        ],
+        "Carola P": [
+          0,
+          0
+        ],
+        "Cata": [
+          3,
+          0
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          3,
+          1
+        ],
+        "Felipe Coloma": [
+          3,
+          0
+        ],
+        "Fernando II": [
+          4,
+          0
+        ],
+        "Fernando IV": [
+          4,
+          0
+        ],
+        "Ignacolo": [
+          3,
+          0
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          3,
+          0
+        ],
+        "José Pablo": [
+          3,
+          0
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          5,
+          0
+        ],
+        "Juanco": [
+          3,
+          1
+        ],
+        "lica": [
+          4,
+          0
+        ],
+        "Lito": [
+          3,
+          0
+        ],
+        "Martín": [
+          4,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          3,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          5,
+          0
+        ],
+        "Tomi": [
+          2,
+          0
+        ],
+        "Tono": [
+          6,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          0
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 17,
+      "grupo": "C",
+      "fecha_orig": "24 jun",
+      "team1": "Scotland",
+      "team2": "Brazil",
+      "preds": {
+        "AguColoma": [
+          1,
+          3
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          1,
+          3
+        ],
+        "Caro": [
+          1,
+          3
+        ],
+        "Carola P": [
+          1,
+          3
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          0,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          1,
+          3
+        ],
+        "Fernando IV": [
+          1,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          3
+        ],
+        "Juan": [
+          1,
+          3
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          1,
+          2
+        ],
+        "Martín": [
+          0,
+          2
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          2
+        ],
+        "Paz": [
+          1,
+          4
+        ],
+        "Pedro": [
+          0,
+          0
+        ],
+        "Rodrigo": [
+          0,
+          3
+        ],
+        "Seb": [
+          0,
+          1
+        ],
+        "Tío Gucho": [
+          0,
+          2
+        ],
+        "Tomi": [
+          3,
+          4
+        ],
+        "Tono": [
+          1,
+          3
+        ],
+        "Trini Coloma": [
+          1,
+          3
+        ],
+        "Vale": [
+          0,
+          3
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 12,
+      "grupo": "B",
+      "fecha_orig": "24 jun",
+      "team1": "Bosnia and Herzegovina",
+      "team2": "Qatar",
+      "preds": {
+        "AguColoma": [
+          0,
+          1
+        ],
+        "Benja": [
+          3,
+          0
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          0,
+          2
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          0,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          1
+        ],
+        "Fernando II": [
+          1,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          4,
+          0
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          0,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          2,
+          1
+        ],
+        "Mely": [
+          1,
+          1
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          0,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          3,
+          1
+        ],
+        "Tomi": [
+          1,
+          3
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 11,
+      "grupo": "B",
+      "fecha_orig": "24 jun",
+      "team1": "Switzerland",
+      "team2": "Canada",
+      "preds": {
+        "AguColoma": [
+          1,
+          0
+        ],
+        "Benja": [
+          2,
+          1
+        ],
+        "Carmen": [
+          2,
+          2
+        ],
+        "Caro": [
+          1,
+          1
+        ],
+        "Carola P": [
+          2,
+          2
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          1,
+          3
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          2,
+          1
+        ],
+        "José Pablo": [
+          1,
+          0
+        ],
+        "Joselin": [
+          0,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          2,
+          2
+        ],
+        "Mely": [
+          1,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          2
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "num": 64,
+      "grupo": "K",
+      "fecha_orig": "24 jun",
+      "team1": "Colombia",
+      "team2": "DR Congo",
+      "preds": {
+        "AguColoma": [
+          3,
+          0
+        ],
+        "Benja": [
+          3,
+          0
+        ],
+        "Carmen": [
+          3,
+          1
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          2,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          3,
+          1
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          2,
+          1
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          4,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          3,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          3,
+          1
+        ],
+        "Pedro": [
+          3,
+          1
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          3,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          2,
+          0
+        ],
+        "Tono": [
+          5,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          0
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 70,
+      "grupo": "L",
+      "fecha_orig": "23 jun",
+      "team1": "Panama",
+      "team2": "Croatia",
+      "preds": {
+        "AguColoma": [
+          2,
+          2
+        ],
+        "Benja": [
+          0,
+          4
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          0,
+          2
+        ],
+        "Carola P": [
+          0,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          3
+        ],
+        "Felipe Coloma": [
+          1,
+          3
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          3
+        ],
+        "Ignacolo": [
+          0,
+          3
+        ],
+        "Jaime": [
+          1,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          3
+        ],
+        "Joselin": [
+          1,
+          3
+        ],
+        "Juan": [
+          0,
+          2
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          1,
+          3
+        ],
+        "Lito": [
+          1,
+          3
+        ],
+        "Martín": [
+          0,
+          2
+        ],
+        "Mely": [
+          0,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          0,
+          3
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          0,
+          3
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          4
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          0,
+          3
+        ],
+        "Trini Coloma": [
+          0,
+          3
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 69,
+      "grupo": "L",
+      "fecha_orig": "23 jun",
+      "team1": "England",
+      "team2": "Ghana",
+      "preds": {
+        "AguColoma": [
+          3,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          4,
+          0
+        ],
+        "Caro": [
+          2,
+          1
+        ],
+        "Carola P": [
+          2,
+          0
+        ],
+        "Cata": [
+          2,
+          1
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          3,
+          0
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          3,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          3,
+          1
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          3,
+          1
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          2,
+          0
+        ],
+        "Tono": [
+          3,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          2,
+          1
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 63,
+      "grupo": "K",
+      "fecha_orig": "23 jun",
+      "team1": "Portugal",
+      "team2": "Uzbekistan",
+      "preds": {
+        "AguColoma": [
+          3,
+          0
+        ],
+        "Benja": [
+          3,
+          0
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          4,
+          0
+        ],
+        "Carola P": [
+          3,
+          0
+        ],
+        "Cata": [
+          3,
+          0
+        ],
+        "Coni": [
+          4,
+          0
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          3,
+          1
+        ],
+        "Felipe Coloma": [
+          4,
+          1
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          5,
+          0
+        ],
+        "lica": [
+          5,
+          0
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          4,
+          0
+        ],
+        "Pedro": [
+          3,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          0
+        ],
+        "Seb": [
+          3,
+          0
+        ],
+        "Tío Gucho": [
+          5,
+          0
+        ],
+        "Tomi": [
+          1,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          0
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 58,
+      "grupo": "J",
+      "fecha_orig": "23 jun",
+      "team1": "Jordan",
+      "team2": "Algeria",
+      "preds": {
+        "AguColoma": [
+          0,
+          0
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          2,
+          3
+        ],
+        "Caro": [
+          0,
+          0
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          3
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          3
+        ],
+        "Jaime": [
+          0,
+          0
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          0,
+          1
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          0
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          0
+        ],
+        "Paz": [
+          1,
+          1
+        ],
+        "Pedro": [
+          0,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          2
+        ],
+        "Tomi": [
+          0,
+          2
+        ],
+        "Tono": [
+          0,
+          3
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 52,
+      "grupo": "I",
+      "fecha_orig": "23 jun",
+      "team1": "Norway",
+      "team2": "Senegal",
+      "preds": {
+        "AguColoma": [
+          1,
+          3
+        ],
+        "Benja": [
+          2,
+          1
+        ],
+        "Carmen": [
+          0,
+          0
+        ],
+        "Caro": [
+          1,
+          2
+        ],
+        "Carola P": [
+          1,
+          0
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          2,
+          11
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          2,
+          2
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          2
+        ],
+        "José Pablo": [
+          1,
+          0
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          2,
+          2
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          2,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          1
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          2,
+          0
+        ],
+        "Pedro": [
+          2,
+          1
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          1,
+          2
+        ],
+        "Tomi": [
+          5,
+          1
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 51,
+      "grupo": "I",
+      "fecha_orig": "22 jun",
+      "team1": "France",
+      "team2": "Iraq",
+      "preds": {
+        "AguColoma": [
+          3,
+          0
+        ],
+        "Benja": [
+          4,
+          0
+        ],
+        "Carmen": [
+          3,
+          0
+        ],
+        "Caro": [
+          3,
+          0
+        ],
+        "Carola P": [
+          2,
+          0
+        ],
+        "Cata": [
+          3,
+          0
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          3,
+          0
+        ],
+        "Domingo": [
+          3,
+          0
+        ],
+        "Felipe Coloma": [
+          3,
+          0
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          4,
+          0
+        ],
+        "Ignacolo": [
+          3,
+          1
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          3,
+          0
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          5,
+          0
+        ],
+        "lica": [
+          2,
+          1
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          4,
+          1
+        ],
+        "Mely": [
+          1,
+          1
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          1
+        ],
+        "Pedro": [
+          3,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          3,
+          0
+        ],
+        "Tío Gucho": [
+          4,
+          0
+        ],
+        "Tomi": [
+          4,
+          1
+        ],
+        "Tono": [
+          3,
+          1
+        ],
+        "Trini Coloma": [
+          3,
+          1
+        ],
+        "Vale": [
+          3,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 57,
+      "grupo": "J",
+      "fecha_orig": "22 jun",
+      "team1": "Argentina",
+      "team2": "Austria",
+      "preds": {
+        "AguColoma": [
+          4,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          2,
+          1
+        ],
+        "Carola P": [
+          3,
+          2
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          4,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          3,
+          2
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          4,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          1,
+          0
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          4,
+          0
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          0
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 40,
+      "grupo": "G",
+      "fecha_orig": "22 jun",
+      "team1": "New Zealand",
+      "team2": "Egypt",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          0,
+          0
+        ],
+        "Carmen": [
+          1,
+          0
+        ],
+        "Caro": [
+          1,
+          1
+        ],
+        "Carola P": [
+          3,
+          1
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          2,
+          0
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          0,
+          1
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          0,
+          2
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          3,
+          0
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          0,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          0,
+          1
+        ],
+        "Tío Gucho": [
+          0,
+          3
+        ],
+        "Tomi": [
+          2,
+          5
+        ],
+        "Tono": [
+          0,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 46,
+      "grupo": "H",
+      "fecha_orig": "21 jun",
+      "team1": "Uruguay",
+      "team2": "Cape Verde",
+      "preds": {
+        "AguColoma": [
+          3,
+          0
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          3,
+          0
+        ],
+        "Caro": [
+          4,
+          0
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          2,
+          1
+        ],
+        "Coni": [
+          4,
+          0
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          0
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          3,
+          0
+        ],
+        "José Pablo": [
+          3,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          3,
+          0
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          4,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          2,
+          0
+        ],
+        "Pedro": [
+          3,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          4,
+          0
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          5,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          0
+        ],
+        "Vale": [
+          3,
+          0
+        ],
+        "Victo": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "num": 39,
+      "grupo": "G",
+      "fecha_orig": "21 jun",
+      "team1": "Belgium",
+      "team2": "Iran",
+      "preds": {
+        "AguColoma": [
+          3,
+          0
+        ],
+        "Benja": [
+          3,
+          0
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          3,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          3,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          0
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          1,
+          0
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          1
+        ],
+        "Paz": [
+          1,
+          0
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          1,
+          1
+        ],
+        "Tono": [
+          3,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          2,
+          1
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 45,
+      "grupo": "H",
+      "fecha_orig": "21 jun",
+      "team1": "Spain",
+      "team2": "Saudi Arabia",
+      "preds": {
+        "AguColoma": [
+          4,
+          1
+        ],
+        "Benja": [
+          3,
+          0
+        ],
+        "Carmen": [
+          3,
+          0
+        ],
+        "Caro": [
+          3,
+          0
+        ],
+        "Carola P": [
+          4,
+          1
+        ],
+        "Cata": [
+          3,
+          0
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          4,
+          0
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          0
+        ],
+        "Ignacolo": [
+          3,
+          0
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          4,
+          1
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          4,
+          0
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          4,
+          1
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          4,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          4,
+          0
+        ],
+        "Tomi": [
+          3,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          0
+        ],
+        "Vale": [
+          2,
+          1
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 34,
+      "grupo": "F",
+      "fecha_orig": "21 jun",
+      "team1": "Tunisia",
+      "team2": "Japan",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          1,
+          2
+        ],
+        "Caro": [
+          0,
+          4
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          1,
+          2
+        ],
+        "Coni": [
+          0,
+          2
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          0,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          2
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          1,
+          3
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          1
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          0,
+          2
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          0,
+          1
+        ],
+        "Lito": [
+          0,
+          1
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          2
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          0,
+          2
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          1,
+          2
+        ],
+        "Tomi": [
+          0,
+          1
+        ],
+        "Tono": [
+          2,
+          1
+        ],
+        "Trini Coloma": [
+          3,
+          3
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 28,
+      "grupo": "E",
+      "fecha_orig": "21 jun",
+      "team1": "Ecuador",
+      "team2": "Curaçao",
+      "preds": {
+        "AguColoma": [
+          3,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          5,
+          0
+        ],
+        "Carola P": [
+          1,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          2,
+          0
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          0
+        ],
+        "Ignacolo": [
+          3,
+          0
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          3,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          3,
+          1
+        ],
+        "Juanco": [
+          3,
+          1
+        ],
+        "lica": [
+          1,
+          0
+        ],
+        "Lito": [
+          3,
+          0
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          4,
+          0
+        ],
+        "Tío Gucho": [
+          4,
+          0
+        ],
+        "Tomi": [
+          3,
+          2
+        ],
+        "Tono": [
+          5,
+          0
+        ],
+        "Trini Coloma": [
+          4,
+          0
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "num": 27,
+      "grupo": "E",
+      "fecha_orig": "20 jun",
+      "team1": "Germany",
+      "team2": "Ivory Coast",
+      "preds": {
+        "AguColoma": [
+          4,
+          0
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          3,
+          1
+        ],
+        "Caro": [
+          4,
+          0
+        ],
+        "Carola P": [
+          3,
+          0
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          3,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          2
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          1
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          0,
+          1
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          2,
+          1
+        ],
+        "Lito": [
+          2,
+          1
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          5,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          0
+        ],
+        "Vale": [
+          2,
+          1
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 33,
+      "grupo": "F",
+      "fecha_orig": "20 jun",
+      "team1": "Netherlands",
+      "team2": "Sweden",
+      "preds": {
+        "AguColoma": [
+          3,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          3,
+          1
+        ],
+        "Caro": [
+          3,
+          1
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          3,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          0
+        ],
+        "Ignacolo": [
+          0,
+          0
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          2,
+          2
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          2,
+          1
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          2
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          0,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          2,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 22,
+      "grupo": "D",
+      "fecha_orig": "20 jun",
+      "team1": "Türkiye",
+      "team2": "Paraguay",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          0,
+          0
+        ],
+        "Carmen": [
+          1,
+          0
+        ],
+        "Caro": [
+          3,
+          3
+        ],
+        "Carola P": [
+          1,
+          0
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          0,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          1,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          1,
+          2
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          0,
+          0
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          0,
+          1
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 16,
+      "grupo": "C",
+      "fecha_orig": "20 jun",
+      "team1": "Brazil",
+      "team2": "Haiti",
+      "preds": {
+        "AguColoma": [
+          6,
+          0
+        ],
+        "Benja": [
+          3,
+          0
+        ],
+        "Carmen": [
+          5,
+          0
+        ],
+        "Caro": [
+          6,
+          1
+        ],
+        "Carola P": [
+          5,
+          0
+        ],
+        "Cata": [
+          3,
+          0
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          3,
+          0
+        ],
+        "Domingo": [
+          3,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          6,
+          0
+        ],
+        "Fernando IV": [
+          4,
+          0
+        ],
+        "Ignacolo": [
+          6,
+          1
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          4,
+          0
+        ],
+        "José Pablo": [
+          5,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          5,
+          0
+        ],
+        "Juanco": [
+          3,
+          0
+        ],
+        "lica": [
+          3,
+          0
+        ],
+        "Lito": [
+          4,
+          0
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          3,
+          0
+        ],
+        "Pablo (tú)": [
+          4,
+          0
+        ],
+        "Paz": [
+          5,
+          0
+        ],
+        "Pedro": [
+          4,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          4,
+          0
+        ],
+        "Tío Gucho": [
+          5,
+          0
+        ],
+        "Tomi": [
+          3,
+          0
+        ],
+        "Tono": [
+          7,
+          0
+        ],
+        "Trini Coloma": [
+          6,
+          0
+        ],
+        "Vale": [
+          3,
+          1
+        ],
+        "Victo": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "num": 15,
+      "grupo": "C",
+      "fecha_orig": "19 jun",
+      "team1": "Scotland",
+      "team2": "Morocco",
+      "preds": {
+        "AguColoma": [
+          0,
+          3
+        ],
+        "Benja": [
+          1,
+          3
+        ],
+        "Carmen": [
+          1,
+          1
+        ],
+        "Caro": [
+          1,
+          3
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          1,
+          2
+        ],
+        "Fernando II": [
+          1,
+          3
+        ],
+        "Fernando IV": [
+          1,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          2
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          1,
+          4
+        ],
+        "Juanco": [
+          0,
+          2
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          3
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          2
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          2
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          1,
+          3
+        ],
+        "Trini Coloma": [
+          0,
+          3
+        ],
+        "Vale": [
+          0,
+          3
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 21,
+      "grupo": "D",
+      "fecha_orig": "19 jun",
+      "team1": "USA",
+      "team2": "Australia",
+      "preds": {
+        "AguColoma": [
+          0,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          1,
+          0
+        ],
+        "Carola P": [
+          2,
+          2
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          1,
+          1
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          2,
+          1
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          0
+        ],
+        "Ignacolo": [
+          1,
+          0
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          3,
+          0
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          0,
+          1
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          1,
+          1
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          3,
+          1
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 4,
+      "grupo": "A",
+      "fecha_orig": "19 jun",
+      "team1": "Mexico",
+      "team2": "South Korea",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          1,
+          1
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          3,
+          1
+        ],
+        "Diego": [
+          0,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          3,
+          0
+        ],
+        "Fernando II": [
+          2,
+          2
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          1
+        ],
+        "José Pablo": [
+          1,
+          0
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          0,
+          0
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          1,
+          1
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          0
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          0
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          1,
+          2
+        ],
+        "Trini Coloma": [
+          3,
+          1
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 10,
+      "grupo": "B",
+      "fecha_orig": "18 jun",
+      "team1": "Canada",
+      "team2": "Qatar",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          1,
+          1
+        ],
+        "Caro": [
+          2,
+          2
+        ],
+        "Carola P": [
+          1,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          3,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          1,
+          1
+        ],
+        "Joselin": [
+          1,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          0
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          1,
+          1
+        ],
+        "Tono": [
+          0,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 9,
+      "grupo": "B",
+      "fecha_orig": "18 jun",
+      "team1": "Switzerland",
+      "team2": "Bosnia and Herzegovina",
+      "preds": {
+        "AguColoma": [
+          2,
+          0
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          1,
+          0
+        ],
+        "Caro": [
+          3,
+          1
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          2,
+          1
+        ],
+        "Coni": [
+          2,
+          0
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          1,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          1,
+          2
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          2,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          1
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          0
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          1,
+          0
+        ],
+        "Trini Coloma": [
+          0,
+          0
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 3,
+      "grupo": "A",
+      "fecha_orig": "18 jun",
+      "team1": "Czechia",
+      "team2": "South Africa",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          1,
+          0
+        ],
+        "Carmen": [
+          0,
+          2
+        ],
+        "Caro": [
+          4,
+          2
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          0,
+          1
+        ],
+        "Diego": [
+          1,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          1,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          1,
+          0
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          2
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          0,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          0
+        ],
+        "Vale": [
+          0,
+          0
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 62,
+      "grupo": "K",
+      "fecha_orig": "18 jun",
+      "team1": "Uzbekistan",
+      "team2": "Colombia",
+      "preds": {
+        "AguColoma": [
+          1,
+          2
+        ],
+        "Benja": [
+          0,
+          3
+        ],
+        "Carmen": [
+          0,
+          3
+        ],
+        "Caro": [
+          1,
+          3
+        ],
+        "Carola P": [
+          0,
+          3
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          0,
+          3
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          1,
+          3
+        ],
+        "Felipe Coloma": [
+          0,
+          4
+        ],
+        "Fernando II": [
+          0,
+          3
+        ],
+        "Fernando IV": [
+          0,
+          3
+        ],
+        "Ignacolo": [
+          0,
+          2
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          0,
+          2
+        ],
+        "Juan": [
+          0,
+          4
+        ],
+        "Juanco": [
+          0,
+          3
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          1,
+          2
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          2
+        ],
+        "Paz": [
+          1,
+          4
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          0,
+          3
+        ],
+        "Tío Gucho": [
+          0,
+          4
+        ],
+        "Tomi": [
+          0,
+          3
+        ],
+        "Tono": [
+          0,
+          4
+        ],
+        "Trini Coloma": [
+          0,
+          3
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 68,
+      "grupo": "L",
+      "fecha_orig": "17 jun",
+      "team1": "Ghana",
+      "team2": "Panama",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          1,
+          1
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          2,
+          1
+        ],
+        "Coni": [
+          1,
+          3
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          0,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          1,
+          0
+        ],
+        "Ignacolo": [
+          3,
+          0
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          3,
+          0
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          3,
+          1
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          3,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          3,
+          1
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          3,
+          0
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 67,
+      "grupo": "L",
+      "fecha_orig": "17 jun",
+      "team1": "England",
+      "team2": "Croatia",
+      "preds": {
+        "AguColoma": [
+          3,
+          1
+        ],
+        "Benja": [
+          1,
+          0
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          1,
+          0
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          2,
+          1
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          3,
+          1
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          3,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          1
+        ],
+        "José Pablo": [
+          1,
+          2
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          2,
+          1
+        ],
+        "Martín": [
+          3,
+          1
+        ],
+        "Mely": [
+          3,
+          3
+        ],
+        "Pablo (tú)": [
+          3,
+          1
+        ],
+        "Paz": [
+          3,
+          2
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          3,
+          3
+        ],
+        "Tono": [
+          2,
+          2
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 61,
+      "grupo": "K",
+      "fecha_orig": "17 jun",
+      "team1": "Portugal",
+      "team2": "DR Congo",
+      "preds": {
+        "AguColoma": [
+          4,
+          0
+        ],
+        "Benja": [
+          4,
+          0
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          5,
+          0
+        ],
+        "Carola P": [
+          5,
+          1
+        ],
+        "Cata": [
+          3,
+          0
+        ],
+        "Coni": [
+          2,
+          0
+        ],
+        "Diego": [
+          3,
+          0
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          4,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          0
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          3,
+          0
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          3,
+          0
+        ],
+        "lica": [
+          4,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          4,
+          1
+        ],
+        "Pedro": [
+          3,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          4,
+          0
+        ],
+        "Tío Gucho": [
+          3,
+          0
+        ],
+        "Tomi": [
+          2,
+          0
+        ],
+        "Tono": [
+          6,
+          0
+        ],
+        "Trini Coloma": [
+          5,
+          0
+        ],
+        "Vale": [
+          3,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 56,
+      "grupo": "J",
+      "fecha_orig": "17 jun",
+      "team1": "Austria",
+      "team2": "Jordan",
+      "preds": {
+        "AguColoma": [
+          2,
+          0
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          4,
+          1
+        ],
+        "Carola P": [
+          2,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          3,
+          0
+        ],
+        "Fernando II": [
+          1,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          0
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          2,
+          0
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          1,
+          0
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          0,
+          0
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          3,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 55,
+      "grupo": "J",
+      "fecha_orig": "17 jun",
+      "team1": "Argentina",
+      "team2": "Algeria",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          1,
+          0
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          4,
+          1
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          4,
+          0
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          3,
+          0
+        ],
+        "Felipe Coloma": [
+          2,
+          1
+        ],
+        "Fernando II": [
+          3,
+          1
+        ],
+        "Fernando IV": [
+          4,
+          0
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          5,
+          0
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          3,
+          0
+        ],
+        "Tío Gucho": [
+          1,
+          0
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          3,
+          2
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "num": 50,
+      "grupo": "I",
+      "fecha_orig": "16 jun",
+      "team1": "Iraq",
+      "team2": "Norway",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          0,
+          0
+        ],
+        "Caro": [
+          0,
+          3
+        ],
+        "Carola P": [
+          1,
+          2
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          0,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          3
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          3
+        ],
+        "Ignacolo": [
+          1,
+          3
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          0,
+          2
+        ],
+        "Juan": [
+          1,
+          3
+        ],
+        "Juanco": [
+          0,
+          3
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          0,
+          1
+        ],
+        "Mely": [
+          1,
+          5
+        ],
+        "Pablo (tú)": [
+          0,
+          3
+        ],
+        "Paz": [
+          1,
+          3
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          1,
+          3
+        ],
+        "Tío Gucho": [
+          0,
+          2
+        ],
+        "Tomi": [
+          1,
+          4
+        ],
+        "Tono": [
+          0,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          3
+        ],
+        "Vale": [
+          0,
+          0
+        ],
+        "Victo": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "num": 49,
+      "grupo": "I",
+      "fecha_orig": "16 jun",
+      "team1": "France",
+      "team2": "Senegal",
+      "preds": {
+        "AguColoma": [
+          3,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          4,
+          0
+        ],
+        "Caro": [
+          3,
+          1
+        ],
+        "Carola P": [
+          5,
+          1
+        ],
+        "Cata": [
+          3,
+          1
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          3,
+          0
+        ],
+        "Fernando II": [
+          3,
+          1
+        ],
+        "Fernando IV": [
+          3,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          2
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          3,
+          1
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          3,
+          1
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          2
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          3,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          1
+        ],
+        "Vale": [
+          2,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 38,
+      "grupo": "G",
+      "fecha_orig": "16 jun",
+      "team1": "Iran",
+      "team2": "New Zealand",
+      "preds": {
+        "AguColoma": [
+          1,
+          2
+        ],
+        "Benja": [
+          0,
+          0
+        ],
+        "Carmen": [
+          0,
+          1
+        ],
+        "Caro": [
+          1,
+          1
+        ],
+        "Carola P": [
+          0,
+          0
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          0
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          0,
+          0
+        ],
+        "Jaime": [
+          0,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          0,
+          1
+        ],
+        "Juan": [
+          0,
+          0
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          0,
+          2
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          1,
+          1
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          1
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          4,
+          0
+        ],
+        "Tomi": [
+          0,
+          1
+        ],
+        "Tono": [
+          1,
+          0
+        ],
+        "Trini Coloma": [
+          0,
+          0
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 44,
+      "grupo": "H",
+      "fecha_orig": "15 jun",
+      "team1": "Saudi Arabia",
+      "team2": "Uruguay",
+      "preds": {
+        "AguColoma": [
+          1,
+          2
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          1,
+          3
+        ],
+        "Caro": [
+          1,
+          2
+        ],
+        "Carola P": [
+          0,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          1,
+          4
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          2,
+          3
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          0,
+          2
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          1,
+          1
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          0,
+          2
+        ],
+        "Juan": [
+          1,
+          2
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          0,
+          1
+        ],
+        "Martín": [
+          0,
+          2
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          3
+        ],
+        "Paz": [
+          1,
+          3
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          3
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          1
+        ],
+        "Tomi": [
+          1,
+          3
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          1,
+          3
+        ],
+        "Vale": [
+          0,
+          0
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 37,
+      "grupo": "G",
+      "fecha_orig": "15 jun",
+      "team1": "Belgium",
+      "team2": "Egypt",
+      "preds": {
+        "AguColoma": [
+          3,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          3,
+          1
+        ],
+        "Carola P": [
+          3,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          2,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          3,
+          2
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          2,
+          1
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          1,
+          0
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          3,
+          0
+        ],
+        "Mely": [
+          2,
+          2
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          2,
+          1
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          3,
+          1
+        ],
+        "Vale": [
+          2,
+          2
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 43,
+      "grupo": "H",
+      "fecha_orig": "15 jun",
+      "team1": "Spain",
+      "team2": "Cape Verde",
+      "preds": {
+        "AguColoma": [
+          5,
+          0
+        ],
+        "Benja": [
+          4,
+          0
+        ],
+        "Carmen": [
+          4,
+          0
+        ],
+        "Caro": [
+          8,
+          0
+        ],
+        "Carola P": [
+          4,
+          1
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          3,
+          0
+        ],
+        "Domingo": [
+          3,
+          1
+        ],
+        "Felipe Coloma": [
+          4,
+          0
+        ],
+        "Fernando II": [
+          5,
+          0
+        ],
+        "Fernando IV": [
+          4,
+          0
+        ],
+        "Ignacolo": [
+          4,
+          0
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          3,
+          0
+        ],
+        "José Pablo": [
+          3,
+          0
+        ],
+        "Joselin": [
+          4,
+          0
+        ],
+        "Juan": [
+          3,
+          1
+        ],
+        "Juanco": [
+          5,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          3,
+          0
+        ],
+        "Martín": [
+          5,
+          0
+        ],
+        "Mely": [
+          3,
+          0
+        ],
+        "Pablo (tú)": [
+          4,
+          0
+        ],
+        "Paz": [
+          4,
+          1
+        ],
+        "Pedro": [
+          5,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          4,
+          0
+        ],
+        "Tío Gucho": [
+          6,
+          0
+        ],
+        "Tomi": [
+          3,
+          1
+        ],
+        "Tono": [
+          5,
+          0
+        ],
+        "Trini Coloma": [
+          5,
+          0
+        ],
+        "Vale": [
+          3,
+          0
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 32,
+      "grupo": "F",
+      "fecha_orig": "15 jun",
+      "team1": "Sweden",
+      "team2": "Tunisia",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          2,
+          0
+        ],
+        "Carmen": [
+          1,
+          0
+        ],
+        "Caro": [
+          4,
+          0
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          1,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          1,
+          1
+        ],
+        "Ignacolo": [
+          1,
+          0
+        ],
+        "Jaime": [
+          0,
+          0
+        ],
+        "joaco": [
+          2,
+          1
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          1,
+          0
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          2,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          1
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          1,
+          0
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          0,
+          0
+        ],
+        "Tono": [
+          1,
+          2
+        ],
+        "Trini Coloma": [
+          3,
+          2
+        ],
+        "Vale": [
+          1,
+          0
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 26,
+      "grupo": "E",
+      "fecha_orig": "14 jun",
+      "team1": "Ivory Coast",
+      "team2": "Ecuador",
+      "preds": {
+        "AguColoma": [
+          0,
+          2
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          1,
+          3
+        ],
+        "Caro": [
+          1,
+          2
+        ],
+        "Carola P": [
+          0,
+          1
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          0,
+          3
+        ],
+        "Diego": [
+          1,
+          1
+        ],
+        "Domingo": [
+          2,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          1,
+          3
+        ],
+        "Fernando IV": [
+          2,
+          2
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          1
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          2,
+          1
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          0,
+          1
+        ],
+        "Martín": [
+          0,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          3
+        ],
+        "Pedro": [
+          1,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          0
+        ],
+        "Tomi": [
+          2,
+          2
+        ],
+        "Tono": [
+          1,
+          3
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "num": 31,
+      "grupo": "F",
+      "fecha_orig": "14 jun",
+      "team1": "Netherlands",
+      "team2": "Japan",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          2,
+          1
+        ],
+        "Carmen": [
+          3,
+          1
+        ],
+        "Caro": [
+          3,
+          2
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          0,
+          2
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          3,
+          1
+        ],
+        "Fernando II": [
+          2,
+          2
+        ],
+        "Fernando IV": [
+          3,
+          1
+        ],
+        "Ignacolo": [
+          2,
+          2
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          2,
+          2
+        ],
+        "José Pablo": [
+          3,
+          1
+        ],
+        "Joselin": [
+          2,
+          1
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          2,
+          2
+        ],
+        "lica": [
+          3,
+          1
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          2,
+          2
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          1
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          2,
+          1
+        ],
+        "Tío Gucho": [
+          2,
+          1
+        ],
+        "Tomi": [
+          4,
+          1
+        ],
+        "Tono": [
+          2,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          2
+        ],
+        "Vale": [
+          1,
+          2
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 25,
+      "grupo": "E",
+      "fecha_orig": "14 jun",
+      "team1": "Germany",
+      "team2": "Curaçao",
+      "preds": {
+        "AguColoma": [
+          3,
+          0
+        ],
+        "Benja": [
+          5,
+          0
+        ],
+        "Carmen": [
+          3,
+          0
+        ],
+        "Caro": [
+          7,
+          0
+        ],
+        "Carola P": [
+          3,
+          1
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          3,
+          0
+        ],
+        "Diego": [
+          4,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          5,
+          0
+        ],
+        "Fernando II": [
+          4,
+          0
+        ],
+        "Fernando IV": [
+          5,
+          1
+        ],
+        "Ignacolo": [
+          6,
+          0
+        ],
+        "Jaime": [
+          3,
+          0
+        ],
+        "joaco": [
+          3,
+          0
+        ],
+        "José Pablo": [
+          4,
+          0
+        ],
+        "Joselin": [
+          3,
+          9
+        ],
+        "Juan": [
+          3,
+          0
+        ],
+        "Juanco": [
+          4,
+          0
+        ],
+        "lica": [
+          4,
+          0
+        ],
+        "Lito": [
+          3,
+          0
+        ],
+        "Martín": [
+          4,
+          0
+        ],
+        "Mely": [
+          3,
+          1
+        ],
+        "Pablo (tú)": [
+          3,
+          0
+        ],
+        "Paz": [
+          5,
+          0
+        ],
+        "Pedro": [
+          4,
+          0
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          5,
+          0
+        ],
+        "Tío Gucho": [
+          6,
+          0
+        ],
+        "Tomi": [
+          3,
+          1
+        ],
+        "Tono": [
+          5,
+          0
+        ],
+        "Trini Coloma": [
+          4,
+          0
+        ],
+        "Vale": [
+          4,
+          0
+        ],
+        "Victo": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "num": 20,
+      "grupo": "D",
+      "fecha_orig": "14 jun",
+      "team1": "Australia",
+      "team2": "Türkiye",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          1,
+          3
+        ],
+        "Carmen": [
+          2,
+          0
+        ],
+        "Caro": [
+          0,
+          2
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          0,
+          1
+        ],
+        "Coni": [
+          1,
+          0
+        ],
+        "Diego": [
+          1,
+          2
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          1,
+          1
+        ],
+        "Fernando II": [
+          1,
+          3
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          1,
+          2
+        ],
+        "Jaime": [
+          0,
+          1
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          1,
+          0
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          0,
+          3
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          2,
+          1
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          0
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          1
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          1
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          1,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          1
+        ],
+        "Tomi": [
+          0,
+          1
+        ],
+        "Tono": [
+          0,
+          3
+        ],
+        "Trini Coloma": [
+          2,
+          3
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 14,
+      "grupo": "C",
+      "fecha_orig": "14 jun",
+      "team1": "Haiti",
+      "team2": "Scotland",
+      "preds": {
+        "AguColoma": [
+          0,
+          0
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          0,
+          1
+        ],
+        "Caro": [
+          0,
+          3
+        ],
+        "Carola P": [
+          0,
+          4
+        ],
+        "Cata": [
+          0,
+          2
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          0,
+          3
+        ],
+        "Domingo": [
+          0,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          0
+        ],
+        "Fernando II": [
+          0,
+          4
+        ],
+        "Fernando IV": [
+          0,
+          3
+        ],
+        "Ignacolo": [
+          0,
+          1
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          1
+        ],
+        "José Pablo": [
+          0,
+          3
+        ],
+        "Joselin": [
+          0,
+          2
+        ],
+        "Juan": [
+          0,
+          2
+        ],
+        "Juanco": [
+          0,
+          1
+        ],
+        "lica": [
+          1,
+          3
+        ],
+        "Lito": [
+          0,
+          3
+        ],
+        "Martín": [
+          0,
+          2
+        ],
+        "Mely": [
+          0,
+          1
+        ],
+        "Pablo (tú)": [
+          0,
+          2
+        ],
+        "Paz": [
+          1,
+          2
+        ],
+        "Pedro": [
+          1,
+          2
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          3
+        ],
+        "Tomi": [
+          0,
+          2
+        ],
+        "Tono": [
+          0,
+          4
+        ],
+        "Trini Coloma": [
+          0,
+          2
+        ],
+        "Vale": [
+          0,
+          2
+        ],
+        "Victo": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "num": 13,
+      "grupo": "C",
+      "fecha_orig": "13 jun",
+      "team1": "Brazil",
+      "team2": "Morocco",
+      "preds": {
+        "AguColoma": [
+          2,
+          1
+        ],
+        "Benja": [
+          2,
+          2
+        ],
+        "Carmen": [
+          4,
+          0
+        ],
+        "Caro": [
+          1,
+          1
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          1,
+          1
+        ],
+        "Coni": [
+          3,
+          2
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          3,
+          2
+        ],
+        "Fernando IV": [
+          2,
+          2
+        ],
+        "Ignacolo": [
+          2,
+          3
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          1
+        ],
+        "José Pablo": [
+          2,
+          0
+        ],
+        "Joselin": [
+          3,
+          0
+        ],
+        "Juan": [
+          2,
+          2
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          2,
+          2
+        ],
+        "Lito": [
+          2,
+          1
+        ],
+        "Martín": [
+          1,
+          1
+        ],
+        "Mely": [
+          3,
+          2
+        ],
+        "Pablo (tú)": [
+          1,
+          1
+        ],
+        "Paz": [
+          4,
+          1
+        ],
+        "Pedro": [
+          2,
+          1
+        ],
+        "Rodrigo": [
+          3,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          1,
+          2
+        ],
+        "Tomi": [
+          3,
+          2
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          3,
+          1
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 8,
+      "grupo": "B",
+      "fecha_orig": "13 jun",
+      "team1": "Qatar",
+      "team2": "Switzerland",
+      "preds": {
+        "AguColoma": [
+          1,
+          1
+        ],
+        "Benja": [
+          0,
+          2
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          0,
+          2
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          0,
+          3
+        ],
+        "Coni": [
+          1,
+          2
+        ],
+        "Diego": [
+          0,
+          2
+        ],
+        "Domingo": [
+          1,
+          2
+        ],
+        "Felipe Coloma": [
+          0,
+          1
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          0,
+          2
+        ],
+        "Ignacolo": [
+          0,
+          3
+        ],
+        "Jaime": [
+          0,
+          2
+        ],
+        "joaco": [
+          0,
+          2
+        ],
+        "José Pablo": [
+          0,
+          2
+        ],
+        "Joselin": [
+          1,
+          0
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          3
+        ],
+        "lica": [
+          1,
+          2
+        ],
+        "Lito": [
+          0,
+          2
+        ],
+        "Martín": [
+          0,
+          2
+        ],
+        "Mely": [
+          1,
+          2
+        ],
+        "Pablo (tú)": [
+          0,
+          0
+        ],
+        "Paz": [
+          1,
+          4
+        ],
+        "Pedro": [
+          0,
+          1
+        ],
+        "Rodrigo": [
+          0,
+          2
+        ],
+        "Seb": [
+          0,
+          2
+        ],
+        "Tío Gucho": [
+          0,
+          5
+        ],
+        "Tomi": [
+          1,
+          2
+        ],
+        "Tono": [
+          0,
+          2
+        ],
+        "Trini Coloma": [
+          1,
+          2
+        ],
+        "Vale": [
+          0,
+          1
+        ],
+        "Victo": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "num": 19,
+      "grupo": "D",
+      "fecha_orig": "13 jun",
+      "team1": "USA",
+      "team2": "Paraguay",
+      "preds": {
+        "AguColoma": [
+          1,
+          2
+        ],
+        "Benja": [
+          2,
+          2
+        ],
+        "Carmen": [
+          1,
+          0
+        ],
+        "Caro": [
+          0,
+          0
+        ],
+        "Carola P": [
+          1,
+          0
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          0,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          1
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          2,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          0
+        ],
+        "Jaime": [
+          2,
+          0
+        ],
+        "joaco": [
+          0,
+          0
+        ],
+        "José Pablo": [
+          2,
+          2
+        ],
+        "Joselin": [
+          1,
+          0
+        ],
+        "Juan": [
+          1,
+          2
+        ],
+        "Juanco": [
+          1,
+          0
+        ],
+        "lica": [
+          1,
+          1
+        ],
+        "Lito": [
+          2,
+          0
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          1,
+          1
+        ],
+        "Pablo (tú)": [
+          3,
+          1
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          2
+        ],
+        "Seb": [
+          1,
+          0
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          2,
+          0
+        ],
+        "Tono": [
+          0,
+          0
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "num": 7,
+      "grupo": "B",
+      "fecha_orig": "12 jun",
+      "team1": "Canada",
+      "team2": "Bosnia and Herzegovina",
+      "preds": {
+        "AguColoma": [
+          1,
+          0
+        ],
+        "Benja": [
+          0,
+          1
+        ],
+        "Carmen": [
+          0,
+          0
+        ],
+        "Caro": [
+          2,
+          0
+        ],
+        "Carola P": [
+          2,
+          1
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          1,
+          0
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          2,
+          0
+        ],
+        "Felipe Coloma": [
+          1,
+          0
+        ],
+        "Fernando II": [
+          2,
+          0
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          0,
+          0
+        ],
+        "Jaime": [
+          2,
+          1
+        ],
+        "joaco": [
+          2,
+          0
+        ],
+        "José Pablo": [
+          0,
+          1
+        ],
+        "Joselin": [
+          0,
+          0
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          0,
+          0
+        ],
+        "lica": [
+          1,
+          0
+        ],
+        "Lito": [
+          0,
+          0
+        ],
+        "Martín": [
+          1,
+          0
+        ],
+        "Mely": [
+          2,
+          1
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          3,
+          0
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          0
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          2
+        ],
+        "Tomi": [
+          1,
+          1
+        ],
+        "Tono": [
+          1,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          1
+        ],
+        "Vale": [
+          1,
+          1
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "num": 2,
+      "grupo": "A",
+      "fecha_orig": "12 jun",
+      "team1": "South Korea",
+      "team2": "Czechia",
+      "preds": {
+        "AguColoma": [
+          0,
+          0
+        ],
+        "Benja": [
+          1,
+          1
+        ],
+        "Carmen": [
+          1,
+          1
+        ],
+        "Caro": [
+          2,
+          1
+        ],
+        "Carola P": [
+          1,
+          1
+        ],
+        "Cata": [
+          1,
+          0
+        ],
+        "Coni": [
+          0,
+          2
+        ],
+        "Diego": [
+          2,
+          1
+        ],
+        "Domingo": [
+          1,
+          1
+        ],
+        "Felipe Coloma": [
+          0,
+          2
+        ],
+        "Fernando II": [
+          1,
+          1
+        ],
+        "Fernando IV": [
+          2,
+          1
+        ],
+        "Ignacolo": [
+          0,
+          3
+        ],
+        "Jaime": [
+          1,
+          1
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          0,
+          1
+        ],
+        "Joselin": [
+          1,
+          2
+        ],
+        "Juan": [
+          1,
+          1
+        ],
+        "Juanco": [
+          1,
+          1
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          1
+        ],
+        "Martín": [
+          1,
+          1
+        ],
+        "Mely": [
+          1,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          2,
+          2
+        ],
+        "Pedro": [
+          1,
+          0
+        ],
+        "Rodrigo": [
+          2,
+          2
+        ],
+        "Seb": [
+          1,
+          1
+        ],
+        "Tío Gucho": [
+          1,
+          1
+        ],
+        "Tomi": [
+          2,
+          1
+        ],
+        "Tono": [
+          1,
+          3
+        ],
+        "Trini Coloma": [
+          1,
+          1
+        ],
+        "Vale": [
+          0,
+          0
+        ],
+        "Victo": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "num": 1,
+      "grupo": "A",
+      "fecha_orig": "11 jun",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "preds": {
+        "AguColoma": [
+          1,
+          0
+        ],
+        "Benja": [
+          1,
+          0
+        ],
+        "Carmen": [
+          2,
+          1
+        ],
+        "Caro": [
+          3,
+          1
+        ],
+        "Carola P": [
+          1,
+          0
+        ],
+        "Cata": [
+          2,
+          0
+        ],
+        "Coni": [
+          3,
+          1
+        ],
+        "Diego": [
+          2,
+          0
+        ],
+        "Domingo": [
+          1,
+          0
+        ],
+        "Felipe Coloma": [
+          2,
+          0
+        ],
+        "Fernando II": [
+          2,
+          1
+        ],
+        "Fernando IV": [
+          3,
+          0
+        ],
+        "Ignacolo": [
+          2,
+          1
+        ],
+        "Jaime": [
+          1,
+          0
+        ],
+        "joaco": [
+          1,
+          0
+        ],
+        "José Pablo": [
+          0,
+          0
+        ],
+        "Joselin": [
+          2,
+          0
+        ],
+        "Juan": [
+          1,
+          0
+        ],
+        "Juanco": [
+          2,
+          0
+        ],
+        "lica": [
+          2,
+          0
+        ],
+        "Lito": [
+          1,
+          0
+        ],
+        "Martín": [
+          2,
+          0
+        ],
+        "Mely": [
+          2,
+          0
+        ],
+        "Pablo (tú)": [
+          2,
+          0
+        ],
+        "Paz": [
+          2,
+          1
+        ],
+        "Pedro": [
+          2,
+          0
+        ],
+        "Rodrigo": [
+          1,
+          1
+        ],
+        "Seb": [
+          2,
+          0
+        ],
+        "Tío Gucho": [
+          2,
+          0
+        ],
+        "Tomi": [
+          1,
+          0
+        ],
+        "Tono": [
+          2,
+          1
+        ],
+        "Trini Coloma": [
+          2,
+          0
+        ],
+        "Vale": [
+          2,
+          0
+        ],
+        "Victo": [
+          2,
+          1
+        ]
+      }
+    }
+  ]
+}
