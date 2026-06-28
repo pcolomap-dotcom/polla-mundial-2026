@@ -14,27 +14,104 @@ API_URL  = 'https://api.football-data.org/v4/competitions/WC/matches'
 YOU      = "Pablo (tú)"
 
 # Normalización de nombres (football-data.org → nuestros datos)
+# football-data.org usa en muchos casos el nombre oficial FIFA en inglés,
+# que a veces difiere del nombre coloquial. Mapeamos todas las variantes conocidas.
 NAME_MAP = {
-    "USA":                       "USA",
-    "United States":             "USA",
-    "Korea Republic":            "South Korea",
-    "Republic of Korea":         "South Korea",
-    "Czechia":                   "Czechia",
-    "Czech Republic":            "Czechia",
-    "Côte d'Ivoire":             "Ivory Coast",
-    "Cote d'Ivoire":             "Ivory Coast",
-    "Iran":                      "Iran",
-    "IR Iran":                   "Iran",
-    "Bosnia and Herzegovina":    "Bosnia and Herzegovina",
-    "Türkiye":                   "Türkiye",
-    "Turkey":                    "Türkiye",
-    "Cape Verde Islands":        "Cape Verde",
-    "DR Congo":                  "DR Congo",
-    "Congo DR":                  "DR Congo",
-    "Congo, DR":                 "DR Congo",
+    # USA
+    "United States":                "USA",
+    "USA":                          "USA",
+    "United States of America":     "USA",
+
+    # South Korea
+    "Korea Republic":               "South Korea",
+    "Republic of Korea":            "South Korea",
+    "South Korea":                  "South Korea",
+
+    # Czechia
+    "Czech Republic":               "Czechia",
+    "Czechia":                      "Czechia",
+
+    # Ivory Coast
+    "Côte d'Ivoire":                "Ivory Coast",
+    "Cote d'Ivoire":                "Ivory Coast",
+    "Ivory Coast":                  "Ivory Coast",
+
+    # Iran
+    "IR Iran":                      "Iran",
+    "Iran":                         "Iran",
+
+    # Bosnia
+    "Bosnia and Herzegovina":       "Bosnia and Herzegovina",
+    "Bosnia & Herzegovina":         "Bosnia and Herzegovina",
+
+    # Turkey
+    "Türkiye":                      "Türkiye",
+    "Turkey":                       "Türkiye",
+
+    # Cape Verde — FIFA/football-data usa "Cabo Verde"
+    "Cabo Verde":                   "Cape Verde",
+    "Cape Verde":                   "Cape Verde",
+    "Cape Verde Islands":           "Cape Verde",
+
+    # DR Congo
+    "DR Congo":                     "DR Congo",
+    "Congo DR":                     "DR Congo",
+    "Congo, DR":                    "DR Congo",
     "Democratic Republic of Congo": "DR Congo",
-    "Korea DPR":                 "North Korea",
-    "Curacao":                   "Curaçao",
+    "Congo (DR)":                   "DR Congo",
+
+    # Curaçao
+    "Curacao":                      "Curaçao",
+    "Curaçao":                      "Curaçao",
+
+    # New Zealand
+    "New Zealand":                  "New Zealand",
+
+    # Equipos cuyo nombre en football-data puede variar ligeramente
+    "Saudi Arabia":                 "Saudi Arabia",
+    "KSA":                          "Saudi Arabia",
+
+    "Scotland":                     "Scotland",
+    "Morocco":                      "Morocco",
+    "Algeria":                      "Algeria",
+    "Senegal":                      "Senegal",
+    "South Africa":                 "South Africa",
+    "Ghana":                        "Ghana",
+    "Tunisia":                      "Tunisia",
+    "Egypt":                        "Egypt",
+    "Panama":                       "Panama",
+    "Haiti":                        "Haiti",
+
+    "Uzbekistan":                   "Uzbekistan",
+    "Jordan":                       "Jordan",
+    "Iraq":                         "Iraq",
+    "Qatar":                        "Qatar",
+    "Australia":                    "Australia",
+
+    "Paraguay":                     "Paraguay",
+    "Ecuador":                      "Ecuador",
+    "Colombia":                     "Colombia",
+    "Argentina":                    "Argentina",
+    "Brazil":                       "Brazil",
+    "Brasil":                       "Brazil",
+    "Uruguay":                      "Uruguay",
+
+    "England":                      "England",
+    "France":                       "France",
+    "Spain":                        "Spain",
+    "Germany":                      "Germany",
+    "Netherlands":                  "Netherlands",
+    "Portugal":                     "Portugal",
+    "Belgium":                      "Belgium",
+    "Norway":                       "Norway",
+    "Sweden":                       "Sweden",
+    "Switzerland":                  "Switzerland",
+    "Austria":                      "Austria",
+    "Croatia":                      "Croatia",
+    "Japan":                        "Japan",
+    "Canada":                       "Canada",
+    "Mexico":                       "Mexico",
+    "Scotland":                     "Scotland",
 }
 
 def norm(name):
@@ -100,6 +177,15 @@ else:
         with urllib.request.urlopen(req, timeout=20) as r:
             data = json.load(r)
         
+        # Loguear todos los nombres que devuelve la API (ayuda a detectar
+        # nombres no mapeados sin necesidad de ver el código)
+        api_names = sorted(set(
+            name
+            for m in data.get('matches', [])
+            for name in (m['homeTeam']['name'], m['awayTeam']['name'])
+        ))
+        print(f"  Nombres en API ({len(api_names)}): {api_names}")
+
         for match in data.get('matches', []):
             score = match.get('score', {})
             ft    = score.get('fullTime', {})
@@ -113,7 +199,7 @@ else:
             num = pair_index.get((t1, t2)) or pair_index.get((t2, t1))
             
             if not num:
-                print(f"  SIN MATCH: {t1} vs {t2}")
+                print(f"  SIN MATCH: {match['homeTeam']['name']!r} → {t1!r}  vs  {match['awayTeam']['name']!r} → {t2!r}")
                 continue
             
             # Swap score if teams were reversed
