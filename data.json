@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "28 Jun 2026 00:07 UTC",
-  "playedCount": 68,
+  "lastUpdated": "28 Jun 2026 03:30 UTC",
+  "playedCount": 70,
   "totalCount": 72,
   "topScorer": {
     "name": "Lionel Messi",
@@ -9,23 +9,23 @@
   },
   "ranking": [
     {
-      "name": "Diego",
-      "pts": 66,
+      "name": "joaco",
+      "pts": 68,
       "rank": 1,
       "exact": 11,
-      "outc": 33
+      "outc": 35
     },
     {
       "name": "Jaime",
-      "pts": 66,
-      "rank": 1,
+      "pts": 67,
+      "rank": 2,
       "exact": 11,
-      "outc": 33
+      "outc": 34
     },
     {
-      "name": "joaco",
+      "name": "Diego",
       "pts": 66,
-      "rank": 1,
+      "rank": 3,
       "exact": 11,
       "outc": 33
     },
@@ -66,10 +66,10 @@
     },
     {
       "name": "Pablo (tú)",
-      "pts": 60,
+      "pts": 61,
       "rank": 9,
       "exact": 9,
-      "outc": 33
+      "outc": 34
     },
     {
       "name": "Cata",
@@ -80,10 +80,10 @@
     },
     {
       "name": "Trini Coloma",
-      "pts": 57,
-      "rank": 11,
+      "pts": 58,
+      "rank": 10,
       "exact": 8,
-      "outc": 33
+      "outc": 34
     },
     {
       "name": "Mely",
@@ -94,143 +94,143 @@
     },
     {
       "name": "Tomi",
-      "pts": 55,
-      "rank": 13,
+      "pts": 56,
+      "rank": 12,
       "exact": 8,
-      "outc": 31
+      "outc": 32
+    },
+    {
+      "name": "Ignacolo",
+      "pts": 55,
+      "rank": 14,
+      "exact": 6,
+      "outc": 37
+    },
+    {
+      "name": "José Pablo",
+      "pts": 55,
+      "rank": 14,
+      "exact": 6,
+      "outc": 37
     },
     {
       "name": "Fernando II",
       "pts": 54,
-      "rank": 14,
+      "rank": 16,
       "exact": 7,
       "outc": 33
     },
     {
       "name": "Fernando IV",
-      "pts": 53,
-      "rank": 15,
+      "pts": 54,
+      "rank": 16,
       "exact": 5,
-      "outc": 38
+      "outc": 39
     },
     {
-      "name": "Ignacolo",
+      "name": "Pedro",
       "pts": 53,
-      "rank": 15,
+      "rank": 18,
       "exact": 6,
       "outc": 35
     },
     {
-      "name": "José Pablo",
-      "pts": 52,
-      "rank": 17,
-      "exact": 5,
-      "outc": 37
-    },
-    {
       "name": "Juan",
       "pts": 52,
-      "rank": 17,
+      "rank": 19,
       "exact": 6,
       "outc": 34
     },
     {
       "name": "Lito",
       "pts": 52,
-      "rank": 17,
+      "rank": 19,
       "exact": 7,
       "outc": 31
     },
     {
-      "name": "Pedro",
+      "name": "Rodrigo",
       "pts": 52,
-      "rank": 17,
-      "exact": 6,
-      "outc": 34
+      "rank": 19,
+      "exact": 8,
+      "outc": 28
     },
     {
-      "name": "Rodrigo",
+      "name": "Felipe Coloma",
       "pts": 51,
-      "rank": 21,
-      "exact": 8,
-      "outc": 27
+      "rank": 22,
+      "exact": 6,
+      "outc": 33
     },
     {
       "name": "Benja",
       "pts": 50,
-      "rank": 22,
+      "rank": 23,
       "exact": 6,
       "outc": 32
     },
     {
-      "name": "Felipe Coloma",
+      "name": "Victo",
       "pts": 50,
-      "rank": 22,
+      "rank": 23,
       "exact": 6,
       "outc": 32
+    },
+    {
+      "name": "Carmen",
+      "pts": 49,
+      "rank": 25,
+      "exact": 6,
+      "outc": 31
     },
     {
       "name": "Caro",
       "pts": 49,
-      "rank": 24,
+      "rank": 25,
       "exact": 6,
       "outc": 31
     },
     {
       "name": "Domingo",
       "pts": 49,
-      "rank": 24,
+      "rank": 25,
       "exact": 6,
       "outc": 31
     },
     {
-      "name": "Victo",
+      "name": "Tono",
       "pts": 49,
-      "rank": 24,
-      "exact": 6,
-      "outc": 31
+      "rank": 25,
+      "exact": 5,
+      "outc": 34
     },
     {
       "name": "lica",
       "pts": 49,
-      "rank": 24,
+      "rank": 25,
       "exact": 7,
       "outc": 28
     },
     {
-      "name": "Carmen",
-      "pts": 48,
-      "rank": 28,
-      "exact": 6,
-      "outc": 30
-    },
-    {
-      "name": "Tono",
-      "pts": 48,
-      "rank": 28,
-      "exact": 5,
-      "outc": 33
+      "name": "Paz",
+      "pts": 47,
+      "rank": 30,
+      "exact": 2,
+      "outc": 41
     },
     {
       "name": "Carola P",
       "pts": 45,
-      "rank": 30,
+      "rank": 31,
       "exact": 5,
       "outc": 30
     },
     {
       "name": "Joselin",
       "pts": 45,
-      "rank": 30,
+      "rank": 31,
       "exact": 5,
       "outc": 30
-    },
-    {
-      "name": "Paz",
-      "pts": 45,
-      "rank": 30,
-      "exact": 2,
-      "outc": 39
     },
     {
       "name": "AguColoma",
@@ -241,10 +241,10 @@
     },
     {
       "name": "Coni",
-      "pts": 35,
+      "pts": 36,
       "rank": 34,
       "exact": 3,
-      "outc": 26
+      "outc": 27
     }
   ],
   "evolution": {
@@ -268,90 +268,6 @@
       "27 jun"
     ],
     "players": [
-      {
-        "name": "Diego",
-        "ranks": [
-          1,
-          2,
-          8,
-          12,
-          12,
-          17,
-          16,
-          7,
-          13,
-          5,
-          6,
-          2,
-          3,
-          1,
-          1,
-          1,
-          1
-        ],
-        "pts": [
-          3,
-          6,
-          7,
-          9,
-          10,
-          12,
-          16,
-          22,
-          23,
-          30,
-          32,
-          39,
-          44,
-          51,
-          56,
-          60,
-          66
-        ],
-        "final": 66
-      },
-      {
-        "name": "Jaime",
-        "ranks": [
-          15,
-          24,
-          27,
-          29,
-          31,
-          30,
-          24,
-          27,
-          13,
-          18,
-          19,
-          16,
-          18,
-          13,
-          6,
-          7,
-          1
-        ],
-        "pts": [
-          1,
-          1,
-          2,
-          4,
-          4,
-          7,
-          13,
-          16,
-          23,
-          26,
-          28,
-          33,
-          36,
-          43,
-          51,
-          53,
-          66
-        ],
-        "final": 66
-      },
       {
         "name": "joaco",
         "ranks": [
@@ -390,6 +306,90 @@
           49,
           54,
           57,
+          68
+        ],
+        "final": 68
+      },
+      {
+        "name": "Jaime",
+        "ranks": [
+          15,
+          24,
+          27,
+          29,
+          31,
+          30,
+          24,
+          27,
+          13,
+          18,
+          19,
+          16,
+          18,
+          13,
+          6,
+          7,
+          2
+        ],
+        "pts": [
+          1,
+          1,
+          2,
+          4,
+          4,
+          7,
+          13,
+          16,
+          23,
+          26,
+          28,
+          33,
+          36,
+          43,
+          51,
+          53,
+          67
+        ],
+        "final": 67
+      },
+      {
+        "name": "Diego",
+        "ranks": [
+          1,
+          2,
+          8,
+          12,
+          12,
+          17,
+          16,
+          7,
+          13,
+          5,
+          6,
+          2,
+          3,
+          1,
+          1,
+          1,
+          3
+        ],
+        "pts": [
+          3,
+          6,
+          7,
+          9,
+          10,
+          12,
+          16,
+          22,
+          23,
+          30,
+          32,
+          39,
+          44,
+          51,
+          56,
+          60,
           66
         ],
         "final": 66
@@ -642,9 +642,9 @@
           47,
           50,
           51,
-          60
+          61
         ],
-        "final": 60
+        "final": 61
       },
       {
         "name": "Cata",
@@ -707,7 +707,7 @@
           17,
           14,
           9,
-          11
+          10
         ],
         "pts": [
           3,
@@ -726,9 +726,9 @@
           41,
           46,
           50,
-          57
+          58
         ],
-        "final": 57
+        "final": 58
       },
       {
         "name": "Mely",
@@ -791,7 +791,7 @@
           24,
           27,
           19,
-          13
+          12
         ],
         "pts": [
           1,
@@ -810,6 +810,90 @@
           38,
           41,
           46,
+          56
+        ],
+        "final": 56
+      },
+      {
+        "name": "Ignacolo",
+        "ranks": [
+          15,
+          20,
+          23,
+          5,
+          2,
+          3,
+          7,
+          14,
+          19,
+          18,
+          17,
+          17,
+          18,
+          15,
+          19,
+          17,
+          14
+        ],
+        "pts": [
+          1,
+          2,
+          3,
+          11,
+          15,
+          17,
+          19,
+          20,
+          22,
+          26,
+          29,
+          32,
+          36,
+          42,
+          44,
+          47,
+          55
+        ],
+        "final": 55
+      },
+      {
+        "name": "José Pablo",
+        "ranks": [
+          33,
+          33,
+          33,
+          32,
+          31,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          33,
+          33,
+          32,
+          27,
+          28,
+          14
+        ],
+        "pts": [
+          0,
+          0,
+          0,
+          3,
+          4,
+          6,
+          9,
+          10,
+          14,
+          18,
+          20,
+          23,
+          27,
+          32,
+          41,
+          43,
           55
         ],
         "final": 55
@@ -833,7 +917,7 @@
           8,
           9,
           11,
-          14
+          16
         ],
         "pts": [
           1,
@@ -875,7 +959,7 @@
           11,
           9,
           11,
-          15
+          16
         ],
         "pts": [
           1,
@@ -894,93 +978,51 @@
           44,
           47,
           49,
-          53
+          54
         ],
-        "final": 53
+        "final": 54
       },
       {
-        "name": "Ignacolo",
+        "name": "Pedro",
         "ranks": [
-          15,
-          20,
-          23,
-          5,
-          2,
-          3,
-          7,
-          14,
-          19,
-          18,
-          17,
-          17,
-          18,
-          15,
-          19,
-          17,
-          15
-        ],
-        "pts": [
           1,
-          2,
-          3,
-          11,
-          15,
+          4,
+          13,
+          18,
+          18,
+          20,
           17,
           19,
-          20,
-          22,
-          26,
-          29,
-          32,
-          36,
-          42,
-          44,
-          47,
-          53
-        ],
-        "final": 53
-      },
-      {
-        "name": "José Pablo",
-        "ranks": [
-          33,
-          33,
-          33,
-          32,
-          31,
-          32,
-          32,
-          32,
-          32,
-          32,
-          32,
-          33,
-          33,
-          32,
-          27,
-          28,
-          17
+          8,
+          12,
+          13,
+          9,
+          11,
+          13,
+          9,
+          11,
+          18
         ],
         "pts": [
-          0,
-          0,
-          0,
           3,
           4,
-          6,
+          5,
+          8,
           9,
-          10,
-          14,
+          11,
+          15,
           18,
-          20,
-          23,
-          27,
-          32,
-          41,
+          25,
+          28,
+          30,
+          36,
+          39,
           43,
-          52
+          47,
+          49,
+          53
         ],
-        "final": 52
+        "final": 53
       },
       {
         "name": "Juan",
@@ -1001,7 +1043,7 @@
           11,
           14,
           15,
-          17
+          19
         ],
         "pts": [
           1,
@@ -1043,7 +1085,7 @@
           22,
           19,
           19,
-          17
+          19
         ],
         "pts": [
           1,
@@ -1067,48 +1109,6 @@
         "final": 52
       },
       {
-        "name": "Pedro",
-        "ranks": [
-          1,
-          4,
-          13,
-          18,
-          18,
-          20,
-          17,
-          19,
-          8,
-          12,
-          13,
-          9,
-          11,
-          13,
-          9,
-          11,
-          17
-        ],
-        "pts": [
-          3,
-          4,
-          5,
-          8,
-          9,
-          11,
-          15,
-          18,
-          25,
-          28,
-          30,
-          36,
-          39,
-          43,
-          47,
-          49,
-          52
-        ],
-        "final": 52
-      },
-      {
         "name": "Rodrigo",
         "ranks": [
           33,
@@ -1127,7 +1127,7 @@
           24,
           9,
           11,
-          21
+          19
         ],
         "pts": [
           0,
@@ -1146,51 +1146,9 @@
           38,
           47,
           49,
-          51
+          52
         ],
-        "final": 51
-      },
-      {
-        "name": "Benja",
-        "ranks": [
-          15,
-          24,
-          27,
-          29,
-          29,
-          28,
-          27,
-          29,
-          25,
-          24,
-          24,
-          24,
-          25,
-          20,
-          17,
-          19,
-          22
-        ],
-        "pts": [
-          1,
-          1,
-          2,
-          4,
-          5,
-          8,
-          12,
-          15,
-          19,
-          24,
-          26,
-          30,
-          33,
-          40,
-          45,
-          46,
-          50
-        ],
-        "final": 50
+        "final": 52
       },
       {
         "name": "Felipe Coloma",
@@ -1230,9 +1188,135 @@
           35,
           43,
           45,
+          51
+        ],
+        "final": 51
+      },
+      {
+        "name": "Benja",
+        "ranks": [
+          15,
+          24,
+          27,
+          29,
+          29,
+          28,
+          27,
+          29,
+          25,
+          24,
+          24,
+          24,
+          25,
+          20,
+          17,
+          19,
+          23
+        ],
+        "pts": [
+          1,
+          1,
+          2,
+          4,
+          5,
+          8,
+          12,
+          15,
+          19,
+          24,
+          26,
+          30,
+          33,
+          40,
+          45,
+          46,
           50
         ],
         "final": 50
+      },
+      {
+        "name": "Victo",
+        "ranks": [
+          15,
+          24,
+          27,
+          25,
+          24,
+          22,
+          24,
+          27,
+          29,
+          24,
+          24,
+          26,
+          30,
+          28,
+          25,
+          25,
+          23
+        ],
+        "pts": [
+          1,
+          1,
+          2,
+          5,
+          6,
+          9,
+          13,
+          16,
+          18,
+          24,
+          26,
+          28,
+          30,
+          34,
+          42,
+          44,
+          50
+        ],
+        "final": 50
+      },
+      {
+        "name": "Carmen",
+        "ranks": [
+          15,
+          20,
+          23,
+          8,
+          9,
+          17,
+          17,
+          24,
+          25,
+          28,
+          28,
+          26,
+          27,
+          30,
+          30,
+          32,
+          25
+        ],
+        "pts": [
+          1,
+          2,
+          3,
+          10,
+          11,
+          12,
+          15,
+          17,
+          19,
+          22,
+          24,
+          28,
+          31,
+          33,
+          37,
+          39,
+          49
+        ],
+        "final": 49
       },
       {
         "name": "Caro",
@@ -1253,7 +1337,7 @@
           17,
           19,
           19,
-          24
+          25
         ],
         "pts": [
           1,
@@ -1295,7 +1379,7 @@
           15,
           17,
           19,
-          24
+          25
         ],
         "pts": [
           1,
@@ -1319,41 +1403,41 @@
         "final": 49
       },
       {
-        "name": "Victo",
+        "name": "Tono",
         "ranks": [
           15,
-          24,
-          27,
-          25,
-          24,
+          4,
+          8,
+          12,
+          7,
+          12,
+          15,
+          17,
+          13,
+          18,
+          23,
+          17,
+          21,
           22,
-          24,
-          27,
-          29,
-          24,
-          24,
-          26,
-          30,
-          28,
           25,
           25,
-          24
+          25
         ],
         "pts": [
           1,
-          1,
-          2,
-          5,
-          6,
+          4,
+          7,
           9,
-          13,
-          16,
-          18,
-          24,
+          12,
+          14,
+          17,
+          19,
+          23,
           26,
-          28,
-          30,
-          34,
+          27,
+          32,
+          35,
+          39,
           42,
           44,
           49
@@ -1379,7 +1463,7 @@
           20,
           23,
           25,
-          24
+          25
         ],
         "pts": [
           3,
@@ -1403,88 +1487,46 @@
         "final": 49
       },
       {
-        "name": "Carmen",
+        "name": "Paz",
         "ranks": [
           15,
+          24,
+          27,
+          25,
+          24,
           20,
-          23,
-          8,
-          9,
           17,
           17,
           24,
-          25,
-          28,
-          28,
+          27,
+          27,
           26,
           27,
+          28,
           30,
-          30,
-          32,
-          28
+          29,
+          30
         ],
         "pts": [
+          1,
           1,
           2,
-          3,
-          10,
+          5,
+          6,
           11,
-          12,
           15,
-          17,
           19,
-          22,
-          24,
+          20,
+          23,
+          25,
           28,
           31,
-          33,
+          34,
           37,
-          39,
-          48
+          40,
+          47
         ],
-        "final": 48
-      },
-      {
-        "name": "Tono",
-        "ranks": [
-          15,
-          4,
-          8,
-          12,
-          7,
-          12,
-          15,
-          17,
-          13,
-          18,
-          23,
-          17,
-          21,
-          22,
-          25,
-          25,
-          28
-        ],
-        "pts": [
-          1,
-          4,
-          7,
-          9,
-          12,
-          14,
-          17,
-          19,
-          23,
-          26,
-          27,
-          32,
-          35,
-          39,
-          42,
-          44,
-          48
-        ],
-        "final": 48
+        "final": 47
       },
       {
         "name": "Carola P",
@@ -1505,7 +1547,7 @@
           26,
           29,
           29,
-          30
+          31
         ],
         "pts": [
           1,
@@ -1547,7 +1589,7 @@
           30,
           32,
           29,
-          30
+          31
         ],
         "pts": [
           3,
@@ -1565,48 +1607,6 @@
           31,
           33,
           36,
-          40,
-          45
-        ],
-        "final": 45
-      },
-      {
-        "name": "Paz",
-        "ranks": [
-          15,
-          24,
-          27,
-          25,
-          24,
-          20,
-          17,
-          17,
-          24,
-          27,
-          27,
-          26,
-          27,
-          28,
-          30,
-          29,
-          30
-        ],
-        "pts": [
-          1,
-          1,
-          2,
-          5,
-          6,
-          11,
-          15,
-          19,
-          20,
-          23,
-          25,
-          28,
-          31,
-          34,
-          37,
           40,
           45
         ],
@@ -1692,9 +1692,9 @@
           26,
           28,
           30,
-          35
+          36
         ],
-        "final": 35
+        "final": 36
       }
     ]
   },
@@ -3420,6 +3420,436 @@
       ]
     },
     {
+      "num": 65,
+      "grupo": "K",
+      "fecha": "27 jun",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "resH": 0,
+      "resA": 0,
+      "preds": [
+        {
+          "name": "José Pablo",
+          "h": 0,
+          "a": 0,
+          "pts": 3
+        },
+        {
+          "name": "Carmen",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Coni",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Felipe Coloma",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Ignacolo",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "joaco",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "Paz",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Rodrigo",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Tono",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "Trini Coloma",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "AguColoma",
+          "h": 1,
+          "a": 3,
+          "pts": 0
+        },
+        {
+          "name": "Benja",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Caro",
+          "h": 2,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Carola P",
+          "h": 2,
+          "a": 3,
+          "pts": 0
+        },
+        {
+          "name": "Cata",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Diego",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Domingo",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Fernando II",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Fernando IV",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Jaime",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Joselin",
+          "h": 2,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Juan",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Juanco",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "lica",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Lito",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Martín",
+          "h": 1,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Mely",
+          "h": 0,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Pablo (tú)",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Pedro",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Seb",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Tío Gucho",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Tomi",
+          "h": 2,
+          "a": 3,
+          "pts": 0
+        },
+        {
+          "name": "Vale",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Victo",
+          "h": 2,
+          "a": 0,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "num": 66,
+      "grupo": "K",
+      "fecha": "27 jun",
+      "team1": "DR Congo",
+      "team2": "Uzbekistan",
+      "resH": 3,
+      "resA": 1,
+      "preds": [
+        {
+          "name": "Fernando IV",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Ignacolo",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Jaime",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "joaco",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Pablo (tú)",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Paz",
+          "h": 3,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Pedro",
+          "h": 2,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Tomi",
+          "h": 2,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "Victo",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "AguColoma",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Benja",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Carmen",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Caro",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Carola P",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Cata",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Coni",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Diego",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Domingo",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Felipe Coloma",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Fernando II",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "José Pablo",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Joselin",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Juan",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Juanco",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "lica",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Lito",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Martín",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Mely",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Rodrigo",
+          "h": 2,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Seb",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Tío Gucho",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Tono",
+          "h": 0,
+          "a": 4,
+          "pts": 0
+        },
+        {
+          "name": "Trini Coloma",
+          "h": 0,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Vale",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        }
+      ]
+    },
+    {
       "num": 71,
       "grupo": "L",
       "fecha": "27 jun",
@@ -3852,46 +4282,46 @@
   ],
   "upcoming": [
     {
-      "num": 65,
-      "grupo": "K",
-      "fecha": "27 jun",
-      "team1": "Colombia",
-      "team2": "Portugal",
+      "num": 59,
+      "grupo": "J",
+      "fecha": "28 jun",
+      "team1": "Algeria",
+      "team2": "Austria",
       "preds": [
         {
           "name": "AguColoma",
           "h": 1,
-          "a": 3
+          "a": 1
         },
         {
           "name": "Benja",
-          "h": 1,
-          "a": 2
+          "h": 0,
+          "a": 1
         },
         {
           "name": "Carmen",
-          "h": 2,
+          "h": 0,
           "a": 2
         },
         {
           "name": "Caro",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Carola P",
-          "h": 2,
+          "h": 1,
           "a": 3
         },
         {
-          "name": "Cata",
+          "name": "Carola P",
           "h": 1,
           "a": 2
         },
         {
+          "name": "Cata",
+          "h": 1,
+          "a": 1
+        },
+        {
           "name": "Coni",
-          "h": 2,
-          "a": 2
+          "h": 0,
+          "a": 0
         },
         {
           "name": "Diego",
@@ -3900,22 +4330,22 @@
         },
         {
           "name": "Domingo",
-          "h": 1,
-          "a": 2
+          "h": 2,
+          "a": 1
         },
         {
           "name": "Felipe Coloma",
           "h": 2,
-          "a": 2
+          "a": 1
         },
         {
           "name": "Fernando II",
           "h": 1,
-          "a": 2
+          "a": 1
         },
         {
           "name": "Fernando IV",
-          "h": 1,
+          "h": 0,
           "a": 2
         },
         {
@@ -3925,267 +4355,267 @@
         },
         {
           "name": "Jaime",
-          "h": 1,
-          "a": 2
+          "h": 0,
+          "a": 1
         },
         {
           "name": "joaco",
-          "h": 1,
+          "h": 0,
           "a": 1
         },
         {
           "name": "José Pablo",
-          "h": 0,
-          "a": 0
+          "h": 2,
+          "a": 2
         },
         {
           "name": "Joselin",
-          "h": 2,
-          "a": 1
-        },
-        {
-          "name": "Juan",
           "h": 1,
           "a": 2
         },
         {
+          "name": "Juan",
+          "h": 1,
+          "a": 1
+        },
+        {
           "name": "Juanco",
-          "h": 0,
+          "h": 1,
           "a": 1
         },
         {
           "name": "lica",
           "h": 1,
-          "a": 2
+          "a": 1
         },
         {
           "name": "Lito",
-          "h": 1,
-          "a": 2
-        },
-        {
-          "name": "Martín",
-          "h": 1,
-          "a": 0
-        },
-        {
-          "name": "Mely",
-          "h": 0,
-          "a": 2
-        },
-        {
-          "name": "Pablo (tú)",
           "h": 0,
           "a": 1
         },
         {
-          "name": "Paz",
+          "name": "Martín",
+          "h": 0,
+          "a": 1
+        },
+        {
+          "name": "Mely",
           "h": 2,
+          "a": 0
+        },
+        {
+          "name": "Pablo (tú)",
+          "h": 0,
+          "a": 0
+        },
+        {
+          "name": "Paz",
+          "h": 1,
           "a": 2
         },
         {
           "name": "Pedro",
           "h": 1,
-          "a": 2
+          "a": 0
         },
         {
           "name": "Rodrigo",
-          "h": 2,
-          "a": 2
-        },
-        {
-          "name": "Seb",
-          "h": 1,
-          "a": 2
-        },
-        {
-          "name": "Tío Gucho",
-          "h": 1,
-          "a": 2
-        },
-        {
-          "name": "Tomi",
-          "h": 2,
-          "a": 3
-        },
-        {
-          "name": "Tono",
           "h": 1,
           "a": 1
         },
         {
-          "name": "Trini Coloma",
+          "name": "Seb",
           "h": 1,
+          "a": 1
+        },
+        {
+          "name": "Tío Gucho",
+          "h": 1,
+          "a": 0
+        },
+        {
+          "name": "Tomi",
+          "h": 3,
+          "a": 2
+        },
+        {
+          "name": "Tono",
+          "h": 2,
+          "a": 1
+        },
+        {
+          "name": "Trini Coloma",
+          "h": 2,
           "a": 1
         },
         {
           "name": "Vale",
           "h": 1,
-          "a": 2
+          "a": 1
         },
         {
           "name": "Victo",
-          "h": 2,
-          "a": 0
+          "h": 0,
+          "a": 1
         }
       ]
     },
     {
-      "num": 66,
-      "grupo": "K",
-      "fecha": "27 jun",
-      "team1": "DR Congo",
-      "team2": "Uzbekistan",
+      "num": 60,
+      "grupo": "J",
+      "fecha": "28 jun",
+      "team1": "Jordan",
+      "team2": "Argentina",
       "preds": [
         {
           "name": "AguColoma",
-          "h": 1,
-          "a": 1
+          "h": 0,
+          "a": 4
         },
         {
           "name": "Benja",
           "h": 0,
-          "a": 0
+          "a": 3
         },
         {
           "name": "Carmen",
           "h": 0,
-          "a": 1
+          "a": 3
         },
         {
           "name": "Caro",
-          "h": 0,
-          "a": 1
+          "h": 1,
+          "a": 4
         },
         {
           "name": "Carola P",
           "h": 1,
-          "a": 1
+          "a": 3
         },
         {
           "name": "Cata",
-          "h": 1,
-          "a": 1
+          "h": 0,
+          "a": 3
         },
         {
           "name": "Coni",
           "h": 1,
-          "a": 2
+          "a": 5
         },
         {
           "name": "Diego",
-          "h": 1,
+          "h": 0,
           "a": 2
         },
         {
           "name": "Domingo",
           "h": 1,
-          "a": 2
+          "a": 3
         },
         {
           "name": "Felipe Coloma",
           "h": 0,
-          "a": 1
+          "a": 4
         },
         {
           "name": "Fernando II",
           "h": 1,
-          "a": 2
+          "a": 3
         },
         {
           "name": "Fernando IV",
-          "h": 1,
-          "a": 0
+          "h": 0,
+          "a": 4
         },
         {
           "name": "Ignacolo",
-          "h": 1,
-          "a": 0
+          "h": 0,
+          "a": 4
         },
         {
           "name": "Jaime",
-          "h": 1,
-          "a": 0
+          "h": 0,
+          "a": 2
         },
         {
           "name": "joaco",
-          "h": 1,
-          "a": 0
+          "h": 0,
+          "a": 2
         },
         {
           "name": "José Pablo",
           "h": 0,
-          "a": 1
+          "a": 4
         },
         {
           "name": "Joselin",
           "h": 0,
-          "a": 1
+          "a": 3
         },
         {
           "name": "Juan",
-          "h": 1,
-          "a": 1
+          "h": 0,
+          "a": 3
         },
         {
           "name": "Juanco",
           "h": 0,
-          "a": 0
+          "a": 2
         },
         {
           "name": "lica",
           "h": 0,
-          "a": 1
+          "a": 2
         },
         {
           "name": "Lito",
-          "h": 1,
-          "a": 1
+          "h": 0,
+          "a": 2
         },
         {
           "name": "Martín",
           "h": 0,
-          "a": 0
+          "a": 3
         },
         {
           "name": "Mely",
           "h": 0,
-          "a": 0
+          "a": 2
         },
         {
           "name": "Pablo (tú)",
-          "h": 1,
-          "a": 0
+          "h": 0,
+          "a": 1
         },
         {
           "name": "Paz",
-          "h": 3,
-          "a": 0
+          "h": 0,
+          "a": 3
         },
         {
           "name": "Pedro",
-          "h": 2,
-          "a": 0
+          "h": 0,
+          "a": 1
         },
         {
           "name": "Rodrigo",
-          "h": 2,
+          "h": 0,
           "a": 2
         },
         {
           "name": "Seb",
-          "h": 1,
-          "a": 1
+          "h": 0,
+          "a": 3
         },
         {
           "name": "Tío Gucho",
-          "h": 1,
-          "a": 1
+          "h": 0,
+          "a": 2
         },
         {
           "name": "Tomi",
-          "h": 2,
-          "a": 1
+          "h": 0,
+          "a": 2
         },
         {
           "name": "Tono",
@@ -4195,17 +4625,17 @@
         {
           "name": "Trini Coloma",
           "h": 0,
-          "a": 2
+          "a": 3
         },
         {
           "name": "Vale",
           "h": 0,
-          "a": 0
+          "a": 2
         },
         {
           "name": "Victo",
-          "h": 1,
-          "a": 0
+          "h": 0,
+          "a": 1
         }
       ]
     }
@@ -19995,6 +20425,515 @@
       ]
     },
     {
+      "num": 65,
+      "grupo": "K",
+      "fecha": "27 jun",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "resH": 0,
+      "resA": 0,
+      "exact": [
+        "José Pablo"
+      ],
+      "right": [
+        "Carmen",
+        "Coni",
+        "Felipe Coloma",
+        "Ignacolo",
+        "Paz",
+        "Rodrigo",
+        "Tono",
+        "Trini Coloma",
+        "joaco"
+      ],
+      "wrong": [
+        "AguColoma",
+        "Benja",
+        "Caro",
+        "Carola P",
+        "Cata",
+        "Diego",
+        "Domingo",
+        "Fernando II",
+        "Fernando IV",
+        "Jaime",
+        "Joselin",
+        "Juan",
+        "Juanco",
+        "Lito",
+        "Martín",
+        "Mely",
+        "Pablo (tú)",
+        "Pedro",
+        "Seb",
+        "Tomi",
+        "Tío Gucho",
+        "Vale",
+        "Victo",
+        "lica"
+      ],
+      "preds": [
+        {
+          "name": "José Pablo",
+          "h": 0,
+          "a": 0,
+          "pts": 3
+        },
+        {
+          "name": "Carmen",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Coni",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Felipe Coloma",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Ignacolo",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "joaco",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "Paz",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Rodrigo",
+          "h": 2,
+          "a": 2,
+          "pts": 1
+        },
+        {
+          "name": "Tono",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "Trini Coloma",
+          "h": 1,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "AguColoma",
+          "h": 1,
+          "a": 3,
+          "pts": 0
+        },
+        {
+          "name": "Benja",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Caro",
+          "h": 2,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Carola P",
+          "h": 2,
+          "a": 3,
+          "pts": 0
+        },
+        {
+          "name": "Cata",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Diego",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Domingo",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Fernando II",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Fernando IV",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Jaime",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Joselin",
+          "h": 2,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Juan",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Juanco",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "lica",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Lito",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Martín",
+          "h": 1,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Mely",
+          "h": 0,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Pablo (tú)",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Pedro",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Seb",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Tío Gucho",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Tomi",
+          "h": 2,
+          "a": 3,
+          "pts": 0
+        },
+        {
+          "name": "Vale",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Victo",
+          "h": 2,
+          "a": 0,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "num": 66,
+      "grupo": "K",
+      "fecha": "27 jun",
+      "team1": "DR Congo",
+      "team2": "Uzbekistan",
+      "resH": 3,
+      "resA": 1,
+      "exact": [],
+      "right": [
+        "Fernando IV",
+        "Ignacolo",
+        "Jaime",
+        "Pablo (tú)",
+        "Paz",
+        "Pedro",
+        "Tomi",
+        "Victo",
+        "joaco"
+      ],
+      "wrong": [
+        "AguColoma",
+        "Benja",
+        "Carmen",
+        "Caro",
+        "Carola P",
+        "Cata",
+        "Coni",
+        "Diego",
+        "Domingo",
+        "Felipe Coloma",
+        "Fernando II",
+        "Joselin",
+        "José Pablo",
+        "Juan",
+        "Juanco",
+        "Lito",
+        "Martín",
+        "Mely",
+        "Rodrigo",
+        "Seb",
+        "Tono",
+        "Trini Coloma",
+        "Tío Gucho",
+        "Vale",
+        "lica"
+      ],
+      "preds": [
+        {
+          "name": "Fernando IV",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Ignacolo",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Jaime",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "joaco",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Pablo (tú)",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Paz",
+          "h": 3,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Pedro",
+          "h": 2,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "Tomi",
+          "h": 2,
+          "a": 1,
+          "pts": 1
+        },
+        {
+          "name": "Victo",
+          "h": 1,
+          "a": 0,
+          "pts": 1
+        },
+        {
+          "name": "AguColoma",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Benja",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Carmen",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Caro",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Carola P",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Cata",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Coni",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Diego",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Domingo",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Felipe Coloma",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Fernando II",
+          "h": 1,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "José Pablo",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Joselin",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Juan",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Juanco",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "lica",
+          "h": 0,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Lito",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Martín",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Mely",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        },
+        {
+          "name": "Rodrigo",
+          "h": 2,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Seb",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Tío Gucho",
+          "h": 1,
+          "a": 1,
+          "pts": 0
+        },
+        {
+          "name": "Tono",
+          "h": 0,
+          "a": 4,
+          "pts": 0
+        },
+        {
+          "name": "Trini Coloma",
+          "h": 0,
+          "a": 2,
+          "pts": 0
+        },
+        {
+          "name": "Vale",
+          "h": 0,
+          "a": 0,
+          "pts": 0
+        }
+      ]
+    },
+    {
       "num": 67,
       "grupo": "L",
       "fecha": "17 jun",
@@ -22239,6 +23178,18 @@
     {
       "num": 72,
       "h": 2,
+      "a": 1,
+      "fecha": "27 jun"
+    },
+    {
+      "num": 65,
+      "h": 0,
+      "a": 0,
+      "fecha": "27 jun"
+    },
+    {
+      "num": 66,
+      "h": 3,
       "a": 1,
       "fecha": "27 jun"
     }
