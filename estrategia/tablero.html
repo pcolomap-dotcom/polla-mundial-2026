@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estrategia Pablo · Polla Mundialera 2026</title>
+</head>
+<body>
+<style>
+  :root{
+    --pitch:#0f3d2e; --pitch-2:#0b3125; --chalk:#f4f7f2; --chalk-dim:#c7d4cb;
+    --gold:#e8b73a; --gold-deep:#c8931c; --red:#d8402f; --line:rgba(244,247,242,.16);
+    --card:#12463433; --ink:#0c231a; --paper:#f3f5ef; --paper-2:#e8ede2;
+    --paper-ink:#183329; --paper-dim:#5c6f63; --paper-line:#d3dad0;
+    --bg:var(--pitch); --fg:var(--chalk); --fg-dim:var(--chalk-dim);
+    --panel:rgba(255,255,255,.05); --panel-line:var(--line); --accent:var(--gold);
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:var(--paper); --fg:var(--paper-ink); --fg-dim:var(--paper-dim);
+      --panel:#ffffff; --panel-line:var(--paper-line); --accent:var(--gold-deep); }
+  }
+  :root[data-theme="dark"]{ --bg:var(--pitch); --fg:var(--chalk); --fg-dim:var(--chalk-dim);
+    --panel:rgba(255,255,255,.05); --panel-line:var(--line); --accent:var(--gold); }
+  :root[data-theme="light"]{ --bg:var(--paper); --fg:var(--paper-ink); --fg-dim:var(--paper-dim);
+    --panel:#ffffff; --panel-line:var(--paper-line); --accent:var(--gold-deep); }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:940px;margin:0 auto;padding:clamp(18px,4vw,44px);}
+  .kicker{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--accent);font-weight:700;}
+  h1{font-family:"Arial Narrow","Helvetica Neue",Impact,sans-serif;
+    font-weight:800;letter-spacing:-.01em;text-wrap:balance;
+    font-size:clamp(2rem,6vw,3.4rem);line-height:1.02;margin:.15em 0 .1em;}
+  h2{font-family:"Arial Narrow","Helvetica Neue",sans-serif;font-weight:800;
+    text-transform:uppercase;letter-spacing:.04em;font-size:1.05rem;
+    margin:0 0 .2em;display:flex;align-items:center;gap:.5em;}
+  p{margin:.4em 0;}
+  .tnum{font-variant-numeric:tabular-nums;}
+  .hero{border-bottom:1px solid var(--panel-line);padding-bottom:22px;margin-bottom:26px;}
+  .hero .sub{color:var(--fg-dim);max-width:60ch;font-size:1.02rem;}
+
+  .standrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;}
+  .stat{flex:1 1 150px;background:var(--panel);border:1px solid var(--panel-line);
+    border-radius:12px;padding:14px 16px;}
+  .stat .lab{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-dim);}
+  .stat .big{font-family:"Arial Narrow",sans-serif;font-weight:800;font-size:2.1rem;
+    line-height:1;margin-top:4px;}
+  .stat .big small{font-size:.9rem;font-weight:600;color:var(--fg-dim);}
+  .stat.hot .big{color:var(--accent);}
+
+  section{margin:30px 0;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:680px){.grid2{grid-template-columns:1fr;}}
+  .panel{background:var(--panel);border:1px solid var(--panel-line);border-radius:14px;
+    padding:18px 20px;}
+
+  .key{position:relative;overflow:hidden;
+    background:linear-gradient(135deg, color-mix(in srgb,var(--accent) 22%, transparent), transparent 70%);
+    border:1px solid color-mix(in srgb,var(--accent) 45%, var(--panel-line));}
+  .key .crest{position:absolute;right:-10px;top:-18px;font-size:8rem;opacity:.10;
+    transform:rotate(8deg);pointer-events:none;}
+  .key h2{color:var(--accent);}
+
+  table{width:100%;border-collapse:collapse;font-size:.95rem;}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--panel-line);}
+  th{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-dim);font-weight:700;}
+  td.r{text-align:right;font-variant-numeric:tabular-nums;}
+  .win{color:var(--accent);font-weight:800;}
+  .lose{color:var(--fg-dim);}
+
+  ul.clean{list-style:none;padding:0;margin:.3em 0;display:flex;flex-direction:column;gap:10px;}
+  ul.clean li{display:flex;gap:10px;align-items:flex-start;}
+  .tick{color:var(--accent);font-weight:800;flex:none;}
+  .dead{color:var(--red);font-weight:800;}
+
+  .rec{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+    padding:11px 0;border-bottom:1px solid var(--panel-line);}
+  .rec:last-child{border-bottom:none;}
+  .rec .m{font-size:.9rem;}
+  .rec .score{font-family:"Arial Narrow",sans-serif;font-weight:800;font-size:1.25rem;
+    color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .rec .why{color:var(--fg-dim);font-size:.82rem;display:block;margin-top:2px;}
+
+  .flag{font-size:1.05em;}
+  .note{font-size:.82rem;color:var(--fg-dim);border-left:3px solid var(--accent);
+    padding-left:12px;margin-top:8px;}
+  .foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--panel-line);
+    color:var(--fg-dim);font-size:.8rem;}
+  .warn{background:color-mix(in srgb,var(--red) 12%,transparent);
+    border:1px solid color-mix(in srgb,var(--red) 40%,var(--panel-line));border-radius:12px;padding:14px 18px;}
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Polla Mundialera Colomas y Asociados · 12 jul 2026</div>
+    <h1>Cómo puede ganar Pablo</h1>
+    <p class="sub">Se jugaron los cuartos. Quedan dos semifinales, el 3er puesto, la
+      final y los premios especiales. Este es el mapa de lo que Pablo controla y de
+      lo que tiene que alentar.</p>
+
+    <div class="standrow">
+      <div class="stat"><div class="lab">Tu posición</div>
+        <div class="big tnum">#12</div></div>
+      <div class="stat"><div class="lab">Tus puntos</div>
+        <div class="big tnum">107</div></div>
+      <div class="stat"><div class="lab">Líder · Jaime</div>
+        <div class="big tnum">136 <small>+29</small></div></div>
+      <div class="stat hot"><div class="lab">Prob. de ganar</div>
+        <div class="big tnum">~0,1–0,3%</div></div>
+    </div>
+  </header>
+
+  <section class="panel key">
+    <div class="crest">🥇</div>
+    <h2>🔑 La llave maestra: la Bota de Oro</h2>
+    <p>Aun con tu bracket perfecto —<b>España campeón, Francia 3ª y Mbappé mejor
+      jugador</b>— el goleador decide todo:</p>
+    <table>
+      <thead><tr><th>Si el máximo goleador es…</th><th class="r">Tu resultado</th></tr></thead>
+      <tbody>
+        <tr><td>Mbappé <span class="lose">(lo más probable · pick de Jaime)</span></td>
+            <td class="r lose">terminas ~#5</td></tr>
+        <tr><td><b>Mikel Oyarzabal</b> <span class="win">(tu pick)</span></td>
+            <td class="r win">terminas #1 🏆</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Tu podio + MVP te suben hasta 5º. Lo <b>único</b> que te corona
+      es que Oyarzabal gane la Bota de Oro. Encaja con el resto: si España es campeón,
+      Oyarzabal juega 2 partidos más y puede pasar a Mbappé (hoy 8 goles).</p>
+  </section>
+
+  <div class="grid2">
+    <section class="panel">
+      <h2>📌 Tus especiales (bloqueados)</h2>
+      <ul class="clean">
+        <li><span class="tick">✓</span><div><b>1º España</b> — vivo, favorito. Tu pilar.</div></li>
+        <li><span class="dead">✕</span><div><b>2º Brasil</b> — <span class="dead">MUERTO</span>.
+          Eliminado: un hueco de −15 que arrastras fijo.</div></li>
+        <li><span class="tick">✓</span><div><b>3º Francia</b> — vivo. +10 si termina 3ª.</div></li>
+        <li><span class="tick">✓</span><div><b>Goleador Oyarzabal</b> — vivo, longshot: tu bala de plata.</div></li>
+        <li><span class="tick">✓</span><div><b>MVP Mbappé</b> — vivo, favorito: tu mejor carta.</div></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>📣 Qué alentar</h2>
+      <ul class="clean">
+        <li><span class="tick">✓</span><div><b>España le gana a Francia</b> en la semi
+          (Francia baja al 3er puesto).</div></li>
+        <li><span class="tick">✓</span><div><b>Francia gana el 3er puesto</b> → Francia 3ª.
+          Te da +10 y le quita +15 a Jaime, que tiene a Francia 2ª.</div></li>
+        <li><span class="tick">✓</span><div><b>España sale campeona.</b></div></li>
+        <li><span class="tick">✓</span><div><b>Mbappé, mejor jugador.</b></div></li>
+        <li><span class="dead">✕</span><div>Tu pesadilla: <b>Francia finalista</b> (dispara a Jaime).</div></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="panel">
+    <h2>🎯 Lo único que controlas · tus pronósticos pendientes</h2>
+    <p style="color:var(--fg-dim);font-size:.9rem;margin-top:0">Envíalos antes de cada
+      partido. Apuesta al mundo en que ganas: exacto en semis vale 6, en 3er puesto y final vale 8.</p>
+    <div class="rec"><div class="m"><span class="flag">🇫🇷</span> Francia vs España <span class="flag">🇪🇸</span> · SF1
+        <span class="why">Francia debe caer al 3er puesto</span></div>
+      <div class="score">1 – 2</div></div>
+    <div class="rec"><div class="m"><span class="flag">🏴</span> Inglaterra vs Argentina <span class="flag">🇦🇷</span> · SF2
+        <span class="why">Inglaterra subcampeón es tu mejor bracket</span></div>
+      <div class="score">2 – 1</div></div>
+    <div class="rec"><div class="m"><span class="flag">🇫🇷</span> Francia · 3er lugar
+        <span class="why">Francia 3ª: +10 para ti, 0 para Jaime</span></div>
+      <div class="score">2 – 1</div></div>
+    <div class="rec"><div class="m"><span class="flag">🇪🇸</span> España · Final
+        <span class="why">España campeón es tu pilar</span></div>
+      <div class="score">2 – 1</div></div>
+  </section>
+
+  <section class="warn">
+    <h2 style="color:var(--red)">⚠️ Acción #1 · aclara el puntaje del MVP</h2>
+    <p style="margin-bottom:6px">El reglamento y el sitio no coinciden, y eso cambia
+      cuánto vale tu Mbappé:</p>
+    <table>
+      <thead><tr><th>Fuente</th><th class="r">Campeón</th><th class="r">Goleador</th><th class="r">MVP</th></tr></thead>
+      <tbody>
+        <tr><td>Reglamento PDF</td><td class="r tnum">20</td><td class="r tnum">10</td><td class="r tnum">10</td></tr>
+        <tr><td>Ranking del sitio</td><td class="r tnum">25</td><td class="r tnum">15</td><td class="r win tnum">20</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="border-color:var(--red)">Te conviene que rija el del sitio
+      (MVP=20): tu Mbappé es favorito. Pregúntale al organizador cuál manda.</p>
+  </section>
+
+  <p class="foot">Generado por el toolkit de agentes <code>estrategia/agentes_polla.py</code>.
+    Probabilidades por Monte Carlo (40.000 sims) con supuestos editables de fuerza de
+    equipos y carrera de goleador. El “qué alentar” es combinatoria exacta de los 16
+    desenlaces del podio y no depende de esos supuestos.</p>
+</div>
+</body>
+</html>
