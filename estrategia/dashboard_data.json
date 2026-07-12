@@ -1,0 +1,619 @@
+{
+ "generated": true,
+ "leader": {
+  "name": "Jaime",
+  "pts": 136
+ },
+ "semis": [
+  {
+   "a": "Francia",
+   "b": "España",
+   "advA": 48,
+   "advB": 52,
+   "scores": [
+    "Francia 1-1 España · 12%",
+    "Francia 0-1 España · 9%",
+    "Francia 1-0 España · 9%"
+   ]
+  },
+  {
+   "a": "Inglaterra",
+   "b": "Argentina",
+   "advA": 39,
+   "advB": 61,
+   "scores": [
+    "Inglaterra 1-1 Argentina · 12%",
+    "Inglaterra 0-1 Argentina · 10%",
+    "Inglaterra 1-2 Argentina · 9%"
+   ]
+  }
+ ],
+ "camino": [
+  {
+   "team": "España",
+   "champ": 30,
+   "final": 52,
+   "third": 29
+  },
+  {
+   "team": "Argentina",
+   "champ": 29,
+   "final": 61,
+   "third": 18
+  },
+  {
+   "team": "Francia",
+   "champ": 27,
+   "final": 48,
+   "third": 30
+  },
+  {
+   "team": "Inglaterra",
+   "champ": 14,
+   "final": 39,
+   "third": 22
+  }
+ ],
+ "players": [
+  {
+   "name": "Pablo (tú)",
+   "disp": "Pablo",
+   "rank": 12,
+   "pts": 107,
+   "gapLead": 29,
+   "tier": "longshot",
+   "win": 0.0,
+   "top3": 0.5,
+   "top5": 3.3,
+   "last": 0,
+   "avgRank": 16,
+   "specials": [
+    {
+     "txt": "1º España",
+     "alive": true
+    },
+    {
+     "txt": "2º Brasil",
+     "alive": false
+    },
+    {
+     "txt": "3º Francia",
+     "alive": true
+    },
+    {
+     "txt": "Goleador Mikel Oyarzabal",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Mbappé",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Mikel Oyarzabal**).",
+   "dream": {
+    "champ": "España",
+    "run": "Inglaterra",
+    "third": "Francia",
+    "podium": 30,
+    "condWin": 1,
+    "condTop3": 5
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "España",
+     "score": "1 – 2",
+     "fav": true,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Inglaterra",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "aunque Argentina es favorito, te conviene por tu posición vs rivales"
+    },
+    {
+     "match": "3er lugar · Francia vs Argentina",
+     "pick": "Francia",
+     "score": "2 – 1",
+     "fav": true,
+     "reason": "tu 3º: +10"
+    },
+    {
+     "match": "Final · España vs Inglaterra",
+     "pick": "España",
+     "score": "2 – 0",
+     "fav": true,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Contrarian selectivo",
+    "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."
+   },
+   "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
+   "keyInsight": "Tu combo depende de que **Mikel Oyarzabal** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."
+  },
+  {
+   "name": "Martín",
+   "disp": "Martín",
+   "rank": 5,
+   "pts": 116,
+   "gapLead": 20,
+   "tier": "candidato",
+   "win": 9.7,
+   "top3": 32.0,
+   "top5": 47.7,
+   "last": 0,
+   "avgRank": 7,
+   "specials": [
+    {
+     "txt": "1º España",
+     "alive": true
+    },
+    {
+     "txt": "2º Argentina",
+     "alive": true
+    },
+    {
+     "txt": "3º Francia",
+     "alive": true
+    },
+    {
+     "txt": "Goleador Mbappé",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Harry Kane",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya **no** puede ser tu MVP **Harry Kane** salvo que ese sea otro jugador.",
+   "dream": {
+    "champ": "España",
+    "run": "Argentina",
+    "third": "Francia",
+    "podium": 45,
+    "condWin": 64,
+    "condTop3": 100
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "España",
+     "score": "1 – 2",
+     "fav": true,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Argentina",
+     "score": "0 – 2",
+     "fav": true,
+     "reason": "tu subcampeón: debe ser finalista"
+    },
+    {
+     "match": "3er lugar · Francia vs Inglaterra",
+     "pick": "Francia",
+     "score": "2 – 0",
+     "fav": true,
+     "reason": "tu 3º: +10"
+    },
+    {
+     "match": "Final · España vs Argentina",
+     "pick": "España",
+     "score": "2 – 1",
+     "fav": true,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Cobertura / chalk",
+    "desc": "Estás arriba: juega a los favoritos y replica lo que harían tus rivales directos. No busques héroe; que nadie te pase barato."
+   },
+   "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
+   "keyInsight": "Eres candidato real (10% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."
+  },
+  {
+   "name": "José Pablo",
+   "disp": "José Pablo",
+   "rank": 30,
+   "pts": 89,
+   "gapLead": 47,
+   "tier": "fondo",
+   "win": 0.0,
+   "top3": 0.0,
+   "top5": 0.0,
+   "last": 0,
+   "avgRank": 27,
+   "specials": [
+    {
+     "txt": "1º España",
+     "alive": true
+    },
+    {
+     "txt": "2º Alemania",
+     "alive": false
+    },
+    {
+     "txt": "3º Argentina",
+     "alive": true
+    },
+    {
+     "txt": "Goleador Mikel Oyarzabal",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Mbappé",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Mikel Oyarzabal**).",
+   "dream": {
+    "champ": "España",
+    "run": "Inglaterra",
+    "third": "Argentina",
+    "podium": 30,
+    "condWin": 0,
+    "condTop3": 0
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "España",
+     "score": "1 – 2",
+     "fav": true,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Inglaterra",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "así Argentina cae al 3er puesto (tu 3º)"
+    },
+    {
+     "match": "3er lugar · Francia vs Argentina",
+     "pick": "Argentina",
+     "score": "1 – 2",
+     "fav": false,
+     "reason": "tu 3º: +10"
+    },
+    {
+     "match": "Final · España vs Inglaterra",
+     "pick": "España",
+     "score": "2 – 0",
+     "fav": true,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Máxima varianza",
+    "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
+   },
+   "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
+   "keyInsight": "Tu combo depende de que **Mikel Oyarzabal** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."
+  },
+  {
+   "name": "Benja",
+   "disp": "Benja",
+   "rank": 27,
+   "pts": 93,
+   "gapLead": 43,
+   "tier": "longshot",
+   "win": 0.0,
+   "top3": 1.4,
+   "top5": 6.5,
+   "last": 0,
+   "avgRank": 22,
+   "specials": [
+    {
+     "txt": "1º Francia",
+     "alive": true
+    },
+    {
+     "txt": "2º Brasil",
+     "alive": false
+    },
+    {
+     "txt": "3º España",
+     "alive": true
+    },
+    {
+     "txt": "Goleador Mbappé",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Mbappé",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "⚠️ Elegiste a **Mbappé** para goleador **y** para mejor jugador, pero un jugador no puede ganar los dos. En la práctica solo puedes sumar **uno** de esos dos premios (máx. 10 pts, no 20).",
+   "dream": {
+    "champ": "Francia",
+    "run": "Inglaterra",
+    "third": "España",
+    "podium": 30,
+    "condWin": 0,
+    "condTop3": 5
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "Francia",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Inglaterra",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "aunque Argentina es favorito, te conviene por tu posición vs rivales"
+    },
+    {
+     "match": "3er lugar · España vs Argentina",
+     "pick": "España",
+     "score": "2 – 1",
+     "fav": true,
+     "reason": "tu 3º: +10"
+    },
+    {
+     "match": "Final · Francia vs Inglaterra",
+     "pick": "Francia",
+     "score": "2 – 0",
+     "fav": true,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Máxima varianza",
+    "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
+   },
+   "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
+   "keyInsight": "Tu goleador y tu MVP son el mismo jugador (Mbappé): solo puedes sumar uno de los dos. Ese techo te limita; necesitas además acertar podio y partidos."
+  },
+  {
+   "name": "Coni",
+   "disp": "Coni",
+   "rank": 34,
+   "pts": 75,
+   "gapLead": 61,
+   "tier": "fondo",
+   "win": 0.0,
+   "top3": 0.0,
+   "top5": 0.0,
+   "last": 62,
+   "avgRank": 32,
+   "specials": [
+    {
+     "txt": "1º Inglaterra",
+     "alive": true
+    },
+    {
+     "txt": "2º Francia",
+     "alive": true
+    },
+    {
+     "txt": "3º Portugal",
+     "alive": false
+    },
+    {
+     "txt": "Goleador Harry Kane",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Mbappé",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Harry Kane**).",
+   "dream": {
+    "champ": "Inglaterra",
+    "run": "Francia",
+    "third": "España",
+    "podium": 35,
+    "condWin": 0,
+    "condTop3": 0
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "Francia",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "tu subcampeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Inglaterra",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "3er lugar · España vs Argentina",
+     "pick": "España",
+     "score": "2 – 1",
+     "fav": true,
+     "reason": "favorito del cruce"
+    },
+    {
+     "match": "Final · Francia vs Inglaterra",
+     "pick": "Inglaterra",
+     "score": "1 – 2",
+     "fav": false,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Máxima varianza",
+    "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
+   },
+   "sanMarino": "🚨 Riesgo ALTO de último lugar: **62%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.",
+   "keyInsight": "Tu combo depende de que **Harry Kane** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."
+  },
+  {
+   "name": "Caro",
+   "disp": "Caro",
+   "rank": 24,
+   "pts": 95,
+   "gapLead": 41,
+   "tier": "longshot",
+   "win": 1.1,
+   "top3": 8.8,
+   "top5": 14.5,
+   "last": 0,
+   "avgRank": 19,
+   "specials": [
+    {
+     "txt": "1º Argentina",
+     "alive": true
+    },
+    {
+     "txt": "2º España",
+     "alive": true
+    },
+    {
+     "txt": "3º Francia",
+     "alive": true
+    },
+    {
+     "txt": "Goleador Mbappé",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Messi",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya **no** puede ser tu MVP **Messi** salvo que ese sea otro jugador.",
+   "dream": {
+    "champ": "Argentina",
+    "run": "España",
+    "third": "Francia",
+    "podium": 45,
+    "condWin": 6,
+    "condTop3": 79
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "España",
+     "score": "1 – 2",
+     "fav": true,
+     "reason": "tu subcampeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Argentina",
+     "score": "0 – 2",
+     "fav": true,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "3er lugar · Francia vs Inglaterra",
+     "pick": "Francia",
+     "score": "2 – 0",
+     "fav": true,
+     "reason": "tu 3º: +10"
+    },
+    {
+     "match": "Final · España vs Argentina",
+     "pick": "Argentina",
+     "score": "1 – 2",
+     "fav": false,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Máxima varianza",
+    "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
+   },
+   "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
+   "keyInsight": "Tu mejor escenario (Argentina campeón, Francia 3º) te da +45 de podio. El título está lejos; juega a escalar y a no quedar último."
+  },
+  {
+   "name": "Carola P",
+   "disp": "Carola Puga",
+   "rank": 19,
+   "pts": 100,
+   "gapLead": 36,
+   "tier": "longshot",
+   "win": 0.0,
+   "top3": 6.2,
+   "top5": 10.7,
+   "last": 0,
+   "avgRank": 21,
+   "specials": [
+    {
+     "txt": "1º Francia",
+     "alive": true
+    },
+    {
+     "txt": "2º Brasil",
+     "alive": false
+    },
+    {
+     "txt": "3º España",
+     "alive": true
+    },
+    {
+     "txt": "Goleador Messi",
+     "alive": true
+    },
+    {
+     "txt": "Balón de Oro Mbappé",
+     "alive": true
+    }
+   ],
+   "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Messi**).",
+   "dream": {
+    "champ": "Francia",
+    "run": "Argentina",
+    "third": "España",
+    "podium": 30,
+    "condWin": 0,
+    "condTop3": 29
+   },
+   "apuestas": [
+    {
+     "match": "Semifinal · Francia vs España",
+     "pick": "Francia",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "tu campeón: debe ser finalista"
+    },
+    {
+     "match": "Semifinal · Inglaterra vs Argentina",
+     "pick": "Argentina",
+     "score": "0 – 2",
+     "fav": true,
+     "reason": "favorito del cruce"
+    },
+    {
+     "match": "3er lugar · España vs Inglaterra",
+     "pick": "España",
+     "score": "2 – 0",
+     "fav": true,
+     "reason": "tu 3º: +10"
+    },
+    {
+     "match": "Final · Francia vs Argentina",
+     "pick": "Francia",
+     "score": "2 – 1",
+     "fav": true,
+     "reason": "tu campeón: +20"
+    }
+   ],
+   "style": {
+    "label": "Contrarian selectivo",
+    "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."
+   },
+   "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
+   "keyInsight": "Tu combo depende de que **Messi** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."
+  }
+ ]
+}

@@ -9,9 +9,10 @@ mejor jugador), que **todavía no se otorgan**.
 Todo este análisis lo genera el toolkit de agentes en
 [`agentes_polla.py`](./agentes_polla.py). Corre `python3 estrategia/agentes_polla.py`
 para reproducir cada tabla. Hay un tablero visual de una página en
-[`tablero.html`](./tablero.html) (ábrelo en el navegador). Los informes para los
-demás jugadores (Martín, José Pablo, Benja, Coni, Caro, Carola Puga) están en
-[`INFORMES.md`](./INFORMES.md).
+[`tablero.html`](./tablero.html) y un **tablero interactivo con los 7 jugadores** en
+[`tableros.html`](./tableros.html) (ábrelos en el navegador). Los informes escritos
+para los demás jugadores (Martín, José Pablo, Benja, Coni, Caro, Carola Puga) están
+en [`INFORMES.md`](./INFORMES.md).
 
 > **Reglas usadas:** puntaje del **reglamento** (Campeón 20 · Subcampeón 15 · 3º 10
 > · Goleador 10 · Balón de Oro 10) y **un jugador no puede ganar Goleador y Balón de

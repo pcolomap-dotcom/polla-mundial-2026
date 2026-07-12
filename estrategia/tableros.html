@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tableros de estrategia · Polla Mundial 2026</title>
+</head>
+<body>
+<style>
+:root{
+  --pitch:#0f3d2e; --chalk:#f4f7f2; --chalk-dim:#c7d4cb; --gold:#e8b73a;
+  --gold-deep:#c8931c; --red:#d8402f; --green-ok:#4caf7d; --line:rgba(244,247,242,.15);
+  --paper:#f3f5ef; --paper-ink:#183329; --paper-dim:#5c6f63; --paper-line:#d3dad0;
+  --bg:var(--pitch); --fg:var(--chalk); --fg-dim:var(--chalk-dim);
+  --panel:rgba(255,255,255,.05); --panel-line:var(--line); --accent:var(--gold);
+  --chip:rgba(255,255,255,.07);
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:var(--paper); --fg:var(--paper-ink); --fg-dim:var(--paper-dim);
+    --panel:#ffffff; --panel-line:var(--paper-line); --accent:var(--gold-deep);
+    --chip:#eef1ea; --line:var(--paper-line); }
+}
+:root[data-theme="dark"]{ --bg:var(--pitch); --fg:var(--chalk); --fg-dim:var(--chalk-dim);
+  --panel:rgba(255,255,255,.05); --panel-line:var(--line); --accent:var(--gold); --chip:rgba(255,255,255,.07);}
+:root[data-theme="light"]{ --bg:var(--paper); --fg:var(--paper-ink); --fg-dim:var(--paper-dim);
+  --panel:#ffffff; --panel-line:var(--paper-line); --accent:var(--gold-deep); --chip:#eef1ea;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;line-height:1.5;}
+.wrap{max-width:960px;margin:0 auto;padding:clamp(16px,4vw,40px);}
+.kicker{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700;}
+h1{font-family:"Arial Narrow","Helvetica Neue",Impact,sans-serif;font-weight:800;
+  font-size:clamp(1.9rem,5.5vw,3rem);line-height:1.02;margin:.12em 0;text-wrap:balance;}
+h2{font-family:"Arial Narrow","Helvetica Neue",sans-serif;font-weight:800;text-transform:uppercase;
+  letter-spacing:.04em;font-size:1rem;margin:0 0 .35em;display:flex;align-items:center;gap:.45em;}
+.sub{color:var(--fg-dim);max-width:64ch;}
+.tnum{font-variant-numeric:tabular-nums;}
+.panel{background:var(--panel);border:1px solid var(--panel-line);border-radius:14px;padding:16px 18px;}
+section{margin:22px 0;}
+.shared{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:720px){.shared{grid-template-columns:1fr;}}
+table{width:100%;border-collapse:collapse;font-size:.92rem;}
+th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--panel-line);}
+th{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-dim);font-weight:700;}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;}
+.mini{font-size:.82rem;color:var(--fg-dim);margin-top:6px;}
+
+nav.players{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;}
+.pill{border:1px solid var(--panel-line);background:var(--chip);color:var(--fg);
+  padding:8px 15px;border-radius:999px;cursor:pointer;font-size:.9rem;font-weight:600;
+  transition:.15s;}
+.pill:hover{border-color:var(--accent);}
+.pill[aria-selected="true"]{background:var(--accent);color:#12231a;border-color:var(--accent);}
+.pill .rk{opacity:.7;font-weight:700;font-size:.8em;margin-right:5px;}
+
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;
+  border-bottom:1px solid var(--panel-line);padding-bottom:14px;margin-bottom:16px;}
+.head .who{font-family:"Arial Narrow",sans-serif;font-weight:800;font-size:2rem;line-height:1;}
+.tierbadge{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;
+  padding:3px 9px;border-radius:999px;}
+.tier-candidato{background:color-mix(in srgb,var(--accent) 22%,transparent);color:var(--accent);
+  border:1px solid var(--accent);}
+.tier-longshot{background:var(--chip);color:var(--fg-dim);border:1px solid var(--panel-line);}
+.tier-fondo{background:color-mix(in srgb,var(--red) 15%,transparent);color:var(--red);
+  border:1px solid color-mix(in srgb,var(--red) 45%,var(--panel-line));}
+
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 2px;}
+.stat{flex:1 1 90px;background:var(--panel);border:1px solid var(--panel-line);border-radius:11px;padding:10px 12px;}
+.stat .lab{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-dim);}
+.stat .big{font-family:"Arial Narrow",sans-serif;font-weight:800;font-size:1.55rem;line-height:1;margin-top:3px;}
+.stat.win .big{color:var(--accent);}
+.stat.risk .big{color:var(--red);}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;}
+@media(max-width:720px){.cols{grid-template-columns:1fr;}}
+ul.clean{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
+ul.clean li{display:flex;gap:9px;align-items:flex-start;font-size:.92rem;}
+.ok{color:var(--green-ok);font-weight:800;flex:none;}
+.no{color:var(--red);font-weight:800;flex:none;}
+.note{font-size:.85rem;color:var(--fg-dim);background:var(--chip);border-radius:10px;padding:9px 12px;margin-top:8px;}
+
+.bet{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:9px 0;
+  border-bottom:1px solid var(--panel-line);}
+.bet:last-child{border:none;}
+.bet .m{font-size:.82rem;}
+.bet .m .why{display:block;color:var(--fg-dim);font-size:.76rem;margin-top:2px;}
+.bet .pick{text-align:right;white-space:nowrap;}
+.bet .pick .sc{font-family:"Arial Narrow",sans-serif;font-weight:800;font-size:1.15rem;color:var(--accent);
+  font-variant-numeric:tabular-nums;}
+.badge{font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;
+  padding:2px 6px;border-radius:6px;margin-left:6px;vertical-align:middle;}
+.b-fav{background:var(--chip);color:var(--fg-dim);}
+.b-contra{background:color-mix(in srgb,var(--red) 18%,transparent);color:var(--red);
+  border:1px solid color-mix(in srgb,var(--red) 40%,transparent);}
+
+.dream{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%);
+  border:1px solid color-mix(in srgb,var(--accent) 40%,var(--panel-line));}
+.podchips{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;}
+.podchip{background:var(--chip);border:1px solid var(--panel-line);border-radius:9px;padding:6px 11px;font-weight:700;font-size:.9rem;}
+.podchip small{display:block;font-size:.62rem;color:var(--fg-dim);font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.sanm{margin-top:14px;padding:12px 14px;border-radius:12px;font-size:.9rem;}
+.sanm.hi{background:color-mix(in srgb,var(--red) 13%,transparent);border:1px solid color-mix(in srgb,var(--red) 45%,var(--panel-line));}
+.sanm.lo{background:var(--chip);border:1px solid var(--panel-line);}
+.key{font-size:.95rem;border-left:3px solid var(--accent);padding-left:12px;margin-top:14px;}
+.foot{margin-top:30px;padding-top:14px;border-top:1px solid var(--panel-line);color:var(--fg-dim);font-size:.78rem;}
+.styletag{display:inline-block;font-weight:800;color:var(--accent);}
+</style>
+<div class="wrap">
+  <header>
+    <div class="kicker">Polla Mundialera Colomas y Asociados · 12 jul 2026</div>
+    <h1>Tableros de estrategia por jugador</h1>
+    <p class="sub">Cuartos jugados. Faltan 2 semifinales, 3er puesto y final, más los
+      premios especiales. Puntaje del reglamento; el goleador no puede ser además mejor
+      jugador; y <b>no se pierden puntos por fallar</b> un pronóstico.</p>
+  </header>
+
+  <section class="shared">
+    
+    <div class="panel">
+      <h2>🇫🇷 Francia <span style="color:var(--fg-dim)">vs</span> España 🇪🇸</h2>
+      <div style="font-size:1.05rem;font-weight:700">Avanza: Francia <b class="tnum">48%</b>
+        · España <b class="tnum">52%</b></div>
+      <div class="mini"><div>Francia 1-1 España · 12%</div><div>Francia 0-1 España · 9%</div><div>Francia 1-0 España · 9%</div></div>
+    </div>
+    <div class="panel">
+      <h2>🏴 Inglaterra <span style="color:var(--fg-dim)">vs</span> Argentina 🇦🇷</h2>
+      <div style="font-size:1.05rem;font-weight:700">Avanza: Inglaterra <b class="tnum">39%</b>
+        · Argentina <b class="tnum">61%</b></div>
+      <div class="mini"><div>Inglaterra 1-1 Argentina · 12%</div><div>Inglaterra 0-1 Argentina · 10%</div><div>Inglaterra 1-2 Argentina · 9%</div></div>
+    </div>
+  </section>
+  <section class="panel">
+    <h2>🔮 Camino a la final</h2>
+    <table>
+      <thead><tr><th>Equipo</th><th class="r">Campeón</th><th class="r">Finalista</th><th class="r">3er lugar</th></tr></thead>
+      <tbody><tr><td>🇪🇸 España</td><td class='r tnum'>30%</td><td class='r tnum'>52%</td><td class='r tnum'>29%</td></tr><tr><td>🇦🇷 Argentina</td><td class='r tnum'>29%</td><td class='r tnum'>61%</td><td class='r tnum'>18%</td></tr><tr><td>🇫🇷 Francia</td><td class='r tnum'>27%</td><td class='r tnum'>48%</td><td class='r tnum'>30%</td></tr><tr><td>🏴 Inglaterra</td><td class='r tnum'>14%</td><td class='r tnum'>39%</td><td class='r tnum'>22%</td></tr></tbody>
+    </table>
+    <div class="mini">La final más probable es España–Argentina. Puntos que quedan en juego por
+      partido: semifinal 3 (acierto) / 6 (exacto); 3er puesto y final 4 / 8.</div>
+  </section>
+
+  <nav class="players" role="tablist"><button class="pill" role="tab" data-i="0" onclick="pick(0)"><span class="rk">#12</span>Pablo</button><button class="pill" role="tab" data-i="1" onclick="pick(1)"><span class="rk">#5</span>Martín</button><button class="pill" role="tab" data-i="2" onclick="pick(2)"><span class="rk">#30</span>José Pablo</button><button class="pill" role="tab" data-i="3" onclick="pick(3)"><span class="rk">#27</span>Benja</button><button class="pill" role="tab" data-i="4" onclick="pick(4)"><span class="rk">#34</span>Coni</button><button class="pill" role="tab" data-i="5" onclick="pick(5)"><span class="rk">#24</span>Caro</button><button class="pill" role="tab" data-i="6" onclick="pick(6)"><span class="rk">#19</span>Carola Puga</button></nav>
+  <main id="board" class="panel"></main>
+
+  <p class="foot">Generado por <code>estrategia/agentes_polla.py</code> (Monte Carlo, 30.000
+    simulaciones + enumeración exacta del podio). Supuestos de fuerza de equipos y carrera de
+    goleador editables en el código. Elige tu nombre arriba.</p>
+</div>
+<script>
+const DATA = [{"name": "Pablo (tú)", "disp": "Pablo", "rank": 12, "pts": 107, "gapLead": 29, "tier": "longshot", "win": 0.0, "top3": 0.5, "top5": 3.3, "last": 0, "avgRank": 16, "specials": [{"txt": "1º España", "alive": true}, {"txt": "2º Brasil", "alive": false}, {"txt": "3º Francia", "alive": true}, {"txt": "Goleador Mikel Oyarzabal", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Mikel Oyarzabal**).", "dream": {"champ": "España", "run": "Inglaterra", "third": "Francia", "podium": 30, "condWin": 1, "condTop3": 5}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu campeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "aunque Argentina es favorito, te conviene por tu posición vs rivales"}, {"match": "3er lugar · Francia vs Argentina", "pick": "Francia", "score": "2 – 1", "fav": true, "reason": "tu 3º: +10"}, {"match": "Final · España vs Inglaterra", "pick": "España", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20"}], "style": {"label": "Contrarian selectivo", "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu combo depende de que **Mikel Oyarzabal** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}, {"name": "Martín", "disp": "Martín", "rank": 5, "pts": 116, "gapLead": 20, "tier": "candidato", "win": 9.7, "top3": 32.0, "top5": 47.7, "last": 0, "avgRank": 7, "specials": [{"txt": "1º España", "alive": true}, {"txt": "2º Argentina", "alive": true}, {"txt": "3º Francia", "alive": true}, {"txt": "Goleador Mbappé", "alive": true}, {"txt": "Balón de Oro Harry Kane", "alive": true}], "golMvpNote": "Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya **no** puede ser tu MVP **Harry Kane** salvo que ese sea otro jugador.", "dream": {"champ": "España", "run": "Argentina", "third": "Francia", "podium": 45, "condWin": 64, "condTop3": 100}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu campeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Argentina", "score": "0 – 2", "fav": true, "reason": "tu subcampeón: debe ser finalista"}, {"match": "3er lugar · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu 3º: +10"}, {"match": "Final · España vs Argentina", "pick": "España", "score": "2 – 1", "fav": true, "reason": "tu campeón: +20"}], "style": {"label": "Cobertura / chalk", "desc": "Estás arriba: juega a los favoritos y replica lo que harían tus rivales directos. No busques héroe; que nadie te pase barato."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Eres candidato real (10% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."}, {"name": "José Pablo", "disp": "José Pablo", "rank": 30, "pts": 89, "gapLead": 47, "tier": "fondo", "win": 0.0, "top3": 0.0, "top5": 0.0, "last": 0, "avgRank": 27, "specials": [{"txt": "1º España", "alive": true}, {"txt": "2º Alemania", "alive": false}, {"txt": "3º Argentina", "alive": true}, {"txt": "Goleador Mikel Oyarzabal", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Mikel Oyarzabal**).", "dream": {"champ": "España", "run": "Inglaterra", "third": "Argentina", "podium": 30, "condWin": 0, "condTop3": 0}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu campeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "así Argentina cae al 3er puesto (tu 3º)"}, {"match": "3er lugar · Francia vs Argentina", "pick": "Argentina", "score": "1 – 2", "fav": false, "reason": "tu 3º: +10"}, {"match": "Final · España vs Inglaterra", "pick": "España", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20"}], "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu combo depende de que **Mikel Oyarzabal** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}, {"name": "Benja", "disp": "Benja", "rank": 27, "pts": 93, "gapLead": 43, "tier": "longshot", "win": 0.0, "top3": 1.4, "top5": 6.5, "last": 0, "avgRank": 22, "specials": [{"txt": "1º Francia", "alive": true}, {"txt": "2º Brasil", "alive": false}, {"txt": "3º España", "alive": true}, {"txt": "Goleador Mbappé", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "⚠️ Elegiste a **Mbappé** para goleador **y** para mejor jugador, pero un jugador no puede ganar los dos. En la práctica solo puedes sumar **uno** de esos dos premios (máx. 10 pts, no 20).", "dream": {"champ": "Francia", "run": "Inglaterra", "third": "España", "podium": 30, "condWin": 0, "condTop3": 5}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "Francia", "score": "2 – 1", "fav": false, "reason": "tu campeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "aunque Argentina es favorito, te conviene por tu posición vs rivales"}, {"match": "3er lugar · España vs Argentina", "pick": "España", "score": "2 – 1", "fav": true, "reason": "tu 3º: +10"}, {"match": "Final · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20"}], "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu goleador y tu MVP son el mismo jugador (Mbappé): solo puedes sumar uno de los dos. Ese techo te limita; necesitas además acertar podio y partidos."}, {"name": "Coni", "disp": "Coni", "rank": 34, "pts": 75, "gapLead": 61, "tier": "fondo", "win": 0.0, "top3": 0.0, "top5": 0.0, "last": 62, "avgRank": 32, "specials": [{"txt": "1º Inglaterra", "alive": true}, {"txt": "2º Francia", "alive": true}, {"txt": "3º Portugal", "alive": false}, {"txt": "Goleador Harry Kane", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Harry Kane**).", "dream": {"champ": "Inglaterra", "run": "Francia", "third": "España", "podium": 35, "condWin": 0, "condTop3": 0}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "Francia", "score": "2 – 1", "fav": false, "reason": "tu subcampeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "tu campeón: debe ser finalista"}, {"match": "3er lugar · España vs Argentina", "pick": "España", "score": "2 – 1", "fav": true, "reason": "favorito del cruce"}, {"match": "Final · Francia vs Inglaterra", "pick": "Inglaterra", "score": "1 – 2", "fav": false, "reason": "tu campeón: +20"}], "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "🚨 Riesgo ALTO de último lugar: **62%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.", "keyInsight": "Tu combo depende de que **Harry Kane** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}, {"name": "Caro", "disp": "Caro", "rank": 24, "pts": 95, "gapLead": 41, "tier": "longshot", "win": 1.1, "top3": 8.8, "top5": 14.5, "last": 0, "avgRank": 19, "specials": [{"txt": "1º Argentina", "alive": true}, {"txt": "2º España", "alive": true}, {"txt": "3º Francia", "alive": true}, {"txt": "Goleador Mbappé", "alive": true}, {"txt": "Balón de Oro Messi", "alive": true}], "golMvpNote": "Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya **no** puede ser tu MVP **Messi** salvo que ese sea otro jugador.", "dream": {"champ": "Argentina", "run": "España", "third": "Francia", "podium": 45, "condWin": 6, "condTop3": 79}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu subcampeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Argentina", "score": "0 – 2", "fav": true, "reason": "tu campeón: debe ser finalista"}, {"match": "3er lugar · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu 3º: +10"}, {"match": "Final · España vs Argentina", "pick": "Argentina", "score": "1 – 2", "fav": false, "reason": "tu campeón: +20"}], "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu mejor escenario (Argentina campeón, Francia 3º) te da +45 de podio. El título está lejos; juega a escalar y a no quedar último."}, {"name": "Carola P", "disp": "Carola Puga", "rank": 19, "pts": 100, "gapLead": 36, "tier": "longshot", "win": 0.0, "top3": 6.2, "top5": 10.7, "last": 0, "avgRank": 21, "specials": [{"txt": "1º Francia", "alive": true}, {"txt": "2º Brasil", "alive": false}, {"txt": "3º España", "alive": true}, {"txt": "Goleador Messi", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Messi**).", "dream": {"champ": "Francia", "run": "Argentina", "third": "España", "podium": 30, "condWin": 0, "condTop3": 29}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "Francia", "score": "2 – 1", "fav": false, "reason": "tu campeón: debe ser finalista"}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Argentina", "score": "0 – 2", "fav": true, "reason": "favorito del cruce"}, {"match": "3er lugar · España vs Inglaterra", "pick": "España", "score": "2 – 0", "fav": true, "reason": "tu 3º: +10"}, {"match": "Final · Francia vs Argentina", "pick": "Francia", "score": "2 – 1", "fav": true, "reason": "tu campeón: +20"}], "style": {"label": "Contrarian selectivo", "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu combo depende de que **Messi** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}];
+const FLAG = {"España": "🇪🇸", "Francia": "🇫🇷", "Inglaterra": "🏴", "Argentina": "🇦🇷"};
+function fl(t){return FLAG[t]||"";}
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function render(p){
+  const spec = p.specials.map(s=>{
+    const good = s.alive;
+    return `<li><span class="${good?'ok':'no'}">${good?'✓':'✕'}</span>
+      <div>${esc(s.txt)} ${good?'':'<b style=\'color:var(--red)\'>— eliminado</b>'}</div></li>`;
+  }).join("");
+  const bets = p.apuestas.map(a=>`
+    <div class="bet">
+      <div class="m">${esc(a.match)}
+        <span class="why">${esc(a.reason)}</span></div>
+      <div class="pick">${fl(a.pick)} <b>${esc(a.pick)}</b>
+        <span class="badge ${a.fav?'b-fav':'b-contra'}">${a.fav?'favorito':'contrarian'}</span><br>
+        <span class="sc">${esc(a.score)}</span></div>
+    </div>`).join("");
+  const d=p.dream;
+  const riskHi = p.last>=15;
+  const board = `
+    <div class="head">
+      <div>
+        <div class="kicker">Tu posición</div>
+        <div class="who">#${p.rank} · ${esc(p.disp)}</div>
+        <div style="color:var(--fg-dim)">${p.pts} pts · a ${p.gapLead} del líder</div>
+      </div>
+      <span class="tierbadge tier-${p.tier}">${p.tier==='candidato'?'Candidato real':p.tier==='longshot'?'Opción lejana':'Fondo de tabla'}</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">${p.win}%</div></div>
+      <div class="stat"><div class="lab">Top-3</div><div class="big tnum">${p.top3}%</div></div>
+      <div class="stat"><div class="lab">Top-5</div><div class="big tnum">${p.top5}%</div></div>
+      <div class="stat ${riskHi?'risk':''}"><div class="lab">Último</div><div class="big tnum">${p.last}%</div></div>
+      <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#${p.avgRank}</div></div>
+    </div>
+
+    <div class="key">${esc(p.keyInsight)}</div>
+
+    <div class="cols">
+      <div class="panel">
+        <h2>📌 Tus especiales</h2>
+        <ul class="clean">${spec}</ul>
+        <div class="note">${esc(p.golMvpNote)}</div>
+      </div>
+      <div class="panel dream">
+        <h2>📣 Qué alentar</h2>
+        <div class="podchips">
+          <div class="podchip"><small>Campeón</small>${fl(d.champ)} ${esc(d.champ)}</div>
+          <div class="podchip"><small>Subcampeón</small>${fl(d.run)} ${esc(d.run)}</div>
+          <div class="podchip"><small>3er lugar</small>${fl(d.third)} ${esc(d.third)}</div>
+        </div>
+        <div class="note">Ese cuadro te da <b>+${d.podium}</b> de podio.
+          ${p.tier==='candidato'?('En él tu prob. de ganar sube a ~'+d.condWin+'%.'):
+             p.tier==='longshot'?('Con tus especiales, te pone a pelear el top-5.'):
+             ('El título está lejos; el objetivo es escalar y no quedar último.')}</div>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:14px">
+      <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+      <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+        Alineadas al escenario donde mejor terminas. Como no se pierden puntos por fallar,
+        ir <b>contrarian</b> no tiene costo.</div>
+      ${bets}
+    </div>
+
+    <div class="sanm ${riskHi?'hi':'lo'}">${esc(p.sanMarino)}</div>
+
+    <div style="margin-top:14px" class="note">
+      <b>Estilo de juego:</b> <span class="styletag">${esc(p.style.label)}</span> — ${esc(p.style.desc)}</div>
+  `;
+  document.getElementById("board").innerHTML = board;
+}
+function pick(i){
+  document.querySelectorAll(".pill").forEach((b,j)=>b.setAttribute("aria-selected", j===i?"true":"false"));
+  render(DATA[i]);
+}
+pick(0);
+</script>
+</body>
+</html>
