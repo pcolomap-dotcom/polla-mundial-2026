@@ -9,7 +9,13 @@ mejor jugador), que **todavía no se otorgan**.
 Todo este análisis lo genera el toolkit de agentes en
 [`agentes_polla.py`](./agentes_polla.py). Corre `python3 estrategia/agentes_polla.py`
 para reproducir cada tabla. Hay un tablero visual de una página en
-[`tablero.html`](./tablero.html) (ábrelo en el navegador).
+[`tablero.html`](./tablero.html) (ábrelo en el navegador). Los informes para los
+demás jugadores (Martín, José Pablo, Benja, Coni, Caro, Carola Puga) están en
+[`INFORMES.md`](./INFORMES.md).
+
+> **Reglas usadas:** puntaje del **reglamento** (Campeón 20 · Subcampeón 15 · 3º 10
+> · Goleador 10 · Balón de Oro 10) y **un jugador no puede ganar Goleador y Balón de
+> Oro a la vez**. Esto último es clave para Pablo (ver §5).
 
 ---
 
@@ -47,18 +53,20 @@ casi todos tus rivales sí tienen un 2º vivo. Es −15 que arrastras fijo.
 
 ## 3. La cruda verdad probabilística
 
-Con el Monte Carlo (40.000 simulaciones, supuestos editables en el código):
+Con el Monte Carlo (puntaje del reglamento, regla goleador≠MVP, supuestos
+editables en el código):
 
-| Esquema de puntaje | P(ganar) | P(top-2) | P(top-3) | Puesto medio |
-|---|---|---|---|---|
-| Reglamento (MVP=10) | **~0,1 %** | ~0,3 % | ~0,7 % | ≈ #15 |
-| Dashboard (MVP=20) | **~0,3 %** | ~0,6 % | ~2,5 % | ≈ #15 |
+| Métrica | Pablo |
+|---|---|
+| P(ganar la polla) | **~0,1 %** |
+| P(top-3) | ~0,7 % |
+| P(top-5) | ~3,5 % |
+| Puesto medio esperado | ≈ #16 |
 
 Ganar la polla **es un tiro muy largo**: vas 12º, 29 abajo, con un especial
-muerto y compartiendo tus mejores aciertos (España 1º, Mbappé MVP) con varios
-rivales, así que esos no te despegan de ellos. Sé realista: el objetivo
-alcanzable es **escalar al top-5/7**, y el premio grande solo llega con la
-combinación exacta de §5.
+muerto (Brasil) y con tus dos cartas de especiales atadas a que Mbappé **no** sea
+goleador. Sé realista: el objetivo alcanzable es **escalar al top-5**, y el premio
+grande solo llega con la combinación exacta de §5.
 
 > Buenas noticias: **no corres ningún riesgo del último lugar** (la polera de San
 > Marino). Estás 32 pts por encima del colista y por encima de media tabla.
@@ -90,22 +98,25 @@ que te acerca. Por eso tu peor pesadilla es **Francia finalista**.
 
 ## 5. 🔑 La llave maestra: la Bota de Oro
 
-Este es **el** hallazgo del análisis. Aun con tu bracket perfecto (España
-campeón, Francia 3ª) y con Mbappé de MVP:
+Este es **el** hallazgo del análisis, y la regla de que **el goleador no puede
+ser también mejor jugador** lo vuelve aún más filoso. Aun con tu bracket perfecto
+(España campeón, Francia 3ª):
 
 | Si el goleador es… | Tu resultado |
 |---|---|
-| **Mbappé** (lo más probable, y es el pick de Jaime y Juanco) | terminas **~#5** |
-| **Mikel Oyarzabal** (tu pick) | **terminas #1** 🏆 |
+| **Mbappé** (lo más probable) — te anula el goleador **y** el MVP | terminas **~#14** |
+| **Mikel Oyarzabal** (tu pick) — libera a Mbappé para el Balón de Oro | **terminas #1** 🏆 |
 
-Traducción: tu podio + MVP te suben hasta el 5º puesto, pero **lo único que te
-corona campeón de la polla es que Oyarzabal gane la Bota de Oro**. Es de baja
-probabilidad (Mbappé lidera con 8 goles), pero es tu único camino real al 85 %
-del pozo, y encaja con lo demás: si **España gana el título, Oyarzabal juega 2
-partidos más y puede pasar a Mbappé** como goleador.
+La clave: si **Mbappé gana la Bota de Oro**, no solo falla tu goleador (Oyarzabal),
+sino que además **ya no puede ser tu MVP** (nadie gana ambos) → pierdes tus dos
+cartas de golpe. Por eso **lo único que te corona campeón de la polla es que
+Oyarzabal sea el máximo goleador**: eso te da el goleador *y* deja a Mbappé libre
+para el Balón de Oro. Es de baja probabilidad (Mbappé lidera con 8 goles), pero es
+tu único camino real al 85 % del pozo, y encaja: si **España gana el título,
+Oyarzabal juega 2 partidos más y puede pasar a Mbappé**.
 
-**Tu parlay ganador completo:** España campeón + Francia 3ª + Mbappé MVP +
-**Oyarzabal máximo goleador**.
+**Tu parlay ganador completo:** España campeón + Francia 3ª + **Oyarzabal máximo
+goleador** (que a su vez habilita **Mbappé MVP**).
 
 ---
 
@@ -128,28 +139,23 @@ ocurre, igual ya estabas fuera de pelea.
 
 ---
 
-## 7. ⚠️ Acción #1: aclarar el puntaje de especiales
+## 7. Puntaje usado y una nota
 
-Hay una **contradicción entre las fuentes** que cambia cuánto vale tu Mbappé MVP:
+Este análisis usa el **reglamento oficial**: Campeón 20 · Subcampeón 15 · 3º 10 ·
+Goleador 10 · Balón de Oro 10, y partidos con escala por ronda (semis 3/6, 3er
+puesto y final 4/8). Además se aplica la regla de que **un mismo jugador no puede
+ganar el Goleador y el Balón de Oro** a la vez.
 
-| | Campeón | Subc. | 3º | Goleador | **MVP** |
-|---|---|---|---|---|---|
-| **Reglamento PDF** | 20 | 15 | 10 | 10 | **10** |
-| **Pie del ranking (app)** | 25 | 15 | 10 | 15 | **20** |
-
-Te conviene muchísimo que rija el esquema del **dashboard** (MVP=20), porque tu
-Mbappé es favorito. **Pregúntale al organizador cuál manda** — no cambia lo que
-debes alentar, pero sí cuánto pesa tu mejor carta.
-
-*(Nota técnica: el `data.json`/`update.py` del repo quedó en fase de grupos y usa
-un tercer esquema, más simple, distinto al del sitio live. El análisis usa las
-posiciones reales del ranking live.)*
+*(Nota técnica: el pie del ranking del sitio describe otro esquema —MVP 20,
+goleador 15— y el `data.json`/`update.py` del repo quedó congelado en fase de
+grupos con un tercer esquema. Si el organizador confirma que el MVP vale más de
+10, tu Mbappé pesa todavía más. El análisis usa las posiciones reales del ranking
+live y el puntaje del reglamento.)*
 
 ---
 
 ### TL;DR
-Vas 12º y ganar es un tiro largo (~0,1–0,3 %). Para tener chance: **alienta a
-España a ganarlo todo, a que Francia termine 3ª (no finalista), a Mbappé como
-mejor jugador y —la llave— a Oyarzabal como goleador.** Manda tus pronósticos
-pendientes acordes (España y Francia ganando sus partidos) y confirma con el
-organizador si el MVP vale 10 o 20.
+Vas 12º y ganar es un tiro largo (~0,1 %). Para tener chance: **alienta a España a
+ganarlo todo, a que Francia termine 3ª (no finalista) y —la llave— a Oyarzabal
+como máximo goleador (que de paso habilita a Mbappé como mejor jugador).** Manda
+tus pronósticos pendientes acordes (España y Francia ganando sus partidos).
