@@ -59,6 +59,38 @@ class AgenteDatos:
 
     TOP_SCORER_NOW = ("Mbappé", 8)   # dato live al 12-jul
 
+    # ── EDITABLE: cómo apuesta JAIME (el líder) cada partido ──────────────
+    # Marcadores 90' en orden (equipo1, equipo2) de cada semifinal.
+    # SF1 (Francia–España): 1–2  → ya lo envió: gana España.
+    # SF2 (Inglaterra–Argentina): por defecto Argentina (favorito). CÁMBIALO
+    #   aquí si sabes/estimas otra cosa; toda la estrategia de "apostar distinto
+    #   a Jaime" se recalcula sola.
+    # Final y 3er puesto: Jaime apuesta al favorito del cruce real (cobertura).
+    JAIME_BETS = {"SF1": (1, 2), "SF2": (1, 2)}
+
+    def jaime_winner(self, which):
+        sc = self.JAIME_BETS[which]; pair = self.SF1 if which == "SF1" else self.SF2
+        if sc[0] > sc[1]: return pair[0]
+        if sc[1] > sc[0]: return pair[1]
+        return None   # Jaime apostó empate
+
+    # ── EDITABLE: contra QUIÉN se diferencia cada jugador en sus apuestas ──
+    # La idea: apostar DISTINTO a tu competencia directa para recortarle si se
+    # da tu escenario. Valores posibles:
+    #   "Jaime"  → te diferencias del líder (para pelear el título).
+    #   "chalk"  → te diferencias de quien apuesta a los favoritos (útil para
+    #              salir del último lugar o para escalar contra el pelotón).
+    #   "<nombre>" → te diferencias de ese jugador puntual.
+    REFERENCE = {
+        "Pablo (tú)": "Jaime",     # persigue al líder
+        "Martín":     "Jaime",     # persigue al líder
+        "Caro":       "Jaime",     # persigue al líder
+        "Coni":       "chalk",     # salir de zona San Marino: distínguete del pelotón
+        "José Pablo": "chalk",     # escalar
+        "Benja":      "chalk",     # escalar
+        "Carola P":   "chalk",     # escalar
+    }
+
     ES = {  # nombres de equipos en español para los informes
         "Spain": "España", "France": "Francia", "England": "Inglaterra",
         "Argentina": "Argentina", "Brazil": "Brasil", "Portugal": "Portugal",
@@ -255,6 +287,23 @@ def sf_pick(d, par, name, pair):
     return a if par.advance(a, b)[0] >= 0.5 else b   # empate -> favorito
 
 
+def final_pick(d, par, name, X, Y):
+    """A quién apuesta como ganador de la FINAL entre X (lado SF1) e Y (lado SF2).
+    Quiere que su campeón gane; si su subcampeón es finalista, quiere que pierda."""
+    s = d.pick(name)
+    if s["first"] in (X, Y):  return s["first"]
+    if s["second"] == X:      return Y
+    if s["second"] == Y:      return X
+    return X if par.advance(X, Y)[0] >= 0.5 else Y
+
+
+def third_pick(d, par, name, X, Y):
+    """A quién apuesta como ganador del 3er puesto entre X (SF1) e Y (SF2)."""
+    s = d.pick(name)
+    if s["third"] in (X, Y):  return s["third"]
+    return X if par.advance(X, Y)[0] >= 0.5 else Y
+
+
 def _oo(h, a):
     return "H" if h > a else ("A" if a > h else "D")
 
@@ -272,19 +321,31 @@ class AgenteSimulacion:
     def __init__(self, d, esc, par, esp, seed=7):
         self.d, self.e, self.par, self.esp = d, esc, par, esp
         random.seed(seed)
-        # precompute: predicción de cada jugador para SF1/SF2 (no cambia entre sims)
-        self._sfpred = {}
+        # Precompute: predicción de CADA jugador para los 4 partidos (no cambia
+        # entre sims). Cada jugador apuesta alineado a sus especiales en los 4;
+        # JAIME usa sus apuestas configuradas (editable) en las semis y el
+        # favorito en final/3º (cobertura de líder).
+        def favmodal(X, Y):
+            fav = X if par.advance(X, Y)[0] >= 0.5 else Y
+            return par.modal_score(X, Y, fav)
+        self._pred = {}
         for n in d.players:
-            pk1 = sf_pick(d, par, n, d.SF1); s1 = par.modal_score(d.SF1[0], d.SF1[1], pk1)
-            pk2 = sf_pick(d, par, n, d.SF2); s2 = par.modal_score(d.SF2[0], d.SF2[1], pk2)
-            self._sfpred[n] = (s1, s2)
-        # precompute: marcador modal del favorito para cada cruce posible (final/3º)
-        self._favmodal = {}
-        for a in d.ALIVE:
-            for b in d.ALIVE:
-                if a == b: continue
-                fav = a if par.advance(a, b)[0] >= 0.5 else b
-                self._favmodal[(a, b)] = par.modal_score(a, b, fav)
+            jaime = (n == "Jaime")
+            if jaime:
+                s1 = tuple(d.JAIME_BETS["SF1"]); s2 = tuple(d.JAIME_BETS["SF2"])
+            else:
+                s1 = par.modal_score(d.SF1[0], d.SF1[1], sf_pick(d, par, n, d.SF1))
+                s2 = par.modal_score(d.SF2[0], d.SF2[1], sf_pick(d, par, n, d.SF2))
+            fin, ter = {}, {}
+            for X in d.SF1:            # finalista lado SF1 / perdedor lado SF1
+                for Y in d.SF2:        # finalista lado SF2 / perdedor lado SF2
+                    if jaime:
+                        fin[(X, Y)] = favmodal(X, Y)
+                        ter[(X, Y)] = favmodal(X, Y)
+                    else:
+                        fin[(X, Y)] = par.modal_score(X, Y, final_pick(d, par, n, X, Y))
+                        ter[(X, Y)] = par.modal_score(X, Y, third_pick(d, par, n, X, Y))
+            self._pred[n] = dict(sf1=s1, sf2=s2, final=fin, third=ter)
 
     def _bracket(self):
         d = self.d; par = self.par
@@ -313,23 +374,19 @@ class AgenteSimulacion:
                     w1=w1, l1=l1, w2=w2, l2=l2,
                     sf1=s1, sf2=s2, final=(w1, w2, sf), tercero=(l1, l2, s3))
 
-    def _const_match_pts(self, o):
-        """Puntos de final + 3er puesto (iguales para todos: todos apuestan al
-        favorito del cruce real)."""
-        w1, w2, sfsc = o["final"]; pr = self._favmodal[(w1, w2)]
-        p = match_pts(pr[0], pr[1], sfsc[0], sfsc[1], 4, 8)
-        l1, l2, s3 = o["tercero"]; pr = self._favmodal[(l1, l2)]
-        p += match_pts(pr[0], pr[1], s3[0], s3[1], 4, 8)
-        return p
-
-    def _sf_match_pts(self, name, o):
-        s1, s2 = self._sfpred[name]
+    def _match_pts(self, name, o):
+        """Puntos de partido del jugador en los 4 partidos (apuesta propia)."""
+        pr = self._pred[name]
+        w1, w2, sfsc = o["final"]; l1, l2, s3 = o["tercero"]
+        pf = pr["final"][(w1, w2)]; pt = pr["third"][(l1, l2)]
+        s1, s2 = pr["sf1"], pr["sf2"]
         return (match_pts(s1[0], s1[1], o["sf1"][0], o["sf1"][1], 3, 6) +
-                match_pts(s2[0], s2[1], o["sf2"][0], o["sf2"][1], 3, 6))
+                match_pts(s2[0], s2[1], o["sf2"][0], o["sf2"][1], 3, 6) +
+                match_pts(pf[0], pf[1], sfsc[0], sfsc[1], 4, 8) +
+                match_pts(pt[0], pt[1], s3[0], s3[1], 4, 8))
 
     def _totals(self, o, gol, mvp, with_match=True):
         d = self.d; S = d.SPECIAL_PTS; tot = {}
-        cm = self._const_match_pts(o) if with_match else 0
         for n in d.players:
             s = d.pick(n); p = d.STANDINGS[n]
             if s["first"] == o["champ"]: p += S["champ"]
@@ -337,7 +394,7 @@ class AgenteSimulacion:
             if s["third"] == o["third"]: p += S["third"]
             if s["scorer"] == gol:       p += S["gol"]
             if s["mvp"] == mvp:          p += S["mvp"]
-            if with_match:               p += cm + self._sf_match_pts(n, o)
+            if with_match:               p += self._match_pts(n, o)
             tot[n] = p
         return tot
 
@@ -463,15 +520,33 @@ class AgenteEstrategia:
         g_win, g_lose = ("2", "0") if pw >= 0.60 else ("2", "1")
         return f"{g_win} – {g_lose}" if winner == a else f"{g_lose} – {g_win}"
 
+    def _ref_winner(self, ref, which, X=None, Y=None):
+        """Ganador que apostaría la REFERENCIA del jugador en un partido.
+        ref: 'Jaime' | 'chalk' | '<nombre>'."""
+        d = self.d; par = self.par
+        pair = d.SF1 if which == "SF1" else d.SF2 if which == "SF2" else (X, Y)
+        if ref == "chalk":
+            return pair[0] if par.advance(*pair)[0] >= 0.5 else pair[1]
+        if ref == "Jaime":
+            if which == "SF1": return d.jaime_winner("SF1")
+            if which == "SF2": return d.jaime_winner("SF2")
+            return X if par.advance(X, Y)[0] >= 0.5 else Y   # final/3º: favorito
+        if which == "SF1": return sf_pick(d, par, ref, d.SF1)
+        if which == "SF2": return sf_pick(d, par, ref, d.SF2)
+        if which == "final": return final_pick(d, par, ref, X, Y)
+        return third_pick(d, par, ref, X, Y)
+
     def apuestas(self, name, bracket):
-        """Las 4 apuestas que le convienen al jugador según su MEJOR bracket
-        (el que maximiza su posición final, ya considerando a los rivales).
-        Marca cuáles van CONTRA el favorito. No se pierden puntos por fallar."""
+        """Las 4 apuestas que le convienen al jugador según su MEJOR bracket,
+        comparadas contra su REFERENCIA (editable: Jaime / chalk / nombre).
+        Marca ⚡ cuándo apuesta DISTINTO a esa referencia. No se pierden puntos
+        por fallar, así que diferenciarse no tiene costo."""
         d = self.d; par = self.par; s = d.pick(name)
+        ref = d.REFERENCE.get(name, "Jaime")
+        reflabel = "Jaime" if ref == "Jaime" else ("los favoritos" if ref == "chalk" else ref)
         champ, run, third = bracket
         fav1 = d.SF1[0] if par.advance(*d.SF1)[0] >= 0.5 else d.SF1[1]
         fav2 = d.SF2[0] if par.advance(*d.SF2)[0] >= 0.5 else d.SF2[1]
-        # finalistas: uno por lado del cuadro
         f1 = champ if champ in d.SF1 else run          # finalista lado SF1
         f2 = champ if champ in d.SF2 else run          # finalista lado SF2
         l1 = [t for t in d.SF1 if t != f1][0]
@@ -482,26 +557,35 @@ class AgenteEstrategia:
             if s["first"] == pick:  return "tu campeón: debe ser finalista"
             if s["second"] == pick: return "tu subcampeón: debe ser finalista"
             if s["third"] == other: return f"así {d.es(other)} cae al 3er puesto (tu 3º)"
-            if pick != fav:         return f"aunque {d.es(fav)} es favorito, te conviene por tu posición vs rivales"
+            if pick != fav:         return f"aunque {d.es(fav)} es favorito, te conviene por tu escenario"
             return "favorito del cruce"
 
+        def refname(w):
+            return d.es(w) if w else "empate"
+
+        r1 = self._ref_winner(ref, "SF1"); r2 = self._ref_winner(ref, "SF2")
+        r3 = self._ref_winner(ref, "third", l1, l2); rf = self._ref_winner(ref, "final", f1, f2)
         rows = [
             dict(match=f"Semifinal · {d.es(d.SF1[0])} vs {d.es(d.SF1[1])}",
                  pick=d.es(f1), score=self._score(d.SF1[0], d.SF1[1], f1),
-                 fav=(f1 == fav1), reason=why(f1, d.SF1, fav1)),
+                 fav=(f1 == fav1), reason=why(f1, d.SF1, fav1),
+                 ref=refname(r1), diff=(f1 != r1)),
             dict(match=f"Semifinal · {d.es(d.SF2[0])} vs {d.es(d.SF2[1])}",
                  pick=d.es(f2), score=self._score(d.SF2[0], d.SF2[1], f2),
-                 fav=(f2 == fav2), reason=why(f2, d.SF2, fav2)),
+                 fav=(f2 == fav2), reason=why(f2, d.SF2, fav2),
+                 ref=refname(r2), diff=(f2 != r2)),
             dict(match=f"3er lugar · {d.es(l1)} vs {d.es(l2)}",
                  pick=d.es(third), score=self._score(l1, l2, third),
                  fav=(third == (l1 if par.advance(l1, l2)[0] >= 0.5 else l2)),
-                 reason=("tu 3º: +10" if s["third"] == third else "favorito del cruce")),
+                 reason=("tu 3º: +10" if s["third"] == third else "favorito del cruce"),
+                 ref=refname(r3), diff=(third != r3)),
             dict(match=f"Final · {d.es(f1)} vs {d.es(f2)}",
                  pick=d.es(champ), score=self._score(f1, f2, champ),
                  fav=(champ == (f1 if par.advance(f1, f2)[0] >= 0.5 else f2)),
-                 reason=("tu campeón: +20" if s["first"] == champ else "el que te deja mejor parado")),
+                 reason=("tu campeón: +20" if s["first"] == champ else "el que te deja mejor parado"),
+                 ref=refname(rf), diff=(champ != rf)),
         ]
-        return rows
+        return rows, reflabel
 
     def style(self, name):
         d = self.d; pts = d.STANDINGS[name]
@@ -583,12 +667,17 @@ def generar_informes(d, esc, par, esp, sim, estr, out_path, N=20000, NB=4000):
       "llegar por lados opuestos del cuadro).\n")
     W("---\n")
 
-    W("> **Nota:** no se pierden puntos por fallar un pronóstico, así que apostar "
-      "diferenciado (contrarian) no tiene costo. Puntos en juego por partido: "
-      "semifinal 3 (ganador) / 6 (exacto); 3er puesto y final 4 / 8.\n")
-    W("---\n")
-
     stats_all = sim.simulate_all(N)
+
+    jw1 = d.jaime_winner("SF1"); jw2 = d.jaime_winner("SF2")
+    W(f"## 👑 Cómo apuesta Jaime (el líder, {fmt_pct(stats_all['Jaime']['win'])} de ganar)\n")
+    W(f"Apuestas de Jaime (editable en el código): **SF1 → {d.es(jw1) if jw1 else 'empate'}**, "
+      f"**SF2 → {d.es(jw2) if jw2 else 'empate'}**, final y 3er puesto al favorito.\n")
+    W("> **Idea clave (tu pregunta):** como no se pierden puntos por fallar, a los que van "
+      "detrás les conviene **apostar DISTINTO a Jaime**. Si se da el resultado que necesitan "
+      "(el de sus especiales), suman puntos de partido donde Jaime no, y así **le recortan**. "
+      "En cada informe se marca ⚡ cuándo tu apuesta difiere de la de Jaime.\n")
+    W("---\n")
     players = ["Pablo (tú)", "Martín", "José Pablo", "Benja", "Coni", "Caro", "Carola P"]
     for name in players:
         disp = DISPLAY.get(name, name)
@@ -598,7 +687,7 @@ def generar_informes(d, esc, par, esp, sim, estr, out_path, N=20000, NB=4000):
         brackets = sim.best_brackets(name, NB)
         best, (bw, bt3) = estr.dream_bracket(name, brackets)
         rows, conflict = estr.live_dead(name)
-        apu = estr.apuestas(name, best)
+        apu, reflabel = estr.apuestas(name, best)
 
         W(f"## 🧑 Informe · {disp}\n")
         W(f"**Posición actual:** #{rank} con **{pts} pts** "
@@ -617,9 +706,9 @@ def generar_informes(d, esc, par, esp, sim, estr, out_path, N=20000, NB=4000):
 
         # probabilidades (incluyen puntos de partido)
         W("**Tus probabilidades** (Monte Carlo, {} sims, con puntos de partido):\n".format(N))
-        W(f"- 🏆 Ganar la polla: **{stats['win']*100:.1f}%**")
-        W(f"- 🥉 Terminar top-3: **{stats['top3']*100:.1f}%**  ·  Top-5: **{stats['top5']*100:.1f}%**")
-        W(f"- 🔻 Terminar último: **{stats['last']*100:.0f}%**  ·  puesto medio esperado: ~#{stats['avg_rank']:.0f}\n")
+        W(f"- 🏆 Ganar la polla: **{fmt_pct(stats['win'])}**")
+        W(f"- 🥉 Terminar top-3: **{fmt_pct(stats['top3'])}**  ·  Top-5: **{fmt_pct(stats['top5'])}**")
+        W(f"- 🔻 Terminar último: **{fmt_pct(stats['last'])}**  ·  puesto medio esperado: ~#{stats['avg_rank']:.0f}\n")
 
         # qué alentar (texto según el nivel real del jugador)
         pod = estr._podium_pts_key(name, best)
@@ -636,14 +725,17 @@ def generar_informes(d, esc, par, esp, sim, estr, out_path, N=20000, NB=4000):
             W(f"- El título está fuera de alcance por la distancia. Tu objetivo realista es "
               f"**sumar puntos y escalar puestos** (y, si estás abajo, salir de la zona roja).\n")
 
-        # apuestas (pronósticos a enviar) con marca contrarian
-        W("**Tus apuestas** (pronósticos a enviar, alineados a tu mejor escenario):\n")
-        W("| Partido | Apuesta | Marcador | Por qué |")
-        W("|---|---|---|---|")
+        # apuestas (pronósticos a enviar) con comparación vs la referencia del jugador
+        ndiff = sum(1 for a in apu if a["diff"])
+        W(f"**Tus apuestas** (pronósticos a enviar; te comparas contra **{reflabel}**):\n")
+        W(f"| Partido | Tu apuesta | Marcador | {reflabel.capitalize()} | Por qué |")
+        W("|---|---|---|---|---|")
         for a in apu:
-            tag = "favorito" if a["fav"] else "⚡ contrarian"
-            W(f"| {a['match']} | {a['pick']} ({tag}) | **{a['score']}** | {a['reason']} |")
+            jcell = ("⚡ **distinto** (" + a["ref"] + ")") if a["diff"] else a["ref"]
+            W(f"| {a['match']} | {a['pick']} | **{a['score']}** | {jcell} | {a['reason']} |")
         W("")
+        W(f"> Apuestas **distintas a {reflabel}: {ndiff} de 4**. Cada una que aciertes en tu "
+          f"escenario te separa de tu competencia directa.\n")
 
         # escenario San Marino
         W("**Escenario San Marino:** " + _san_marino(d, name, stats["last"], rank, len(d.players)) + "\n")
@@ -661,6 +753,15 @@ def generar_informes(d, esc, par, esp, sim, estr, out_path, N=20000, NB=4000):
 
 
 REPORT_PLAYERS = ["Pablo (tú)", "Martín", "José Pablo", "Benja", "Coni", "Caro", "Carola P"]
+
+
+def fmt_pct(x):
+    """Formatea una probabilidad (fracción) con decimales útiles cuando es chica."""
+    v = x * 100
+    if v >= 1:    return f"{v:.1f}%"
+    if v >= 0.01: return f"{v:.2f}%"
+    if v > 0:     return f"{v:.3f}%"
+    return "<0.001%"
 
 
 def _san_marino(d, name, last_p, rank, nP):
@@ -708,6 +809,10 @@ def export_dashboard(d, esc, par, esp, sim, estr, out_path, N=30000, NB=2500):
     data["camino"] = [dict(team=d.es(t), champ=round(champ[t]*100),
                            final=round(final[t]*100), third=round(third[t]*100))
                       for t in sorted(d.ALIVE, key=lambda x: -champ[x])]
+    jw1 = d.jaime_winner("SF1"); jw2 = d.jaime_winner("SF2")
+    data["jaime"] = dict(sf1=d.es(jw1) if jw1 else "empate",
+                         sf2=d.es(jw2) if jw2 else "empate",
+                         winPct=fmt_pct(stats_all["Jaime"]["win"]))
     # jugadores
     players = []
     for name in REPORT_PLAYERS:
@@ -717,19 +822,22 @@ def export_dashboard(d, esc, par, esp, sim, estr, out_path, N=30000, NB=2500):
         best, (bw, bt3) = estr.dream_bracket(name, brackets)
         rows, conflict = estr.live_dead(name)
         podium = estr._podium_pts_key(name, best)
+        apu, reflabel = estr.apuestas(name, best)
+        ndiff = sum(1 for a in apu if a["diff"])
         tier = ("candidato" if stx["win"] >= 0.02 else
                 "longshot" if stx["top5"] >= 0.02 else "fondo")
         players.append(dict(
             name=name, disp=DISPLAY.get(name, name), rank=rank, pts=pts,
             gapLead=136 - pts, tier=tier,
-            win=round(stx["win"]*100, 1), top3=round(stx["top3"]*100, 1),
+            win=round(stx["win"]*100, 1), winStr=fmt_pct(stx["win"]),
+            top3=round(stx["top3"]*100, 1),
             top5=round(stx["top5"]*100, 1), last=round(stx["last"]*100),
             avgRank=round(stx["avg_rank"]),
             specials=[dict(txt=t, alive=al) for (t, al) in rows],
             golMvpNote=gol_mvp_note(d, name),
             dream=dict(champ=d.es(best[0]), run=d.es(best[1]), third=d.es(best[2]),
                        podium=podium, condWin=round(bw*100), condTop3=round(bt3*100)),
-            apuestas=estr.apuestas(name, best),
+            apuestas=apu, ndiff=ndiff, ref=reflabel,
             style=dict(label=st["label"], desc=st["desc"]),
             sanMarino=_san_marino(d, name, stx["last"], rank, len(d.players)),
             keyInsight=_key_insight(d, name, s, stx, best, podium),
@@ -745,7 +853,7 @@ def export_dashboard(d, esc, par, esp, sim, estr, out_path, N=30000, NB=2500):
 # ══════════════════════════════════════════════════════════════════════
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--sims", type=int, default=40000)
+    ap.add_argument("--sims", type=int, default=60000)
     ap.add_argument("--informes", action="store_true", help="genera estrategia/INFORMES.md")
     ap.add_argument("--dashboard", action="store_true", help="genera estrategia/dashboard_data.json")
     args = ap.parse_args()

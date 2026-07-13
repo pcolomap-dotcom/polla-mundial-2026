@@ -155,6 +155,40 @@ live y el puntaje del reglamento.)*
 
 ---
 
+## 8. ¿Por qué tu probabilidad es ~0,05% y no 1%? ¿Y cómo subirla?
+
+**No es un error ni falta de decimales.** Más simulaciones no *suben* tu
+probabilidad, solo la *miden* mejor (con 60.000 sims ya se ve **0,05%**, no
+"0%"). Tu chance es baja por estructura: vas 29 abajo y para pasar a Jaime
+necesitas España campeón + Francia 3ª + **Oyarzabal goleador** + Mbappé MVP, y
+aun así le ganas por **1 punto**.
+
+**Lo que SÍ la sube — tu idea de apostar distinto a Jaime.** Como no se pierden
+puntos por fallar, apostar diferente al líder no cuesta nada y te separa en tu
+escenario:
+
+| Escenario | Tu prob. de ganar |
+|---|---|
+| Apuestas **igual** que Jaime en las semis | ~0,02% |
+| Apuestas **distinto** a Jaime (Inglaterra finalista) | ~0,05% |
+
+Es decir, diferenciarte **≈ 2,5×** tu chance. Por eso tu única apuesta distinta
+a Jaime (Inglaterra en SF2) importa: en tu cuadro ideal Inglaterra gana esa semi
+y sumas donde Jaime no.
+
+**El techo real depende de la Bota de Oro** (mi supuesto: Oyarzabal 5%). Aunque
+fuera mucho más alto, no llegas a 1%:
+
+| Prob. de Oyarzabal goleador | Tu prob. de ganar |
+|---|---|
+| 5% (supuesto base) | ~0,05% |
+| 15% | ~0,15% |
+| 30% (muy optimista) | ~0,31% |
+
+Todo esto es editable en el código (`JAIME_BETS`, `REFERENCE`, `AgenteEspeciales.GOL`).
+
+---
+
 ### TL;DR
 Vas 12º y ganar es un tiro largo (~0,1 %). Para tener chance: **alienta a España a
 ganarlo todo, a que Francia termine 3ª (no finalista) y —la llave— a Oyarzabal

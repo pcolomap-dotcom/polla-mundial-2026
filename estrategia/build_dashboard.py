@@ -127,6 +127,8 @@ camino_rows = "".join(
     f"<td class='r tnum'>{c['final']}%</td><td class='r tnum'>{c['third']}%</td></tr>"
     for c in data["camino"])
 
+jaime_sf1 = data["jaime"]["sf1"]; jaime_sf2 = data["jaime"]["sf2"]; jaime_win = data["jaime"]["winPct"]
+
 pills = "".join(
     f'<button class="pill" role="tab" data-i="{i}" onclick="pick({i})">'
     f'<span class="rk">#{p["rank"]}</span>{p["disp"]}</button>'
@@ -154,14 +156,18 @@ HTML = f"""<title>Tableros de estrategia · Polla Mundial 2026</title>
     </table>
     <div class="mini">La final más probable es España–Argentina. Puntos que quedan en juego por
       partido: semifinal 3 (acierto) / 6 (exacto); 3er puesto y final 4 / 8.</div>
+    <div class="note" style="margin-top:10px">👑 <b>Jaime</b> (líder, {jaime_win} de ganar) apuesta:
+      SF1 → <b>{jaime_sf1}</b>, SF2 → <b>{jaime_sf2}</b>, final y 3º al favorito.
+      La idea: <b>apostar distinto a tu competencia</b> (⚡) para recortarle si se da tu escenario;
+      como no se pierden puntos por fallar, diferenciarse no cuesta nada.</div>
   </section>
 
   <nav class="players" role="tablist">{pills}</nav>
   <main id="board" class="panel"></main>
 
-  <p class="foot">Generado por <code>estrategia/agentes_polla.py</code> (Monte Carlo, 30.000
-    simulaciones + enumeración exacta del podio). Supuestos de fuerza de equipos y carrera de
-    goleador editables en el código. Elige tu nombre arriba.</p>
+  <p class="foot">Generado por <code>estrategia/agentes_polla.py</code> (Monte Carlo, 60.000
+    simulaciones + enumeración exacta del podio). Contra quién se diferencia cada jugador y la
+    fuerza de los equipos son editables en el código. Elige tu nombre arriba.</p>
 </div>
 <script>
 const DATA = {json.dumps(data['players'], ensure_ascii=False)};
@@ -177,9 +183,9 @@ function render(p){{
   const bets = p.apuestas.map(a=>`
     <div class="bet">
       <div class="m">${{esc(a.match)}}
-        <span class="why">${{esc(a.reason)}}</span></div>
+        <span class="why">${{esc(a.reason)}} · ${{a.diff?('<b style=\\'color:var(--red)\\'>⚡ distinto a '+esc(p.ref)+'</b> (él: '+esc(a.ref)+')'):('igual a '+esc(p.ref))}}</span></div>
       <div class="pick">${{fl(a.pick)}} <b>${{esc(a.pick)}}</b>
-        <span class="badge ${{a.fav?'b-fav':'b-contra'}}">${{a.fav?'favorito':'contrarian'}}</span><br>
+        <span class="badge ${{a.diff?'b-contra':'b-fav'}}">${{a.diff?'⚡ distinto':'igual'}}</span><br>
         <span class="sc">${{esc(a.score)}}</span></div>
     </div>`).join("");
   const d=p.dream;
@@ -195,12 +201,15 @@ function render(p){{
     </div>
 
     <div class="stats">
-      <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">${{p.win}}%</div></div>
+      <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">${{p.winStr}}</div></div>
       <div class="stat"><div class="lab">Top-3</div><div class="big tnum">${{p.top3}}%</div></div>
       <div class="stat"><div class="lab">Top-5</div><div class="big tnum">${{p.top5}}%</div></div>
       <div class="stat ${{riskHi?'risk':''}}"><div class="lab">Último</div><div class="big tnum">${{p.last}}%</div></div>
       <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#${{p.avgRank}}</div></div>
     </div>
+    <div class="note" style="margin-top:10px">🎯 Te diferencias de <b>${{esc(p.ref)}}</b> ·
+      apuestas <b>distintas: ${{p.ndiff}} de 4</b>. Cada acierto tuyo en tu escenario que
+      ${{esc(p.ref)}} falle, te acerca.</div>
 
     <div class="key">${{esc(p.keyInsight)}}</div>
 
@@ -227,8 +236,8 @@ function render(p){{
     <div class="panel" style="margin-top:14px">
       <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
       <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
-        Alineadas al escenario donde mejor terminas. Como no se pierden puntos por fallar,
-        ir <b>contrarian</b> no tiene costo.</div>
+        Alineadas a tu mejor escenario y comparadas con <b>${{esc(p.ref)}}</b>. Como no se
+        pierden puntos por fallar, apostar <b>⚡ distinto</b> no tiene costo y te separa.</div>
       ${{bets}}
     </div>
 

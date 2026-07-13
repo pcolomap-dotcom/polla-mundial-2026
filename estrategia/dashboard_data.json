@@ -54,6 +54,11 @@
    "third": 22
   }
  ],
+ "jaime": {
+  "sf1": "España",
+  "sf2": "Argentina",
+  "winPct": "39.9%"
+ },
  "players": [
   {
    "name": "Pablo (tú)",
@@ -62,9 +67,10 @@
    "pts": 107,
    "gapLead": 29,
    "tier": "longshot",
-   "win": 0.0,
+   "win": 0.1,
+   "winStr": "0.05%",
    "top3": 0.5,
-   "top5": 3.3,
+   "top5": 3.2,
    "last": 0,
    "avgRank": 16,
    "specials": [
@@ -96,7 +102,7 @@
     "third": "Francia",
     "podium": 30,
     "condWin": 1,
-    "condTop3": 5
+    "condTop3": 6
    },
    "apuestas": [
     {
@@ -104,30 +110,40 @@
      "pick": "España",
      "score": "1 – 2",
      "fav": true,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Inglaterra",
      "score": "2 – 1",
      "fav": false,
-     "reason": "aunque Argentina es favorito, te conviene por tu posición vs rivales"
+     "reason": "aunque Argentina es favorito, te conviene por tu escenario",
+     "ref": "Argentina",
+     "diff": true
     },
     {
      "match": "3er lugar · Francia vs Argentina",
      "pick": "Francia",
      "score": "2 – 1",
      "fav": true,
-     "reason": "tu 3º: +10"
+     "reason": "tu 3º: +10",
+     "ref": "Francia",
+     "diff": false
     },
     {
      "match": "Final · España vs Inglaterra",
      "pick": "España",
      "score": "2 – 0",
      "fav": true,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "España",
+     "diff": false
     }
    ],
+   "ndiff": 1,
+   "ref": "Jaime",
    "style": {
     "label": "Contrarian selectivo",
     "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."
@@ -142,9 +158,10 @@
    "pts": 116,
    "gapLead": 20,
    "tier": "candidato",
-   "win": 9.7,
-   "top3": 32.0,
-   "top5": 47.7,
+   "win": 8.4,
+   "winStr": "8.4%",
+   "top3": 31.9,
+   "top5": 46.7,
    "last": 0,
    "avgRank": 7,
    "specials": [
@@ -175,7 +192,7 @@
     "run": "Argentina",
     "third": "Francia",
     "podium": 45,
-    "condWin": 64,
+    "condWin": 67,
     "condTop3": 100
    },
    "apuestas": [
@@ -184,36 +201,46 @@
      "pick": "España",
      "score": "1 – 2",
      "fav": true,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Argentina",
      "score": "0 – 2",
      "fav": true,
-     "reason": "tu subcampeón: debe ser finalista"
+     "reason": "tu subcampeón: debe ser finalista",
+     "ref": "Argentina",
+     "diff": false
     },
     {
      "match": "3er lugar · Francia vs Inglaterra",
      "pick": "Francia",
      "score": "2 – 0",
      "fav": true,
-     "reason": "tu 3º: +10"
+     "reason": "tu 3º: +10",
+     "ref": "Francia",
+     "diff": false
     },
     {
      "match": "Final · España vs Argentina",
      "pick": "España",
      "score": "2 – 1",
      "fav": true,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "España",
+     "diff": false
     }
    ],
+   "ndiff": 0,
+   "ref": "Jaime",
    "style": {
     "label": "Cobertura / chalk",
     "desc": "Estás arriba: juega a los favoritos y replica lo que harían tus rivales directos. No busques héroe; que nadie te pase barato."
    },
    "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
-   "keyInsight": "Eres candidato real (10% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."
+   "keyInsight": "Eres candidato real (8% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."
   },
   {
    "name": "José Pablo",
@@ -223,8 +250,9 @@
    "gapLead": 47,
    "tier": "fondo",
    "win": 0.0,
+   "winStr": "<0.001%",
    "top3": 0.0,
-   "top5": 0.0,
+   "top5": 0.1,
    "last": 0,
    "avgRank": 27,
    "specials": [
@@ -264,30 +292,40 @@
      "pick": "España",
      "score": "1 – 2",
      "fav": true,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Inglaterra",
      "score": "2 – 1",
      "fav": false,
-     "reason": "así Argentina cae al 3er puesto (tu 3º)"
+     "reason": "así Argentina cae al 3er puesto (tu 3º)",
+     "ref": "Argentina",
+     "diff": true
     },
     {
      "match": "3er lugar · Francia vs Argentina",
      "pick": "Argentina",
      "score": "1 – 2",
      "fav": false,
-     "reason": "tu 3º: +10"
+     "reason": "tu 3º: +10",
+     "ref": "Francia",
+     "diff": true
     },
     {
      "match": "Final · España vs Inglaterra",
      "pick": "España",
      "score": "2 – 0",
      "fav": true,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "España",
+     "diff": false
     }
    ],
+   "ndiff": 2,
+   "ref": "los favoritos",
    "style": {
     "label": "Máxima varianza",
     "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
@@ -303,8 +341,9 @@
    "gapLead": 43,
    "tier": "longshot",
    "win": 0.0,
-   "top3": 1.4,
-   "top5": 6.5,
+   "winStr": "<0.001%",
+   "top3": 0.7,
+   "top5": 8.7,
    "last": 0,
    "avgRank": 22,
    "specials": [
@@ -336,7 +375,7 @@
     "third": "España",
     "podium": 30,
     "condWin": 0,
-    "condTop3": 5
+    "condTop3": 2
    },
    "apuestas": [
     {
@@ -344,30 +383,40 @@
      "pick": "Francia",
      "score": "2 – 1",
      "fav": false,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "España",
+     "diff": true
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Inglaterra",
      "score": "2 – 1",
      "fav": false,
-     "reason": "aunque Argentina es favorito, te conviene por tu posición vs rivales"
+     "reason": "aunque Argentina es favorito, te conviene por tu escenario",
+     "ref": "Argentina",
+     "diff": true
     },
     {
      "match": "3er lugar · España vs Argentina",
      "pick": "España",
      "score": "2 – 1",
      "fav": true,
-     "reason": "tu 3º: +10"
+     "reason": "tu 3º: +10",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Final · Francia vs Inglaterra",
      "pick": "Francia",
      "score": "2 – 0",
      "fav": true,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "Francia",
+     "diff": false
     }
    ],
+   "ndiff": 2,
+   "ref": "los favoritos",
    "style": {
     "label": "Máxima varianza",
     "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
@@ -383,10 +432,11 @@
    "gapLead": 61,
    "tier": "fondo",
    "win": 0.0,
+   "winStr": "<0.001%",
    "top3": 0.0,
-   "top5": 0.0,
-   "last": 62,
-   "avgRank": 32,
+   "top5": 0.1,
+   "last": 65,
+   "avgRank": 31,
    "specials": [
     {
      "txt": "1º Inglaterra",
@@ -424,35 +474,45 @@
      "pick": "Francia",
      "score": "2 – 1",
      "fav": false,
-     "reason": "tu subcampeón: debe ser finalista"
+     "reason": "tu subcampeón: debe ser finalista",
+     "ref": "España",
+     "diff": true
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Inglaterra",
      "score": "2 – 1",
      "fav": false,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "Argentina",
+     "diff": true
     },
     {
      "match": "3er lugar · España vs Argentina",
      "pick": "España",
      "score": "2 – 1",
      "fav": true,
-     "reason": "favorito del cruce"
+     "reason": "favorito del cruce",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Final · Francia vs Inglaterra",
      "pick": "Inglaterra",
      "score": "1 – 2",
      "fav": false,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "Francia",
+     "diff": true
     }
    ],
+   "ndiff": 3,
+   "ref": "los favoritos",
    "style": {
     "label": "Máxima varianza",
     "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
    },
-   "sanMarino": "🚨 Riesgo ALTO de último lugar: **62%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.",
+   "sanMarino": "🚨 Riesgo ALTO de último lugar: **65%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.",
    "keyInsight": "Tu combo depende de que **Harry Kane** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."
   },
   {
@@ -463,8 +523,9 @@
    "gapLead": 41,
    "tier": "longshot",
    "win": 1.1,
-   "top3": 8.8,
-   "top5": 14.5,
+   "winStr": "1.1%",
+   "top3": 9.7,
+   "top5": 16.6,
    "last": 0,
    "avgRank": 19,
    "specials": [
@@ -495,8 +556,8 @@
     "run": "España",
     "third": "Francia",
     "podium": 45,
-    "condWin": 6,
-    "condTop3": 79
+    "condWin": 7,
+    "condTop3": 76
    },
    "apuestas": [
     {
@@ -504,30 +565,40 @@
      "pick": "España",
      "score": "1 – 2",
      "fav": true,
-     "reason": "tu subcampeón: debe ser finalista"
+     "reason": "tu subcampeón: debe ser finalista",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Argentina",
      "score": "0 – 2",
      "fav": true,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "Argentina",
+     "diff": false
     },
     {
      "match": "3er lugar · Francia vs Inglaterra",
      "pick": "Francia",
      "score": "2 – 0",
      "fav": true,
-     "reason": "tu 3º: +10"
+     "reason": "tu 3º: +10",
+     "ref": "Francia",
+     "diff": false
     },
     {
      "match": "Final · España vs Argentina",
      "pick": "Argentina",
      "score": "1 – 2",
      "fav": false,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "España",
+     "diff": true
     }
    ],
+   "ndiff": 1,
+   "ref": "Jaime",
    "style": {
     "label": "Máxima varianza",
     "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
@@ -543,10 +614,11 @@
    "gapLead": 36,
    "tier": "longshot",
    "win": 0.0,
-   "top3": 6.2,
-   "top5": 10.7,
+   "winStr": "0.03%",
+   "top3": 7.2,
+   "top5": 11.8,
    "last": 0,
-   "avgRank": 21,
+   "avgRank": 20,
    "specials": [
     {
      "txt": "1º Francia",
@@ -576,7 +648,7 @@
     "third": "España",
     "podium": 30,
     "condWin": 0,
-    "condTop3": 29
+    "condTop3": 27
    },
    "apuestas": [
     {
@@ -584,30 +656,40 @@
      "pick": "Francia",
      "score": "2 – 1",
      "fav": false,
-     "reason": "tu campeón: debe ser finalista"
+     "reason": "tu campeón: debe ser finalista",
+     "ref": "España",
+     "diff": true
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
      "pick": "Argentina",
      "score": "0 – 2",
      "fav": true,
-     "reason": "favorito del cruce"
+     "reason": "favorito del cruce",
+     "ref": "Argentina",
+     "diff": false
     },
     {
      "match": "3er lugar · España vs Inglaterra",
      "pick": "España",
      "score": "2 – 0",
      "fav": true,
-     "reason": "tu 3º: +10"
+     "reason": "tu 3º: +10",
+     "ref": "España",
+     "diff": false
     },
     {
      "match": "Final · Francia vs Argentina",
      "pick": "Francia",
      "score": "2 – 1",
      "fav": true,
-     "reason": "tu campeón: +20"
+     "reason": "tu campeón: +20",
+     "ref": "Francia",
+     "diff": false
     }
    ],
+   "ndiff": 1,
+   "ref": "los favoritos",
    "style": {
     "label": "Contrarian selectivo",
     "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."
