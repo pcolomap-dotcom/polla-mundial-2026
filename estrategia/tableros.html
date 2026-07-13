@@ -36,7 +36,7 @@ h2{font-family:"Arial Narrow","Helvetica Neue",sans-serif;font-weight:800;text-t
 .sub{color:var(--fg-dim);max-width:64ch;}
 .tnum{font-variant-numeric:tabular-nums;}
 .panel{background:var(--panel);border:1px solid var(--panel-line);border-radius:14px;padding:16px 18px;}
-section{margin:22px 0;}
+section.blk{margin:22px 0;}
 .shared{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 @media(max-width:720px){.shared{grid-template-columns:1fr;}}
 table{width:100%;border-collapse:collapse;font-size:.92rem;}
@@ -45,15 +45,30 @@ th{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-
 td.r,th.r{text-align:right;font-variant-numeric:tabular-nums;}
 .mini{font-size:.82rem;color:var(--fg-dim);margin-top:6px;}
 
+/* radios ocultos que controlan las pestañas */
+.tabs{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
 nav.players{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;}
 .pill{border:1px solid var(--panel-line);background:var(--chip);color:var(--fg);
-  padding:8px 15px;border-radius:999px;cursor:pointer;font-size:.9rem;font-weight:600;
-  transition:.15s;}
+  padding:9px 16px;border-radius:999px;cursor:pointer;font-size:.95rem;font-weight:600;
+  transition:.15s;user-select:none;}
 .pill:hover{border-color:var(--accent);}
-.pill[aria-selected="true"]{background:var(--accent);color:#12231a;border-color:var(--accent);}
 .pill .rk{opacity:.7;font-weight:700;font-size:.8em;margin-right:5px;}
-.pill .rel{opacity:.6;font-weight:600;font-size:.72em;margin-left:6px;}
-.pill[aria-selected="true"] .rel,.pill[aria-selected="true"] .rk{opacity:.85;}
+#tab0:checked ~ nav .pill[for="tab0"],
+#tab1:checked ~ nav .pill[for="tab1"],
+#tab2:checked ~ nav .pill[for="tab2"],
+#tab3:checked ~ nav .pill[for="tab3"],
+#tab4:checked ~ nav .pill[for="tab4"],
+#tab5:checked ~ nav .pill[for="tab5"],
+#tab6:checked ~ nav .pill[for="tab6"]{background:var(--accent);color:#12231a;border-color:var(--accent);}
+
+.board{display:none;}
+#tab0:checked ~ .boards #b0,
+#tab1:checked ~ .boards #b1,
+#tab2:checked ~ .boards #b2,
+#tab3:checked ~ .boards #b3,
+#tab4:checked ~ .boards #b4,
+#tab5:checked ~ .boards #b5,
+#tab6:checked ~ .boards #b6{display:block;}
 
 .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;
   border-bottom:1px solid var(--panel-line);padding-bottom:14px;margin-bottom:16px;}
@@ -110,16 +125,14 @@ ul.clean li{display:flex;gap:9px;align-items:flex-start;font-size:.92rem;}
 <div class="wrap">
   <header>
     <div class="kicker">Polla Mundialera Colomas y Asociados · Mundial 2026</div>
-    <h1>Tableros de estrategia de la familia</h1>
-    <p class="sub"><b>👋 Toca tu nombre</b> abajo para ver tu tablero. Ya se jugaron los
-      cuartos; faltan 2 semifinales, el 3er puesto y la final, más los premios especiales.
-      Idea central: apostar <b>⚡ distinto</b> a tu competencia (no se pierden puntos por
-      fallar), asumiendo que sabemos qué apuesta cada uno —en especial Jaime, el líder—
-      antes de mandar lo nuestro.</p>
+    <h1>Tableros de estrategia de la polla</h1>
+    <p class="sub"><b>👇 Toca tu nombre</b> para ver tu tablero. Ya se jugaron los cuartos;
+      faltan 2 semifinales, el 3er puesto y la final, más los premios especiales. Idea central:
+      apostar <b>⚡ distinto</b> a tu competencia (no se pierden puntos por fallar), asumiendo que
+      sabemos qué apuesta cada uno —en especial Jaime, el líder— antes de mandar lo nuestro.</p>
   </header>
 
-  <section class="shared">
-    
+  <section class="blk shared">
     <div class="panel">
       <h2>🇫🇷 Francia <span style="color:var(--fg-dim)">vs</span> España 🇪🇸</h2>
       <div style="font-size:1.05rem;font-weight:700">Avanza: Francia <b class="tnum">48%</b>
@@ -133,112 +146,529 @@ ul.clean li{display:flex;gap:9px;align-items:flex-start;font-size:.92rem;}
       <div class="mini"><div>Inglaterra 1-1 Argentina · 12%</div><div>Inglaterra 0-1 Argentina · 10%</div><div>Inglaterra 1-2 Argentina · 9%</div></div>
     </div>
   </section>
-  <section class="panel">
+  <section class="blk panel">
     <h2>🔮 Camino a la final</h2>
     <table>
       <thead><tr><th>Equipo</th><th class="r">Campeón</th><th class="r">Finalista</th><th class="r">3er lugar</th></tr></thead>
       <tbody><tr><td>🇪🇸 España</td><td class='r tnum'>30%</td><td class='r tnum'>52%</td><td class='r tnum'>29%</td></tr><tr><td>🇦🇷 Argentina</td><td class='r tnum'>29%</td><td class='r tnum'>61%</td><td class='r tnum'>18%</td></tr><tr><td>🇫🇷 Francia</td><td class='r tnum'>27%</td><td class='r tnum'>48%</td><td class='r tnum'>30%</td></tr><tr><td>🏴 Inglaterra</td><td class='r tnum'>14%</td><td class='r tnum'>39%</td><td class='r tnum'>22%</td></tr></tbody>
     </table>
-    <div class="mini">La final más probable es España–Argentina. Puntos que quedan en juego por
-      partido: semifinal 3 (acierto) / 6 (exacto); 3er puesto y final 4 / 8.</div>
     <div class="note" style="margin-top:10px">👑 <b>Jaime</b> (líder, 38.9% de ganar) apuesta:
-      SF1 → <b>España</b>, SF2 → <b>Argentina</b>, final y 3º al favorito.
-      La idea: <b>apostar distinto a tu competencia</b> (⚡) para recortarle si se da tu escenario;
-      como no se pierden puntos por fallar, diferenciarse no cuesta nada.</div>
+      SF1 → <b>España</b>, SF2 → <b>Argentina</b>, final y 3º al favorito. Puntos por partido:
+      semifinal 3 (acierto) / 6 (exacto); 3er puesto y final 4 / 8.</div>
   </section>
 
-  <nav class="players" role="tablist"><button class="pill" role="tab" data-i="0" onclick="pick(0)"><span class="rk">#12</span>Pablo<span class="rel">Tú</span></button><button class="pill" role="tab" data-i="1" onclick="pick(1)"><span class="rk">#5</span>Martín<span class="rel">Hermano</span></button><button class="pill" role="tab" data-i="2" onclick="pick(2)"><span class="rk">#30</span>José Pablo<span class="rel">Papá</span></button><button class="pill" role="tab" data-i="3" onclick="pick(3)"><span class="rk">#27</span>Benja<span class="rel">Hermano</span></button><button class="pill" role="tab" data-i="4" onclick="pick(4)"><span class="rk">#34</span>Coni<span class="rel">Cuñada</span></button><button class="pill" role="tab" data-i="5" onclick="pick(5)"><span class="rk">#24</span>Caro<span class="rel">Hermana</span></button><button class="pill" role="tab" data-i="6" onclick="pick(6)"><span class="rk">#19</span>Carola Puga<span class="rel">Mamá</span></button></nav>
-  <main id="board" class="panel"></main>
+  <input class="tabs" type="radio" name="tab" id="tab0" checked><input class="tabs" type="radio" name="tab" id="tab1"><input class="tabs" type="radio" name="tab" id="tab2"><input class="tabs" type="radio" name="tab" id="tab3"><input class="tabs" type="radio" name="tab" id="tab4"><input class="tabs" type="radio" name="tab" id="tab5"><input class="tabs" type="radio" name="tab" id="tab6">
+  <nav class="players"><label class="pill" for="tab0"><span class="rk">#12</span>Pablo</label><label class="pill" for="tab1"><span class="rk">#5</span>Martín</label><label class="pill" for="tab2"><span class="rk">#30</span>José Pablo</label><label class="pill" for="tab3"><span class="rk">#27</span>Benja</label><label class="pill" for="tab4"><span class="rk">#34</span>Coni</label><label class="pill" for="tab5"><span class="rk">#24</span>Caro</label><label class="pill" for="tab6"><span class="rk">#19</span>Carola Puga</label></nav>
+  <div class="boards">
+    <section class="board" id="b0">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#12 · Pablo</div>
+          <div style="color:var(--fg-dim)">107 pts · a 29 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-longshot">Opción lejana</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">0.08%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">1.2%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">5.1%</div></div>
+        <div class="stat "><div class="lab">Último</div><div class="big tnum">0%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#16</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>Jaime</b> · apuestas
+        <b>distintas: 1 de 4</b>. Cada acierto tuyo en tu escenario que Jaime falle, te acerca.</div>
+
+      <div class="key">Tu combo depende de que <b>Mikel Oyarzabal</b> sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º España</div></li><li><span class="no">✕</span><div>2º Brasil <b style="color:var(--red)">— eliminado</b></div></li><li><span class="ok">✓</span><div>3º Francia</div></li><li><span class="ok">✓</span><div>Goleador Mikel Oyarzabal</div></li><li><span class="ok">✓</span><div>Balón de Oro Mbappé</div></li></ul>
+          <div class="note">Tu MVP es <b>Mbappé</b> (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que <b>Mbappé NO sea el máximo goleador</b> (que lo supere otro, idealmente tu goleador <b>Mikel Oyarzabal</b>).</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🇪🇸 España</div>
+            <div class="podchip"><small>Subcampeón</small>🏴 Inglaterra</div>
+            <div class="podchip"><small>3er lugar</small>🇫🇷 Francia</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+30</b> de podio. Con tus especiales, te pone a pelear el top-5.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>Jaime</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu campeón: debe ser finalista · igual a Jaime</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">te da igual: apuestas distinto a Jaime para separarte · <b style="color:var(--red)">⚡ distinto a Jaime</b> (él: Argentina)</span></div>
+        <div class="pick">🏴 <b>Inglaterra</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · Francia vs Argentina<span class="why">tu 3º: +10 · igual a Jaime</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · España vs Inglaterra<span class="why">tu campeón: +20 · igual a Jaime</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 0</span></div>
+      </div>
+      </div>
+
+      <div class="sanm lo">✅ Prácticamente sin riesgo de último lugar.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Contrarian selectivo</span> — Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable.</div>
+    </section>
+    <section class="board" id="b1">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#5 · Martín</div>
+          <div style="color:var(--fg-dim)">116 pts · a 20 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-candidato">Candidato real</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">8.6%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">29.6%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">48.4%</div></div>
+        <div class="stat "><div class="lab">Último</div><div class="big tnum">0%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#8</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>Jaime</b> · apuestas
+        <b>distintas: 0 de 4</b>. Cada acierto tuyo en tu escenario que Jaime falle, te acerca.</div>
+
+      <div class="key">Eres candidato real (9% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º España</div></li><li><span class="ok">✓</span><div>2º Argentina</div></li><li><span class="ok">✓</span><div>3º Francia</div></li><li><span class="ok">✓</span><div>Goleador Mbappé</div></li><li><span class="ok">✓</span><div>Balón de Oro Harry Kane</div></li></ul>
+          <div class="note">Tu goleador es <b>Mbappé</b> (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya <b>no</b> puede ser tu MVP <b>Harry Kane</b> salvo que ese sea otro jugador.</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🇪🇸 España</div>
+            <div class="podchip"><small>Subcampeón</small>🇦🇷 Argentina</div>
+            <div class="podchip"><small>3er lugar</small>🇫🇷 Francia</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+45</b> de podio. En él tu prob. de ganar sube a ~66%.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>Jaime</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu campeón: debe ser finalista · igual a Jaime</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">tu subcampeón: debe ser finalista · igual a Jaime</span></div>
+        <div class="pick">🇦🇷 <b>Argentina</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">0 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · Francia vs Inglaterra<span class="why">tu 3º: +10 · igual a Jaime</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 0</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · España vs Argentina<span class="why">tu campeón: +20 · igual a Jaime</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      </div>
+
+      <div class="sanm lo">✅ Prácticamente sin riesgo de último lugar.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Cobertura / chalk</span> — Estás arriba: juega a los favoritos y replica lo que harían tus rivales directos. No busques héroe; que nadie te pase barato.</div>
+    </section>
+    <section class="board" id="b2">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#30 · José Pablo</div>
+          <div style="color:var(--fg-dim)">89 pts · a 47 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-fondo">Fondo de tabla</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">&lt;0.001%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">0.0%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">0.0%</div></div>
+        <div class="stat "><div class="lab">Último</div><div class="big tnum">0%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#27</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>los favoritos</b> · apuestas
+        <b>distintas: 2 de 4</b>. Cada acierto tuyo en tu escenario que los favoritos falle, te acerca.</div>
+
+      <div class="key">Tu combo depende de que <b>Mikel Oyarzabal</b> sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º España</div></li><li><span class="no">✕</span><div>2º Alemania <b style="color:var(--red)">— eliminado</b></div></li><li><span class="ok">✓</span><div>3º Argentina</div></li><li><span class="ok">✓</span><div>Goleador Mikel Oyarzabal</div></li><li><span class="ok">✓</span><div>Balón de Oro Mbappé</div></li></ul>
+          <div class="note">Tu MVP es <b>Mbappé</b> (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que <b>Mbappé NO sea el máximo goleador</b> (que lo supere otro, idealmente tu goleador <b>Mikel Oyarzabal</b>).</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🇪🇸 España</div>
+            <div class="podchip"><small>Subcampeón</small>🏴 Inglaterra</div>
+            <div class="podchip"><small>3er lugar</small>🇦🇷 Argentina</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+30</b> de podio. El título está lejos; el objetivo es escalar y no quedar último.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>los favoritos</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu campeón: debe ser finalista · igual a los favoritos</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">así Argentina cae al 3er puesto (tu 3º) · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: Argentina)</span></div>
+        <div class="pick">🏴 <b>Inglaterra</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · Francia vs Argentina<span class="why">tu 3º: +10 · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: Francia)</span></div>
+        <div class="pick">🇦🇷 <b>Argentina</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · España vs Inglaterra<span class="why">tu campeón: +20 · igual a los favoritos</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 0</span></div>
+      </div>
+      </div>
+
+      <div class="sanm lo">✅ Prácticamente sin riesgo de último lugar.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Máxima varianza</span> — Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado.</div>
+    </section>
+    <section class="board" id="b3">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#27 · Benja</div>
+          <div style="color:var(--fg-dim)">93 pts · a 43 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-longshot">Opción lejana</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">&lt;0.001%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">2.3%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">9.6%</div></div>
+        <div class="stat "><div class="lab">Último</div><div class="big tnum">0%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#22</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>los favoritos</b> · apuestas
+        <b>distintas: 2 de 4</b>. Cada acierto tuyo en tu escenario que los favoritos falle, te acerca.</div>
+
+      <div class="key">Tu goleador y tu MVP son el mismo jugador (Mbappé): solo puedes sumar uno de los dos. Ese techo te limita; necesitas además acertar podio y partidos.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º Francia</div></li><li><span class="no">✕</span><div>2º Brasil <b style="color:var(--red)">— eliminado</b></div></li><li><span class="ok">✓</span><div>3º España</div></li><li><span class="ok">✓</span><div>Goleador Mbappé</div></li><li><span class="ok">✓</span><div>Balón de Oro Mbappé</div></li></ul>
+          <div class="note">⚠️ Elegiste a <b>Mbappé</b> para goleador <b>y</b> para mejor jugador, pero un jugador no puede ganar los dos. En la práctica solo puedes sumar <b>uno</b> de esos dos premios (máx. 10 pts, no 20).</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🇫🇷 Francia</div>
+            <div class="podchip"><small>Subcampeón</small>🏴 Inglaterra</div>
+            <div class="podchip"><small>3er lugar</small>🇪🇸 España</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+30</b> de podio. Con tus especiales, te pone a pelear el top-5.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>los favoritos</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu campeón: debe ser finalista · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: España)</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">te da igual: apuestas distinto a los favoritos para separarte · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: Argentina)</span></div>
+        <div class="pick">🏴 <b>Inglaterra</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · España vs Argentina<span class="why">tu 3º: +10 · igual a los favoritos</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · Francia vs Inglaterra<span class="why">tu campeón: +20 · igual a los favoritos</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 0</span></div>
+      </div>
+      </div>
+
+      <div class="sanm lo">✅ Prácticamente sin riesgo de último lugar.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Máxima varianza</span> — Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado.</div>
+    </section>
+    <section class="board" id="b4">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#34 · Coni</div>
+          <div style="color:var(--fg-dim)">75 pts · a 61 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-fondo">Fondo de tabla</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">&lt;0.001%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">0.0%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">0.0%</div></div>
+        <div class="stat risk"><div class="lab">Último</div><div class="big tnum">60%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#31</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>los favoritos</b> · apuestas
+        <b>distintas: 4 de 4</b>. Cada acierto tuyo en tu escenario que los favoritos falle, te acerca.</div>
+
+      <div class="key">Tu combo depende de que <b>Harry Kane</b> sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º Inglaterra</div></li><li><span class="ok">✓</span><div>2º Francia</div></li><li><span class="no">✕</span><div>3º Portugal <b style="color:var(--red)">— eliminado</b></div></li><li><span class="ok">✓</span><div>Goleador Harry Kane</div></li><li><span class="ok">✓</span><div>Balón de Oro Mbappé</div></li></ul>
+          <div class="note">Tu MVP es <b>Mbappé</b> (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que <b>Mbappé NO sea el máximo goleador</b> (que lo supere otro, idealmente tu goleador <b>Harry Kane</b>).</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🏴 Inglaterra</div>
+            <div class="podchip"><small>Subcampeón</small>🇫🇷 Francia</div>
+            <div class="podchip"><small>3er lugar</small>🇪🇸 España</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+35</b> de podio. El título está lejos; el objetivo es escalar y no quedar último.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>los favoritos</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu subcampeón: debe ser finalista · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: España)</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">tu campeón: debe ser finalista · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: Argentina)</span></div>
+        <div class="pick">🏴 <b>Inglaterra</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · España vs Argentina<span class="why">te da igual: apuestas distinto a los favoritos · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: España)</span></div>
+        <div class="pick">🇦🇷 <b>Argentina</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · Francia vs Inglaterra<span class="why">tu campeón: +20 · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: Francia)</span></div>
+        <div class="pick">🏴 <b>Inglaterra</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      </div>
+
+      <div class="sanm hi">🚨 Riesgo ALTO de último lugar: <b>60%</b> de terminar 34º (polera de San Marino). Para salvarte necesitas que <b>tus especiales vivos sumen</b> (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que <b>no pierdes puntos por fallar</b>, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Máxima varianza</span> — Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado.</div>
+    </section>
+    <section class="board" id="b5">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#24 · Caro</div>
+          <div style="color:var(--fg-dim)">95 pts · a 41 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-longshot">Opción lejana</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">1.0%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">10.1%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">16.3%</div></div>
+        <div class="stat "><div class="lab">Último</div><div class="big tnum">0%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#19</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>Jaime</b> · apuestas
+        <b>distintas: 1 de 4</b>. Cada acierto tuyo en tu escenario que Jaime falle, te acerca.</div>
+
+      <div class="key">Tu mejor escenario (Argentina campeón, Francia 3º) te da +45 de podio. El título está lejos; juega a escalar y a no quedar último.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º Argentina</div></li><li><span class="ok">✓</span><div>2º España</div></li><li><span class="ok">✓</span><div>3º Francia</div></li><li><span class="ok">✓</span><div>Goleador Mbappé</div></li><li><span class="ok">✓</span><div>Balón de Oro Messi</div></li></ul>
+          <div class="note">Tu goleador es <b>Mbappé</b> (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya <b>no</b> puede ser tu MVP <b>Messi</b> salvo que ese sea otro jugador.</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🇦🇷 Argentina</div>
+            <div class="podchip"><small>Subcampeón</small>🇪🇸 España</div>
+            <div class="podchip"><small>3er lugar</small>🇫🇷 Francia</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+45</b> de podio. Con tus especiales, te pone a pelear el top-5.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>Jaime</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu subcampeón: debe ser finalista · igual a Jaime</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">tu campeón: debe ser finalista · igual a Jaime</span></div>
+        <div class="pick">🇦🇷 <b>Argentina</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">0 – 2</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · Francia vs Inglaterra<span class="why">tu 3º: +10 · igual a Jaime</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 0</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · España vs Argentina<span class="why">tu campeón: +20 · <b style="color:var(--red)">⚡ distinto a Jaime</b> (él: España)</span></div>
+        <div class="pick">🇦🇷 <b>Argentina</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">1 – 2</span></div>
+      </div>
+      </div>
+
+      <div class="sanm lo">✅ Prácticamente sin riesgo de último lugar.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Máxima varianza</span> — Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado.</div>
+    </section>
+    <section class="board" id="b6">
+      <div class="head">
+        <div>
+          <div class="kicker">Tu posición</div>
+          <div class="who">#19 · Carola Puga</div>
+          <div style="color:var(--fg-dim)">100 pts · a 36 del líder (Jaime)</div>
+        </div>
+        <span class="tierbadge tier-longshot">Opción lejana</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">&lt;0.001%</div></div>
+        <div class="stat"><div class="lab">Top-3</div><div class="big tnum">6.9%</div></div>
+        <div class="stat"><div class="lab">Top-5</div><div class="big tnum">11.9%</div></div>
+        <div class="stat "><div class="lab">Último</div><div class="big tnum">0%</div></div>
+        <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#20</div></div>
+      </div>
+      <div class="note">🎯 Te diferencias de <b>los favoritos</b> · apuestas
+        <b>distintas: 2 de 4</b>. Cada acierto tuyo en tu escenario que los favoritos falle, te acerca.</div>
+
+      <div class="key">Tu combo depende de que <b>Messi</b> sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos.</div>
+
+      <div class="cols">
+        <div class="panel">
+          <h2>📌 Tus especiales</h2>
+          <ul class="clean"><li><span class="ok">✓</span><div>1º Francia</div></li><li><span class="no">✕</span><div>2º Brasil <b style="color:var(--red)">— eliminado</b></div></li><li><span class="ok">✓</span><div>3º España</div></li><li><span class="ok">✓</span><div>Goleador Messi</div></li><li><span class="ok">✓</span><div>Balón de Oro Mbappé</div></li></ul>
+          <div class="note">Tu MVP es <b>Mbappé</b> (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que <b>Mbappé NO sea el máximo goleador</b> (que lo supere otro, idealmente tu goleador <b>Messi</b>).</div>
+        </div>
+        <div class="panel dream">
+          <h2>📣 Qué alentar</h2>
+          <div class="podchips">
+            <div class="podchip"><small>Campeón</small>🇫🇷 Francia</div>
+            <div class="podchip"><small>Subcampeón</small>🏴 Inglaterra</div>
+            <div class="podchip"><small>3er lugar</small>🇪🇸 España</div>
+          </div>
+          <div class="note">Ese cuadro te da <b>+30</b> de podio. Con tus especiales, te pone a pelear el top-5.</div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:14px">
+        <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
+        <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
+          Alineadas a tu mejor escenario y comparadas con <b>los favoritos</b>. Como no se
+          pierden puntos por fallar, apostar <b>⚡ distinto</b> no cuesta nada y te separa.</div>
+        
+      <div class="bet">
+        <div class="m">Semifinal · Francia vs España<span class="why">tu campeón: debe ser finalista · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: España)</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Semifinal · Inglaterra vs Argentina<span class="why">te da igual: apuestas distinto a los favoritos para separarte · <b style="color:var(--red)">⚡ distinto a los favoritos</b> (él: Argentina)</span></div>
+        <div class="pick">🏴 <b>Inglaterra</b><span class="badge b-contra">⚡ distinto</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">3er lugar · España vs Argentina<span class="why">tu 3º: +10 · igual a los favoritos</span></div>
+        <div class="pick">🇪🇸 <b>España</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 1</span></div>
+      </div>
+      <div class="bet">
+        <div class="m">Final · Francia vs Inglaterra<span class="why">tu campeón: +20 · igual a los favoritos</span></div>
+        <div class="pick">🇫🇷 <b>Francia</b><span class="badge b-fav">igual</span><br>
+          <span class="sc">2 – 0</span></div>
+      </div>
+      </div>
+
+      <div class="sanm lo">✅ Prácticamente sin riesgo de último lugar.</div>
+
+      <div class="note" style="margin-top:14px"><b>Estilo de juego:</b>
+        <span class="styletag">Contrarian selectivo</span> — Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable.</div>
+    </section></div>
 
   <p class="foot">Generado por <code>estrategia/agentes_polla.py</code> (Monte Carlo, 60.000
-    simulaciones + enumeración exacta del podio). Contra quién se diferencia cada jugador y la
-    fuerza de los equipos son editables en el código. Elige tu nombre arriba.</p>
+    simulaciones + enumeración exacta del podio). Sin conexión ni JavaScript: funciona en cualquier
+    celular. Contra quién se diferencia cada jugador y la fuerza de los equipos son editables en el código.</p>
 </div>
-<script>
-const DATA = [{"name": "Pablo (tú)", "disp": "Pablo", "rel": "Tú", "rank": 12, "pts": 107, "gapLead": 29, "tier": "longshot", "win": 0.1, "winStr": "0.08%", "top3": 1.2, "top5": 5.1, "last": 0, "avgRank": 16, "specials": [{"txt": "1º España", "alive": true}, {"txt": "2º Brasil", "alive": false}, {"txt": "3º Francia", "alive": true}, {"txt": "Goleador Mikel Oyarzabal", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Mikel Oyarzabal**).", "dream": {"champ": "España", "run": "Inglaterra", "third": "Francia", "podium": 30, "condWin": 1, "condTop3": 5}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu campeón: debe ser finalista", "ref": "España", "diff": false}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "te da igual: apuestas distinto a Jaime para separarte", "ref": "Argentina", "diff": true}, {"match": "3er lugar · Francia vs Argentina", "pick": "Francia", "score": "2 – 1", "fav": true, "reason": "tu 3º: +10", "ref": "Francia", "diff": false}, {"match": "Final · España vs Inglaterra", "pick": "España", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20", "ref": "España", "diff": false}], "ndiff": 1, "ref": "Jaime", "style": {"label": "Contrarian selectivo", "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu combo depende de que **Mikel Oyarzabal** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}, {"name": "Martín", "disp": "Martín", "rel": "Hermano", "rank": 5, "pts": 116, "gapLead": 20, "tier": "candidato", "win": 8.6, "winStr": "8.6%", "top3": 29.6, "top5": 48.4, "last": 0, "avgRank": 8, "specials": [{"txt": "1º España", "alive": true}, {"txt": "2º Argentina", "alive": true}, {"txt": "3º Francia", "alive": true}, {"txt": "Goleador Mbappé", "alive": true}, {"txt": "Balón de Oro Harry Kane", "alive": true}], "golMvpNote": "Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya **no** puede ser tu MVP **Harry Kane** salvo que ese sea otro jugador.", "dream": {"champ": "España", "run": "Argentina", "third": "Francia", "podium": 45, "condWin": 66, "condTop3": 100}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu campeón: debe ser finalista", "ref": "España", "diff": false}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Argentina", "score": "0 – 2", "fav": true, "reason": "tu subcampeón: debe ser finalista", "ref": "Argentina", "diff": false}, {"match": "3er lugar · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu 3º: +10", "ref": "Francia", "diff": false}, {"match": "Final · España vs Argentina", "pick": "España", "score": "2 – 1", "fav": true, "reason": "tu campeón: +20", "ref": "España", "diff": false}], "ndiff": 0, "ref": "Jaime", "style": {"label": "Cobertura / chalk", "desc": "Estás arriba: juega a los favoritos y replica lo que harían tus rivales directos. No busques héroe; que nadie te pase barato."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Eres candidato real (9% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."}, {"name": "José Pablo", "disp": "José Pablo", "rel": "Papá", "rank": 30, "pts": 89, "gapLead": 47, "tier": "fondo", "win": 0.0, "winStr": "<0.001%", "top3": 0.0, "top5": 0.0, "last": 0, "avgRank": 27, "specials": [{"txt": "1º España", "alive": true}, {"txt": "2º Alemania", "alive": false}, {"txt": "3º Argentina", "alive": true}, {"txt": "Goleador Mikel Oyarzabal", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Mikel Oyarzabal**).", "dream": {"champ": "España", "run": "Inglaterra", "third": "Argentina", "podium": 30, "condWin": 0, "condTop3": 0}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu campeón: debe ser finalista", "ref": "España", "diff": false}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "así Argentina cae al 3er puesto (tu 3º)", "ref": "Argentina", "diff": true}, {"match": "3er lugar · Francia vs Argentina", "pick": "Argentina", "score": "1 – 2", "fav": false, "reason": "tu 3º: +10", "ref": "Francia", "diff": true}, {"match": "Final · España vs Inglaterra", "pick": "España", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20", "ref": "España", "diff": false}], "ndiff": 2, "ref": "los favoritos", "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu combo depende de que **Mikel Oyarzabal** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}, {"name": "Benja", "disp": "Benja", "rel": "Hermano", "rank": 27, "pts": 93, "gapLead": 43, "tier": "longshot", "win": 0.0, "winStr": "<0.001%", "top3": 2.3, "top5": 9.6, "last": 0, "avgRank": 22, "specials": [{"txt": "1º Francia", "alive": true}, {"txt": "2º Brasil", "alive": false}, {"txt": "3º España", "alive": true}, {"txt": "Goleador Mbappé", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "⚠️ Elegiste a **Mbappé** para goleador **y** para mejor jugador, pero un jugador no puede ganar los dos. En la práctica solo puedes sumar **uno** de esos dos premios (máx. 10 pts, no 20).", "dream": {"champ": "Francia", "run": "Inglaterra", "third": "España", "podium": 30, "condWin": 0, "condTop3": 5}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "Francia", "score": "2 – 1", "fav": false, "reason": "tu campeón: debe ser finalista", "ref": "España", "diff": true}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "te da igual: apuestas distinto a los favoritos para separarte", "ref": "Argentina", "diff": true}, {"match": "3er lugar · España vs Argentina", "pick": "España", "score": "2 – 1", "fav": true, "reason": "tu 3º: +10", "ref": "España", "diff": false}, {"match": "Final · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20", "ref": "Francia", "diff": false}], "ndiff": 2, "ref": "los favoritos", "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu goleador y tu MVP son el mismo jugador (Mbappé): solo puedes sumar uno de los dos. Ese techo te limita; necesitas además acertar podio y partidos."}, {"name": "Coni", "disp": "Coni", "rel": "Cuñada", "rank": 34, "pts": 75, "gapLead": 61, "tier": "fondo", "win": 0.0, "winStr": "<0.001%", "top3": 0.0, "top5": 0.0, "last": 60, "avgRank": 31, "specials": [{"txt": "1º Inglaterra", "alive": true}, {"txt": "2º Francia", "alive": true}, {"txt": "3º Portugal", "alive": false}, {"txt": "Goleador Harry Kane", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Harry Kane**).", "dream": {"champ": "Inglaterra", "run": "Francia", "third": "España", "podium": 35, "condWin": 0, "condTop3": 0}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "Francia", "score": "2 – 1", "fav": false, "reason": "tu subcampeón: debe ser finalista", "ref": "España", "diff": true}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "tu campeón: debe ser finalista", "ref": "Argentina", "diff": true}, {"match": "3er lugar · España vs Argentina", "pick": "Argentina", "score": "1 – 2", "fav": false, "reason": "te da igual: apuestas distinto a los favoritos", "ref": "España", "diff": true}, {"match": "Final · Francia vs Inglaterra", "pick": "Inglaterra", "score": "1 – 2", "fav": false, "reason": "tu campeón: +20", "ref": "Francia", "diff": true}], "ndiff": 4, "ref": "los favoritos", "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "🚨 Riesgo ALTO de último lugar: **60%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.", "keyInsight": "Tu combo depende de que **Harry Kane** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}, {"name": "Caro", "disp": "Caro", "rel": "Hermana", "rank": 24, "pts": 95, "gapLead": 41, "tier": "longshot", "win": 1.0, "winStr": "1.0%", "top3": 10.1, "top5": 16.3, "last": 0, "avgRank": 19, "specials": [{"txt": "1º Argentina", "alive": true}, {"txt": "2º España", "alive": true}, {"txt": "3º Francia", "alive": true}, {"txt": "Goleador Mbappé", "alive": true}, {"txt": "Balón de Oro Messi", "alive": true}], "golMvpNote": "Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la Bota de Oro, ya **no** puede ser tu MVP **Messi** salvo que ese sea otro jugador.", "dream": {"champ": "Argentina", "run": "España", "third": "Francia", "podium": 45, "condWin": 7, "condTop3": 78}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "España", "score": "1 – 2", "fav": true, "reason": "tu subcampeón: debe ser finalista", "ref": "España", "diff": false}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Argentina", "score": "0 – 2", "fav": true, "reason": "tu campeón: debe ser finalista", "ref": "Argentina", "diff": false}, {"match": "3er lugar · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu 3º: +10", "ref": "Francia", "diff": false}, {"match": "Final · España vs Argentina", "pick": "Argentina", "score": "1 – 2", "fav": false, "reason": "tu campeón: +20", "ref": "España", "diff": true}], "ndiff": 1, "ref": "Jaime", "style": {"label": "Máxima varianza", "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu mejor escenario (Argentina campeón, Francia 3º) te da +45 de podio. El título está lejos; juega a escalar y a no quedar último."}, {"name": "Carola P", "disp": "Carola Puga", "rel": "Mamá", "rank": 19, "pts": 100, "gapLead": 36, "tier": "longshot", "win": 0.0, "winStr": "<0.001%", "top3": 6.9, "top5": 11.9, "last": 0, "avgRank": 20, "specials": [{"txt": "1º Francia", "alive": true}, {"txt": "2º Brasil", "alive": false}, {"txt": "3º España", "alive": true}, {"txt": "Goleador Messi", "alive": true}, {"txt": "Balón de Oro Mbappé", "alive": true}], "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Messi**).", "dream": {"champ": "Francia", "run": "Inglaterra", "third": "España", "podium": 30, "condWin": 0, "condTop3": 33}, "apuestas": [{"match": "Semifinal · Francia vs España", "pick": "Francia", "score": "2 – 1", "fav": false, "reason": "tu campeón: debe ser finalista", "ref": "España", "diff": true}, {"match": "Semifinal · Inglaterra vs Argentina", "pick": "Inglaterra", "score": "2 – 1", "fav": false, "reason": "te da igual: apuestas distinto a los favoritos para separarte", "ref": "Argentina", "diff": true}, {"match": "3er lugar · España vs Argentina", "pick": "España", "score": "2 – 1", "fav": true, "reason": "tu 3º: +10", "ref": "España", "diff": false}, {"match": "Final · Francia vs Inglaterra", "pick": "Francia", "score": "2 – 0", "fav": true, "reason": "tu campeón: +20", "ref": "Francia", "diff": false}], "ndiff": 2, "ref": "los favoritos", "style": {"label": "Contrarian selectivo", "desc": "Vas en el pelotón: apuesta tus marcadores al escenario donde tus especiales vivos pagan, aunque no sea el resultado más probable."}, "sanMarino": "✅ Prácticamente sin riesgo de último lugar.", "keyInsight": "Tu combo depende de que **Messi** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."}];
-const FLAG = {"España": "🇪🇸", "Francia": "🇫🇷", "Inglaterra": "🏴", "Argentina": "🇦🇷"};
-function fl(t){return FLAG[t]||"";}
-function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}
-function mdb(s){return esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>");}
-function render(p){
-  const spec = p.specials.map(s=>{
-    const good = s.alive;
-    return `<li><span class="${good?'ok':'no'}">${good?'✓':'✕'}</span>
-      <div>${esc(s.txt)} ${good?'':'<b style=\'color:var(--red)\'>— eliminado</b>'}</div></li>`;
-  }).join("");
-  const bets = p.apuestas.map(a=>`
-    <div class="bet">
-      <div class="m">${esc(a.match)}
-        <span class="why">${esc(a.reason)} · ${a.diff?('<b style=\'color:var(--red)\'>⚡ distinto a '+esc(p.ref)+'</b> (él: '+esc(a.ref)+')'):('igual a '+esc(p.ref))}</span></div>
-      <div class="pick">${fl(a.pick)} <b>${esc(a.pick)}</b>
-        <span class="badge ${a.diff?'b-contra':'b-fav'}">${a.diff?'⚡ distinto':'igual'}</span><br>
-        <span class="sc">${esc(a.score)}</span></div>
-    </div>`).join("");
-  const d=p.dream;
-  const riskHi = p.last>=15;
-  const board = `
-    <div class="head">
-      <div>
-        <div class="kicker">Tu posición ${p.rel?('· '+esc(p.rel)):''}</div>
-        <div class="who">#${p.rank} · ${esc(p.disp)}</div>
-        <div style="color:var(--fg-dim)">${p.pts} pts · a ${p.gapLead} del líder (Jaime)</div>
-      </div>
-      <span class="tierbadge tier-${p.tier}">${p.tier==='candidato'?'Candidato real':p.tier==='longshot'?'Opción lejana':'Fondo de tabla'}</span>
-    </div>
 
-    <div class="stats">
-      <div class="stat win"><div class="lab">Ganar</div><div class="big tnum">${p.winStr}</div></div>
-      <div class="stat"><div class="lab">Top-3</div><div class="big tnum">${p.top3}%</div></div>
-      <div class="stat"><div class="lab">Top-5</div><div class="big tnum">${p.top5}%</div></div>
-      <div class="stat ${riskHi?'risk':''}"><div class="lab">Último</div><div class="big tnum">${p.last}%</div></div>
-      <div class="stat"><div class="lab">Puesto medio</div><div class="big tnum">#${p.avgRank}</div></div>
-    </div>
-    <div class="note" style="margin-top:10px">🎯 Te diferencias de <b>${esc(p.ref)}</b> ·
-      apuestas <b>distintas: ${p.ndiff} de 4</b>. Cada acierto tuyo en tu escenario que
-      ${esc(p.ref)} falle, te acerca.</div>
-
-    <div class="key">${mdb(p.keyInsight)}</div>
-
-    <div class="cols">
-      <div class="panel">
-        <h2>📌 Tus especiales</h2>
-        <ul class="clean">${spec}</ul>
-        <div class="note">${mdb(p.golMvpNote)}</div>
-      </div>
-      <div class="panel dream">
-        <h2>📣 Qué alentar</h2>
-        <div class="podchips">
-          <div class="podchip"><small>Campeón</small>${fl(d.champ)} ${esc(d.champ)}</div>
-          <div class="podchip"><small>Subcampeón</small>${fl(d.run)} ${esc(d.run)}</div>
-          <div class="podchip"><small>3er lugar</small>${fl(d.third)} ${esc(d.third)}</div>
-        </div>
-        <div class="note">Ese cuadro te da <b>+${d.podium}</b> de podio.
-          ${p.tier==='candidato'?('En él tu prob. de ganar sube a ~'+d.condWin+'%.'):
-             p.tier==='longshot'?('Con tus especiales, te pone a pelear el top-5.'):
-             ('El título está lejos; el objetivo es escalar y no quedar último.')}</div>
-      </div>
-    </div>
-
-    <div class="panel" style="margin-top:14px">
-      <h2>🎯 Tus apuestas (pronósticos a enviar)</h2>
-      <div style="font-size:.82rem;color:var(--fg-dim);margin-bottom:4px">
-        Alineadas a tu mejor escenario y comparadas con <b>${esc(p.ref)}</b>. Como no se
-        pierden puntos por fallar, apostar <b>⚡ distinto</b> no tiene costo y te separa.</div>
-      ${bets}
-    </div>
-
-    <div class="sanm ${riskHi?'hi':'lo'}">${mdb(p.sanMarino)}</div>
-
-    <div style="margin-top:14px" class="note">
-      <b>Estilo de juego:</b> <span class="styletag">${esc(p.style.label)}</span> — ${esc(p.style.desc)}</div>
-  `;
-  document.getElementById("board").innerHTML = board;
-}
-function pick(i){
-  document.querySelectorAll(".pill").forEach((b,j)=>b.setAttribute("aria-selected", j===i?"true":"false"));
-  render(DATA[i]);
-}
-pick(0);
-</script>
 </body>
 </html>
