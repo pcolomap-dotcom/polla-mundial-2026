@@ -27,7 +27,7 @@ Marcadores más probables: Inglaterra 1-1 Argentina 12% · Inglaterra 0-1 Argent
 
 ---
 
-## 👑 Cómo apuesta Jaime (el líder, 39.9% de ganar)
+## 👑 Cómo apuesta Jaime (el líder, 38.9% de ganar)
 
 Apuestas de Jaime (editable en el código): **SF1 → España**, **SF2 → Argentina**, final y 3er puesto al favorito.
 
@@ -53,8 +53,8 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
-- 🏆 Ganar la polla: **0.05%**
-- 🥉 Terminar top-3: **0.51%**  ·  Top-5: **3.2%**
+- 🏆 Ganar la polla: **0.08%**
+- 🥉 Terminar top-3: **1.2%**  ·  Top-5: **5.1%**
 - 🔻 Terminar último: **<0.001%**  ·  puesto medio esperado: ~#16
 
 **Qué debes alentar** (tu mejor escenario):
@@ -67,7 +67,7 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 | Partido | Tu apuesta | Marcador | Jaime | Por qué |
 |---|---|---|---|---|
 | Semifinal · Francia vs España | España | **1 – 2** | España | tu campeón: debe ser finalista |
-| Semifinal · Inglaterra vs Argentina | Inglaterra | **2 – 1** | ⚡ **distinto** (Argentina) | aunque Argentina es favorito, te conviene por tu escenario |
+| Semifinal · Inglaterra vs Argentina | Inglaterra | **2 – 1** | ⚡ **distinto** (Argentina) | te da igual: apuestas distinto a Jaime para separarte |
 | 3er lugar · Francia vs Argentina | Francia | **2 – 1** | Francia | tu 3º: +10 |
 | Final · España vs Inglaterra | España | **2 – 0** | España | tu campeón: +20 |
 
@@ -97,14 +97,14 @@ Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la
 
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
-- 🏆 Ganar la polla: **8.4%**
-- 🥉 Terminar top-3: **31.9%**  ·  Top-5: **46.7%**
-- 🔻 Terminar último: **<0.001%**  ·  puesto medio esperado: ~#7
+- 🏆 Ganar la polla: **8.6%**
+- 🥉 Terminar top-3: **29.6%**  ·  Top-5: **48.4%**
+- 🔻 Terminar último: **<0.001%**  ·  puesto medio esperado: ~#8
 
 **Qué debes alentar** (tu mejor escenario):
 
 - Campeón **España**, subcampeón **Argentina**, 3º **Francia** (te da +45 de podio).
-- En ese cuadro tu prob. de **ganar** sube a ~65% y de top-3 a ~100%. Eres candidato real: ese es el resultado que tienes que empujar.
+- En ese cuadro tu prob. de **ganar** sube a ~64% y de top-3 a ~100%. Eres candidato real: ese es el resultado que tienes que empujar.
 
 **Tus apuestas** (pronósticos a enviar; te comparas contra **Jaime**):
 
@@ -142,8 +142,8 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
 - 🏆 Ganar la polla: **<0.001%**
-- 🥉 Terminar top-3: **0.02%**  ·  Top-5: **0.08%**
-- 🔻 Terminar último: **0.34%**  ·  puesto medio esperado: ~#27
+- 🥉 Terminar top-3: **<0.001%**  ·  Top-5: **<0.001%**
+- 🔻 Terminar último: **0.06%**  ·  puesto medio esperado: ~#27
 
 **Qué debes alentar** (tu mejor escenario):
 
@@ -186,8 +186,8 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
 - 🏆 Ganar la polla: **<0.001%**
-- 🥉 Terminar top-3: **0.75%**  ·  Top-5: **8.7%**
-- 🔻 Terminar último: **0.04%**  ·  puesto medio esperado: ~#22
+- 🥉 Terminar top-3: **2.3%**  ·  Top-5: **9.6%**
+- 🔻 Terminar último: **0.21%**  ·  puesto medio esperado: ~#22
 
 **Qué debes alentar** (tu mejor escenario):
 
@@ -199,7 +199,7 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 | Partido | Tu apuesta | Marcador | Los favoritos | Por qué |
 |---|---|---|---|---|
 | Semifinal · Francia vs España | Francia | **2 – 1** | ⚡ **distinto** (España) | tu campeón: debe ser finalista |
-| Semifinal · Inglaterra vs Argentina | Inglaterra | **2 – 1** | ⚡ **distinto** (Argentina) | aunque Argentina es favorito, te conviene por tu escenario |
+| Semifinal · Inglaterra vs Argentina | Inglaterra | **2 – 1** | ⚡ **distinto** (Argentina) | te da igual: apuestas distinto a los favoritos para separarte |
 | 3er lugar · España vs Argentina | España | **2 – 1** | España | tu 3º: +10 |
 | Final · Francia vs Inglaterra | Francia | **2 – 0** | Francia | tu campeón: +20 |
 
@@ -230,8 +230,8 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
 - 🏆 Ganar la polla: **<0.001%**
-- 🥉 Terminar top-3: **<0.001%**  ·  Top-5: **0.09%**
-- 🔻 Terminar último: **65.4%**  ·  puesto medio esperado: ~#31
+- 🥉 Terminar top-3: **<0.001%**  ·  Top-5: **0.05%**
+- 🔻 Terminar último: **60.4%**  ·  puesto medio esperado: ~#31
 
 **Qué debes alentar** (tu mejor escenario):
 
@@ -244,12 +244,12 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 |---|---|---|---|---|
 | Semifinal · Francia vs España | Francia | **2 – 1** | ⚡ **distinto** (España) | tu subcampeón: debe ser finalista |
 | Semifinal · Inglaterra vs Argentina | Inglaterra | **2 – 1** | ⚡ **distinto** (Argentina) | tu campeón: debe ser finalista |
-| 3er lugar · España vs Argentina | España | **2 – 1** | España | favorito del cruce |
+| 3er lugar · España vs Argentina | Argentina | **1 – 2** | ⚡ **distinto** (España) | te da igual: apuestas distinto a los favoritos |
 | Final · Francia vs Inglaterra | Inglaterra | **1 – 2** | ⚡ **distinto** (Francia) | tu campeón: +20 |
 
-> Apuestas **distintas a los favoritos: 3 de 4**. Cada una que aciertes en tu escenario te separa de tu competencia directa.
+> Apuestas **distintas a los favoritos: 4 de 4**. Cada una que aciertes en tu escenario te separa de tu competencia directa.
 
-**Escenario San Marino:** 🚨 Riesgo ALTO de último lugar: **65%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.
+**Escenario San Marino:** 🚨 Riesgo ALTO de último lugar: **60%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.
 
 **Estilo de juego: _Máxima varianza_.** Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado.
 
@@ -273,9 +273,9 @@ Tu goleador es **Mbappé** (favorito, hoy 8 goles). Pero ojo: si Mbappé gana la
 
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
-- 🏆 Ganar la polla: **1.1%**
-- 🥉 Terminar top-3: **9.7%**  ·  Top-5: **16.6%**
-- 🔻 Terminar último: **<0.001%**  ·  puesto medio esperado: ~#19
+- 🏆 Ganar la polla: **1.0%**
+- 🥉 Terminar top-3: **10.1%**  ·  Top-5: **16.3%**
+- 🔻 Terminar último: **0.07%**  ·  puesto medio esperado: ~#19
 
 **Qué debes alentar** (tu mejor escenario):
 
@@ -317,13 +317,13 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 
 **Tus probabilidades** (Monte Carlo, 60000 sims, con puntos de partido):
 
-- 🏆 Ganar la polla: **0.03%**
-- 🥉 Terminar top-3: **7.2%**  ·  Top-5: **11.8%**
+- 🏆 Ganar la polla: **<0.001%**
+- 🥉 Terminar top-3: **6.9%**  ·  Top-5: **11.9%**
 - 🔻 Terminar último: **<0.001%**  ·  puesto medio esperado: ~#20
 
 **Qué debes alentar** (tu mejor escenario):
 
-- Campeón **Francia**, subcampeón **Argentina**, 3º **España** (te da +30 de podio).
+- Campeón **Francia**, subcampeón **Inglaterra**, 3º **España** (te da +30 de podio).
 - El título es casi inalcanzable, pero ese cuadro (más tus especiales) te mete en pelea por el **top-5**. Apunta a escalar, no al 1º.
 
 **Tus apuestas** (pronósticos a enviar; te comparas contra **los favoritos**):
@@ -331,11 +331,11 @@ Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, pa
 | Partido | Tu apuesta | Marcador | Los favoritos | Por qué |
 |---|---|---|---|---|
 | Semifinal · Francia vs España | Francia | **2 – 1** | ⚡ **distinto** (España) | tu campeón: debe ser finalista |
-| Semifinal · Inglaterra vs Argentina | Argentina | **0 – 2** | Argentina | favorito del cruce |
-| 3er lugar · España vs Inglaterra | España | **2 – 0** | España | tu 3º: +10 |
-| Final · Francia vs Argentina | Francia | **2 – 1** | Francia | tu campeón: +20 |
+| Semifinal · Inglaterra vs Argentina | Inglaterra | **2 – 1** | ⚡ **distinto** (Argentina) | te da igual: apuestas distinto a los favoritos para separarte |
+| 3er lugar · España vs Argentina | España | **2 – 1** | España | tu 3º: +10 |
+| Final · Francia vs Inglaterra | Francia | **2 – 0** | Francia | tu campeón: +20 |
 
-> Apuestas **distintas a los favoritos: 1 de 4**. Cada una que aciertes en tu escenario te separa de tu competencia directa.
+> Apuestas **distintas a los favoritos: 2 de 4**. Cada una que aciertes en tu escenario te separa de tu competencia directa.
 
 **Escenario San Marino:** ✅ Prácticamente sin riesgo de último lugar.
 

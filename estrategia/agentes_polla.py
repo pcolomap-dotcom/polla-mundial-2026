@@ -271,37 +271,78 @@ class AgenteEspeciales:
 # ──────────────────────────────────────────────────────────────────────
 #  Helpers de apuestas y puntos de partido
 # ──────────────────────────────────────────────────────────────────────
-def sf_pick(d, par, name, pair):
-    """Qué equipo del par le conviene al jugador que sea FINALISTA (gane la semi).
-    Si su 1º/2º está en el par -> lo quiere finalista. Si su 3º está -> lo quiere
-    perdedor (para que juegue el 3er puesto), así que apuesta por el OTRO."""
+# Preferencia que dictan los ESPECIALES del jugador (None = le da igual ese partido).
+def spec_pref_semi(d, name, pair):
     s = d.pick(name); a, b = pair
-    def val(team):
-        if s["first"] == team:  return 20   # campeón: debe ser finalista
-        if s["second"] == team: return 15   # subcampeón: debe ser finalista
-        if s["third"] == team:  return -10  # 3º: debe PERDER la semi
+    def val(t):
+        if s["first"] == t:  return 20   # campeón: debe ser finalista
+        if s["second"] == t: return 15   # subcampeón: debe ser finalista
+        if s["third"] == t:  return -10  # 3º: debe PERDER la semi
         return 0
     va, vb = val(a), val(b)
-    if va != vb:
-        return a if va > vb else b
-    return a if par.advance(a, b)[0] >= 0.5 else b   # empate -> favorito
+    return (a if va > vb else b) if va != vb else None
+
+
+def spec_pref_final(d, name, X, Y):
+    s = d.pick(name)
+    if s["first"] in (X, Y):  return s["first"]
+    if s["second"] == X:      return Y      # quiere que su subcampeón pierda la final
+    if s["second"] == Y:      return X
+    return None
+
+
+def spec_pref_third(d, name, X, Y):
+    s = d.pick(name)
+    return s["third"] if s["third"] in (X, Y) else None
+
+
+def _fav(par, X, Y):
+    return X if par.advance(X, Y)[0] >= 0.5 else Y
+
+
+# Wrappers con fallback al favorito (para referencias de jugador puntual).
+def sf_pick(d, par, name, pair):
+    return spec_pref_semi(d, name, pair) or _fav(par, *pair)
 
 
 def final_pick(d, par, name, X, Y):
-    """A quién apuesta como ganador de la FINAL entre X (lado SF1) e Y (lado SF2).
-    Quiere que su campeón gane; si su subcampeón es finalista, quiere que pierda."""
-    s = d.pick(name)
-    if s["first"] in (X, Y):  return s["first"]
-    if s["second"] == X:      return Y
-    if s["second"] == Y:      return X
-    return X if par.advance(X, Y)[0] >= 0.5 else Y
+    return spec_pref_final(d, name, X, Y) or _fav(par, X, Y)
 
 
 def third_pick(d, par, name, X, Y):
-    """A quién apuesta como ganador del 3er puesto entre X (SF1) e Y (SF2)."""
-    s = d.pick(name)
-    if s["third"] in (X, Y):  return s["third"]
-    return X if par.advance(X, Y)[0] >= 0.5 else Y
+    return spec_pref_third(d, name, X, Y) or _fav(par, X, Y)
+
+
+def ref_winner(d, par, ref, which, X=None, Y=None):
+    """A quién apostaría la REFERENCIA en un partido. ref: 'Jaime'|'chalk'|nombre."""
+    pair = d.SF1 if which == "SF1" else d.SF2 if which == "SF2" else (X, Y)
+    if ref == "chalk":
+        return _fav(par, *pair)
+    if ref == "Jaime":
+        if which == "SF1": return d.jaime_winner("SF1")
+        if which == "SF2": return d.jaime_winner("SF2")
+        return _fav(par, *pair)            # final/3º: cobertura al favorito
+    if which == "SF1": return sf_pick(d, par, ref, d.SF1)
+    if which == "SF2": return sf_pick(d, par, ref, d.SF2)
+    if which == "final": return final_pick(d, par, ref, X, Y)
+    return third_pick(d, par, ref, X, Y)
+
+
+def resolve_pick(d, par, name, which, X=None, Y=None):
+    """Apuesta RECOMENDADA sabiendo de antemano lo que apuesta tu referencia:
+    1) si tus especiales dictan un pick, ese; 2) si te da igual ese partido,
+    apuesta lo OPUESTO a tu referencia (separación gratis, no se pierden puntos)."""
+    pair = d.SF1 if which == "SF1" else d.SF2 if which == "SF2" else (X, Y)
+    if which in ("SF1", "SF2"): pref = spec_pref_semi(d, name, pair)
+    elif which == "final":      pref = spec_pref_final(d, name, X, Y)
+    else:                       pref = spec_pref_third(d, name, X, Y)
+    if pref is not None:
+        return pref
+    ref = d.REFERENCE.get(name, "Jaime")
+    rp = ref_winner(d, par, ref, which, X, Y)
+    if rp is None:                          # la referencia apostó empate
+        return _fav(par, *pair)
+    return pair[0] if pair[1] == rp else pair[1]   # lo opuesto a la referencia
 
 
 def _oo(h, a):
@@ -334,8 +375,8 @@ class AgenteSimulacion:
             if jaime:
                 s1 = tuple(d.JAIME_BETS["SF1"]); s2 = tuple(d.JAIME_BETS["SF2"])
             else:
-                s1 = par.modal_score(d.SF1[0], d.SF1[1], sf_pick(d, par, n, d.SF1))
-                s2 = par.modal_score(d.SF2[0], d.SF2[1], sf_pick(d, par, n, d.SF2))
+                s1 = par.modal_score(d.SF1[0], d.SF1[1], resolve_pick(d, par, n, "SF1"))
+                s2 = par.modal_score(d.SF2[0], d.SF2[1], resolve_pick(d, par, n, "SF2"))
             fin, ter = {}, {}
             for X in d.SF1:            # finalista lado SF1 / perdedor lado SF1
                 for Y in d.SF2:        # finalista lado SF2 / perdedor lado SF2
@@ -343,8 +384,8 @@ class AgenteSimulacion:
                         fin[(X, Y)] = favmodal(X, Y)
                         ter[(X, Y)] = favmodal(X, Y)
                     else:
-                        fin[(X, Y)] = par.modal_score(X, Y, final_pick(d, par, n, X, Y))
-                        ter[(X, Y)] = par.modal_score(X, Y, third_pick(d, par, n, X, Y))
+                        fin[(X, Y)] = par.modal_score(X, Y, resolve_pick(d, par, n, "final", X, Y))
+                        ter[(X, Y)] = par.modal_score(X, Y, resolve_pick(d, par, n, "third", X, Y))
             self._pred[n] = dict(sf1=s1, sf2=s2, final=fin, third=ter)
 
     def _bracket(self):
@@ -520,69 +561,58 @@ class AgenteEstrategia:
         g_win, g_lose = ("2", "0") if pw >= 0.60 else ("2", "1")
         return f"{g_win} – {g_lose}" if winner == a else f"{g_lose} – {g_win}"
 
-    def _ref_winner(self, ref, which, X=None, Y=None):
-        """Ganador que apostaría la REFERENCIA del jugador en un partido.
-        ref: 'Jaime' | 'chalk' | '<nombre>'."""
-        d = self.d; par = self.par
-        pair = d.SF1 if which == "SF1" else d.SF2 if which == "SF2" else (X, Y)
-        if ref == "chalk":
-            return pair[0] if par.advance(*pair)[0] >= 0.5 else pair[1]
-        if ref == "Jaime":
-            if which == "SF1": return d.jaime_winner("SF1")
-            if which == "SF2": return d.jaime_winner("SF2")
-            return X if par.advance(X, Y)[0] >= 0.5 else Y   # final/3º: favorito
-        if which == "SF1": return sf_pick(d, par, ref, d.SF1)
-        if which == "SF2": return sf_pick(d, par, ref, d.SF2)
-        if which == "final": return final_pick(d, par, ref, X, Y)
-        return third_pick(d, par, ref, X, Y)
-
-    def apuestas(self, name, bracket):
-        """Las 4 apuestas que le convienen al jugador según su MEJOR bracket,
-        comparadas contra su REFERENCIA (editable: Jaime / chalk / nombre).
-        Marca ⚡ cuándo apuesta DISTINTO a esa referencia. No se pierden puntos
-        por fallar, así que diferenciarse no tiene costo."""
+    def apuestas(self, name, bracket=None):
+        """Las 4 apuestas recomendadas (SABIENDO de antemano lo que apuesta tu
+        referencia): tus especiales mandan y, donde te da igual, apuestas lo
+        opuesto a tu referencia (editable: Jaime / chalk / nombre). Marca ⚡ los
+        partidos donde apuestas distinto. No se pierden puntos por fallar."""
         d = self.d; par = self.par; s = d.pick(name)
         ref = d.REFERENCE.get(name, "Jaime")
         reflabel = "Jaime" if ref == "Jaime" else ("los favoritos" if ref == "chalk" else ref)
-        champ, run, third = bracket
-        fav1 = d.SF1[0] if par.advance(*d.SF1)[0] >= 0.5 else d.SF1[1]
-        fav2 = d.SF2[0] if par.advance(*d.SF2)[0] >= 0.5 else d.SF2[1]
-        f1 = champ if champ in d.SF1 else run          # finalista lado SF1
-        f2 = champ if champ in d.SF2 else run          # finalista lado SF2
+
+        # picks recomendados (mismos que usa la simulación)
+        f1 = resolve_pick(d, par, name, "SF1")     # finalista lado SF1
+        f2 = resolve_pick(d, par, name, "SF2")     # finalista lado SF2
         l1 = [t for t in d.SF1 if t != f1][0]
         l2 = [t for t in d.SF2 if t != f2][0]
+        champ = resolve_pick(d, par, name, "final", f1, f2)
+        third = resolve_pick(d, par, name, "third", l1, l2)
 
-        def why(pick, pair, fav):
+        # apuestas de la referencia (para comparar)
+        r1 = ref_winner(d, par, ref, "SF1"); r2 = ref_winner(d, par, ref, "SF2")
+        r3 = ref_winner(d, par, ref, "third", l1, l2); rf = ref_winner(d, par, ref, "final", f1, f2)
+
+        def why_semi(pick, pair):
             other = [t for t in pair if t != pick][0]
             if s["first"] == pick:  return "tu campeón: debe ser finalista"
             if s["second"] == pick: return "tu subcampeón: debe ser finalista"
             if s["third"] == other: return f"así {d.es(other)} cae al 3er puesto (tu 3º)"
-            if pick != fav:         return f"aunque {d.es(fav)} es favorito, te conviene por tu escenario"
-            return "favorito del cruce"
+            return f"te da igual: apuestas distinto a {reflabel} para separarte"
 
         def refname(w):
             return d.es(w) if w else "empate"
 
-        r1 = self._ref_winner(ref, "SF1"); r2 = self._ref_winner(ref, "SF2")
-        r3 = self._ref_winner(ref, "third", l1, l2); rf = self._ref_winner(ref, "final", f1, f2)
         rows = [
             dict(match=f"Semifinal · {d.es(d.SF1[0])} vs {d.es(d.SF1[1])}",
                  pick=d.es(f1), score=self._score(d.SF1[0], d.SF1[1], f1),
-                 fav=(f1 == fav1), reason=why(f1, d.SF1, fav1),
+                 fav=(f1 == _fav(par, *d.SF1)), reason=why_semi(f1, d.SF1),
                  ref=refname(r1), diff=(f1 != r1)),
             dict(match=f"Semifinal · {d.es(d.SF2[0])} vs {d.es(d.SF2[1])}",
                  pick=d.es(f2), score=self._score(d.SF2[0], d.SF2[1], f2),
-                 fav=(f2 == fav2), reason=why(f2, d.SF2, fav2),
+                 fav=(f2 == _fav(par, *d.SF2)), reason=why_semi(f2, d.SF2),
                  ref=refname(r2), diff=(f2 != r2)),
             dict(match=f"3er lugar · {d.es(l1)} vs {d.es(l2)}",
                  pick=d.es(third), score=self._score(l1, l2, third),
-                 fav=(third == (l1 if par.advance(l1, l2)[0] >= 0.5 else l2)),
-                 reason=("tu 3º: +10" if s["third"] == third else "favorito del cruce"),
+                 fav=(third == _fav(par, l1, l2)),
+                 reason=("tu 3º: +10" if s["third"] == third else
+                         f"te da igual: apuestas distinto a {reflabel}"),
                  ref=refname(r3), diff=(third != r3)),
             dict(match=f"Final · {d.es(f1)} vs {d.es(f2)}",
                  pick=d.es(champ), score=self._score(f1, f2, champ),
-                 fav=(champ == (f1 if par.advance(f1, f2)[0] >= 0.5 else f2)),
-                 reason=("tu campeón: +20" if s["first"] == champ else "el que te deja mejor parado"),
+                 fav=(champ == _fav(par, f1, f2)),
+                 reason=("tu campeón: +20" if s["first"] == champ else
+                         "tu subcampeón pierde la final" if s["second"] == champ else
+                         f"te da igual: apuestas distinto a {reflabel}"),
                  ref=refname(rf), diff=(champ != rf)),
         ]
         return rows, reflabel
@@ -615,6 +645,8 @@ class AgenteEstrategia:
 #  GENERADOR DE INFORMES (markdown)
 # ══════════════════════════════════════════════════════════════════════
 DISPLAY = {"Pablo (tú)": "Pablo", "Carola P": "Carola Puga"}
+REL = {"Pablo (tú)": "Tú", "Martín": "Hermano", "Caro": "Hermana", "Benja": "Hermano",
+       "José Pablo": "Papá", "Carola P": "Mamá", "Coni": "Cuñada"}
 
 
 def comp_rank(d, name):
@@ -827,8 +859,8 @@ def export_dashboard(d, esc, par, esp, sim, estr, out_path, N=30000, NB=2500):
         tier = ("candidato" if stx["win"] >= 0.02 else
                 "longshot" if stx["top5"] >= 0.02 else "fondo")
         players.append(dict(
-            name=name, disp=DISPLAY.get(name, name), rank=rank, pts=pts,
-            gapLead=136 - pts, tier=tier,
+            name=name, disp=DISPLAY.get(name, name), rel=REL.get(name, ""),
+            rank=rank, pts=pts, gapLead=136 - pts, tier=tier,
             win=round(stx["win"]*100, 1), winStr=fmt_pct(stx["win"]),
             top3=round(stx["top3"]*100, 1),
             top5=round(stx["top5"]*100, 1), last=round(stx["last"]*100),

@@ -57,20 +57,21 @@
  "jaime": {
   "sf1": "España",
   "sf2": "Argentina",
-  "winPct": "39.9%"
+  "winPct": "38.9%"
  },
  "players": [
   {
    "name": "Pablo (tú)",
    "disp": "Pablo",
+   "rel": "Tú",
    "rank": 12,
    "pts": 107,
    "gapLead": 29,
    "tier": "longshot",
    "win": 0.1,
-   "winStr": "0.05%",
-   "top3": 0.5,
-   "top5": 3.2,
+   "winStr": "0.08%",
+   "top3": 1.2,
+   "top5": 5.1,
    "last": 0,
    "avgRank": 16,
    "specials": [
@@ -102,7 +103,7 @@
     "third": "Francia",
     "podium": 30,
     "condWin": 1,
-    "condTop3": 6
+    "condTop3": 5
    },
    "apuestas": [
     {
@@ -119,7 +120,7 @@
      "pick": "Inglaterra",
      "score": "2 – 1",
      "fav": false,
-     "reason": "aunque Argentina es favorito, te conviene por tu escenario",
+     "reason": "te da igual: apuestas distinto a Jaime para separarte",
      "ref": "Argentina",
      "diff": true
     },
@@ -154,16 +155,17 @@
   {
    "name": "Martín",
    "disp": "Martín",
+   "rel": "Hermano",
    "rank": 5,
    "pts": 116,
    "gapLead": 20,
    "tier": "candidato",
-   "win": 8.4,
-   "winStr": "8.4%",
-   "top3": 31.9,
-   "top5": 46.7,
+   "win": 8.6,
+   "winStr": "8.6%",
+   "top3": 29.6,
+   "top5": 48.4,
    "last": 0,
-   "avgRank": 7,
+   "avgRank": 8,
    "specials": [
     {
      "txt": "1º España",
@@ -192,7 +194,7 @@
     "run": "Argentina",
     "third": "Francia",
     "podium": 45,
-    "condWin": 67,
+    "condWin": 66,
     "condTop3": 100
    },
    "apuestas": [
@@ -240,11 +242,12 @@
     "desc": "Estás arriba: juega a los favoritos y replica lo que harían tus rivales directos. No busques héroe; que nadie te pase barato."
    },
    "sanMarino": "✅ Prácticamente sin riesgo de último lugar.",
-   "keyInsight": "Eres candidato real (8% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."
+   "keyInsight": "Eres candidato real (9% de ganar). Tu podio vivo (España/Argentina/Francia) es tu fortaleza: empuja ese cuadro y no te compliques."
   },
   {
    "name": "José Pablo",
    "disp": "José Pablo",
+   "rel": "Papá",
    "rank": 30,
    "pts": 89,
    "gapLead": 47,
@@ -252,7 +255,7 @@
    "win": 0.0,
    "winStr": "<0.001%",
    "top3": 0.0,
-   "top5": 0.1,
+   "top5": 0.0,
    "last": 0,
    "avgRank": 27,
    "specials": [
@@ -336,14 +339,15 @@
   {
    "name": "Benja",
    "disp": "Benja",
+   "rel": "Hermano",
    "rank": 27,
    "pts": 93,
    "gapLead": 43,
    "tier": "longshot",
    "win": 0.0,
    "winStr": "<0.001%",
-   "top3": 0.7,
-   "top5": 8.7,
+   "top3": 2.3,
+   "top5": 9.6,
    "last": 0,
    "avgRank": 22,
    "specials": [
@@ -375,7 +379,7 @@
     "third": "España",
     "podium": 30,
     "condWin": 0,
-    "condTop3": 2
+    "condTop3": 5
    },
    "apuestas": [
     {
@@ -392,7 +396,7 @@
      "pick": "Inglaterra",
      "score": "2 – 1",
      "fav": false,
-     "reason": "aunque Argentina es favorito, te conviene por tu escenario",
+     "reason": "te da igual: apuestas distinto a los favoritos para separarte",
      "ref": "Argentina",
      "diff": true
     },
@@ -427,6 +431,7 @@
   {
    "name": "Coni",
    "disp": "Coni",
+   "rel": "Cuñada",
    "rank": 34,
    "pts": 75,
    "gapLead": 61,
@@ -434,8 +439,8 @@
    "win": 0.0,
    "winStr": "<0.001%",
    "top3": 0.0,
-   "top5": 0.1,
-   "last": 65,
+   "top5": 0.0,
+   "last": 60,
    "avgRank": 31,
    "specials": [
     {
@@ -489,12 +494,12 @@
     },
     {
      "match": "3er lugar · España vs Argentina",
-     "pick": "España",
-     "score": "2 – 1",
-     "fav": true,
-     "reason": "favorito del cruce",
+     "pick": "Argentina",
+     "score": "1 – 2",
+     "fav": false,
+     "reason": "te da igual: apuestas distinto a los favoritos",
      "ref": "España",
-     "diff": false
+     "diff": true
     },
     {
      "match": "Final · Francia vs Inglaterra",
@@ -506,26 +511,27 @@
      "diff": true
     }
    ],
-   "ndiff": 3,
+   "ndiff": 4,
    "ref": "los favoritos",
    "style": {
     "label": "Máxima varianza",
     "desc": "Vas atrás: necesitas caos. Pronostica resultados diferenciados y alienta al outsider; tu única vía es que pase lo inesperado."
    },
-   "sanMarino": "🚨 Riesgo ALTO de último lugar: **65%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.",
+   "sanMarino": "🚨 Riesgo ALTO de último lugar: **60%** de terminar 34º (polera de San Marino). Para salvarte necesitas que **tus especiales vivos sumen** (que tu equipo llegue lejos) y acertar pronósticos de partidos; recuerda que **no pierdes puntos por fallar**, así que arriesga. El reglamento además castiga a quien intente quedar último a propósito.",
    "keyInsight": "Tu combo depende de que **Harry Kane** sea goleador: eso libera a Mbappé para MVP y te paga los dos. Si Mbappé es goleador, pierdes ambos."
   },
   {
    "name": "Caro",
    "disp": "Caro",
+   "rel": "Hermana",
    "rank": 24,
    "pts": 95,
    "gapLead": 41,
    "tier": "longshot",
-   "win": 1.1,
-   "winStr": "1.1%",
-   "top3": 9.7,
-   "top5": 16.6,
+   "win": 1.0,
+   "winStr": "1.0%",
+   "top3": 10.1,
+   "top5": 16.3,
    "last": 0,
    "avgRank": 19,
    "specials": [
@@ -557,7 +563,7 @@
     "third": "Francia",
     "podium": 45,
     "condWin": 7,
-    "condTop3": 76
+    "condTop3": 78
    },
    "apuestas": [
     {
@@ -609,14 +615,15 @@
   {
    "name": "Carola P",
    "disp": "Carola Puga",
+   "rel": "Mamá",
    "rank": 19,
    "pts": 100,
    "gapLead": 36,
    "tier": "longshot",
    "win": 0.0,
-   "winStr": "0.03%",
-   "top3": 7.2,
-   "top5": 11.8,
+   "winStr": "<0.001%",
+   "top3": 6.9,
+   "top5": 11.9,
    "last": 0,
    "avgRank": 20,
    "specials": [
@@ -644,11 +651,11 @@
    "golMvpNote": "Tu MVP es **Mbappé** (favorito). Como el goleador no puede ser también MVP, para que tu Mbappé-MVP pague hace falta que **Mbappé NO sea el máximo goleador** (que lo supere otro, idealmente tu goleador **Messi**).",
    "dream": {
     "champ": "Francia",
-    "run": "Argentina",
+    "run": "Inglaterra",
     "third": "España",
     "podium": 30,
     "condWin": 0,
-    "condTop3": 27
+    "condTop3": 33
    },
    "apuestas": [
     {
@@ -662,33 +669,33 @@
     },
     {
      "match": "Semifinal · Inglaterra vs Argentina",
-     "pick": "Argentina",
-     "score": "0 – 2",
-     "fav": true,
-     "reason": "favorito del cruce",
+     "pick": "Inglaterra",
+     "score": "2 – 1",
+     "fav": false,
+     "reason": "te da igual: apuestas distinto a los favoritos para separarte",
      "ref": "Argentina",
-     "diff": false
+     "diff": true
     },
     {
-     "match": "3er lugar · España vs Inglaterra",
+     "match": "3er lugar · España vs Argentina",
      "pick": "España",
-     "score": "2 – 0",
+     "score": "2 – 1",
      "fav": true,
      "reason": "tu 3º: +10",
      "ref": "España",
      "diff": false
     },
     {
-     "match": "Final · Francia vs Argentina",
+     "match": "Final · Francia vs Inglaterra",
      "pick": "Francia",
-     "score": "2 – 1",
+     "score": "2 – 0",
      "fav": true,
      "reason": "tu campeón: +20",
      "ref": "Francia",
      "diff": false
     }
    ],
-   "ndiff": 1,
+   "ndiff": 2,
    "ref": "los favoritos",
    "style": {
     "label": "Contrarian selectivo",

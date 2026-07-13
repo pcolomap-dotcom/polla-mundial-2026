@@ -54,6 +54,8 @@ nav.players{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px;}
 .pill:hover{border-color:var(--accent);}
 .pill[aria-selected="true"]{background:var(--accent);color:#12231a;border-color:var(--accent);}
 .pill .rk{opacity:.7;font-weight:700;font-size:.8em;margin-right:5px;}
+.pill .rel{opacity:.6;font-weight:600;font-size:.72em;margin-left:6px;}
+.pill[aria-selected="true"] .rel,.pill[aria-selected="true"] .rk{opacity:.85;}
 
 .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;
   border-bottom:1px solid var(--panel-line);padding-bottom:14px;margin-bottom:16px;}
@@ -131,18 +133,21 @@ jaime_sf1 = data["jaime"]["sf1"]; jaime_sf2 = data["jaime"]["sf2"]; jaime_win = 
 
 pills = "".join(
     f'<button class="pill" role="tab" data-i="{i}" onclick="pick({i})">'
-    f'<span class="rk">#{p["rank"]}</span>{p["disp"]}</button>'
+    f'<span class="rk">#{p["rank"]}</span>{p["disp"]}'
+    f'<span class="rel">{p.get("rel","")}</span></button>'
     for i, p in enumerate(data["players"]))
 
-HTML = f"""<title>Tableros de estrategia · Polla Mundial 2026</title>
+HTML = f"""<title>Polla familiar · Tableros por jugador</title>
 <style>{CSS}</style>
 <div class="wrap">
   <header>
-    <div class="kicker">Polla Mundialera Colomas y Asociados · 12 jul 2026</div>
-    <h1>Tableros de estrategia por jugador</h1>
-    <p class="sub">Cuartos jugados. Faltan 2 semifinales, 3er puesto y final, más los
-      premios especiales. Puntaje del reglamento; el goleador no puede ser además mejor
-      jugador; y <b>no se pierden puntos por fallar</b> un pronóstico.</p>
+    <div class="kicker">Polla Mundialera Colomas y Asociados · Mundial 2026</div>
+    <h1>Tableros de estrategia de la familia</h1>
+    <p class="sub"><b>👋 Toca tu nombre</b> abajo para ver tu tablero. Ya se jugaron los
+      cuartos; faltan 2 semifinales, el 3er puesto y la final, más los premios especiales.
+      Idea central: apostar <b>⚡ distinto</b> a tu competencia (no se pierden puntos por
+      fallar), asumiendo que sabemos qué apuesta cada uno —en especial Jaime, el líder—
+      antes de mandar lo nuestro.</p>
   </header>
 
   <section class="shared">
@@ -174,6 +179,7 @@ const DATA = {json.dumps(data['players'], ensure_ascii=False)};
 const FLAG = {json.dumps(FLAG, ensure_ascii=False)};
 function fl(t){{return FLAG[t]||"";}}
 function esc(s){{return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;");}}
+function mdb(s){{return esc(s).replace(/\\*\\*(.+?)\\*\\*/g,"<b>$1</b>");}}
 function render(p){{
   const spec = p.specials.map(s=>{{
     const good = s.alive;
@@ -193,9 +199,9 @@ function render(p){{
   const board = `
     <div class="head">
       <div>
-        <div class="kicker">Tu posición</div>
+        <div class="kicker">Tu posición ${{p.rel?('· '+esc(p.rel)):''}}</div>
         <div class="who">#${{p.rank}} · ${{esc(p.disp)}}</div>
-        <div style="color:var(--fg-dim)">${{p.pts}} pts · a ${{p.gapLead}} del líder</div>
+        <div style="color:var(--fg-dim)">${{p.pts}} pts · a ${{p.gapLead}} del líder (Jaime)</div>
       </div>
       <span class="tierbadge tier-${{p.tier}}">${{p.tier==='candidato'?'Candidato real':p.tier==='longshot'?'Opción lejana':'Fondo de tabla'}}</span>
     </div>
@@ -211,13 +217,13 @@ function render(p){{
       apuestas <b>distintas: ${{p.ndiff}} de 4</b>. Cada acierto tuyo en tu escenario que
       ${{esc(p.ref)}} falle, te acerca.</div>
 
-    <div class="key">${{esc(p.keyInsight)}}</div>
+    <div class="key">${{mdb(p.keyInsight)}}</div>
 
     <div class="cols">
       <div class="panel">
         <h2>📌 Tus especiales</h2>
         <ul class="clean">${{spec}}</ul>
-        <div class="note">${{esc(p.golMvpNote)}}</div>
+        <div class="note">${{mdb(p.golMvpNote)}}</div>
       </div>
       <div class="panel dream">
         <h2>📣 Qué alentar</h2>
@@ -241,7 +247,7 @@ function render(p){{
       ${{bets}}
     </div>
 
-    <div class="sanm ${{riskHi?'hi':'lo'}}">${{esc(p.sanMarino)}}</div>
+    <div class="sanm ${{riskHi?'hi':'lo'}}">${{mdb(p.sanMarino)}}</div>
 
     <div style="margin-top:14px" class="note">
       <b>Estilo de juego:</b> <span class="styletag">${{esc(p.style.label)}}</span> — ${{esc(p.style.desc)}}</div>
